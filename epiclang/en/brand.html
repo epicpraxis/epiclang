@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EPIC PRAXIS - Brand</title>
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+    <link rel="stylesheet" href="/css/brand.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <script src="components/header.js" type="text/javascript" defer></script>
+    <script src="components/footer.js" type="text/javascript" defer></script>
+    <script src="components/hero.js" type="text/javascript" defer></script>
+</head>
+<body>
+    <header-component></header-component>
+
+    <main>
+        <section class="brand-hero">
+            <div class="hero-intro">
+                <h1>Epic Praxis fosters praxis heroes</h1>
+                <p>Education protocols that activates actionable learning.</p>
+            </div>
+            <div class="hero-banner-group">
+                <div class="hero-banner">
+                    <div class="hero-banner-overlay">
+                        <p class="top">Epic Language Institute</p>
+                        <p class="middle">The Epic Way to English Mastery</p>
+                        <p class="bottom">언어를 배우는 새로운 방식, 모두를 위한 영어</p>
+                        <button class="plus-button">
+                            <svg viewBox="0 0 24 24">
+                              <line x1="12" y1="5" x2="12" y2="19" />
+                              <line x1="5" y1="12" x2="19" y2="12" />
+                            </svg>
+                          </button>
+                          <div class="banner-detail">
+                            <p class="body">Through the Power of Reading</p>
+                            <p class="text">에픽영어학원의 목표는, 영어를 ‘학습’이 아닌 ‘습득’으로 접근해 사고와 표현의 도구로 만드는 것입니다.
+                                읽기를 중심으로 한 AI-SO 커리큘럼으로, 언어 기술과 사고력을 동시에 성장시킵니다.
+                                결국 아이들은 영어를 진짜 자기 언어로 체화하게 됩니다.</p>
+                            <a href="#" target="_blank">에픽영어학원 홈페이지 바로가기</a>
+                            <button class="close-button" style="display: none;">
+                                <svg viewBox="0 0 24 24">
+                                  <line x1="6" y1="6" x2="18" y2="18" />
+                                  <line x1="6" y1="18" x2="18" y2="6" />
+                                </svg>
+                            </button>
+                          </div>
+                    </div>
+                </div>
+                <div class="hero-banner">
+                    <div class="hero-banner-overlay" style="display: none;">
+                        <p class="top">Epic Language Institute</p>
+                        <p class="middle">The Epic Way to English Mastery</p>
+                        <p class="bottom">언어를 배우는 새로운 방식, 모두를 위한 영어</p>
+                        <button class="plus-button">
+                            <svg viewBox="0 0 24 24">
+                              <line x1="12" y1="5" x2="12" y2="19" />
+                              <line x1="5" y1="12" x2="19" y2="12" />
+                            </svg>
+                          </button>
+                          
+                          <div class="banner-detail">
+                            <p class="body">Through the Power of Reading</p>
+                            <p class="text">에픽영어학원의 목표는, 영어를 ‘학습’이 아닌 ‘습득’으로 접근해 사고와 표현의 도구로 만드는 것입니다.
+                                읽기를 중심으로 한 AI-SO 커리큘럼으로, 언어 기술과 사고력을 동시에 성장시킵니다.
+                                결국 아이들은 영어를 진짜 자기 언어로 체화하게 됩니다.</p>
+                            <a href="#" target="_blank">에픽영어학원 홈페이지 바로가기</a>
+                            <button class="close-button" style="display: none;">
+                                <svg viewBox="0 0 24 24">
+                                  <line x1="6" y1="6" x2="18" y2="18" />
+                                  <line x1="6" y1="18" x2="18" y2="6" />
+                                </svg>
+                            </button>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer-component></footer-component>
+    <script>
+      document.querySelectorAll('.hero-banner').forEach((banner) => {
+        banner.addEventListener('click', () => {
+          const detail = banner.querySelector('.banner-detail');
+          const topText = banner.querySelector('.top');
+          const plusButton = banner.querySelector('.plus-button');
+          const closeButton = banner.querySelector('.close-button');
+
+          const isExpanded = banner.classList.contains('banner-expanded');
+
+          if (isExpanded) {
+            banner.classList.remove('banner-expanded');
+            detail.classList.remove('active');
+            if (topText) topText.style.display = 'block';
+            if (plusButton) plusButton.style.display = 'flex';
+            if (closeButton) closeButton.style.display = 'none';
+          } else {
+            banner.classList.add('banner-expanded');
+            detail.classList.add('active');
+            if (topText) topText.style.display = 'none';
+            if (plusButton) plusButton.style.display = 'none';
+            if (closeButton) closeButton.style.display = 'flex';
+          }
+        });
+      });
+    </script>
+</body>
+</html>
