@@ -31,7 +31,7 @@ class Header extends HTMLElement {
                         <li><a href="#">학습 로드맵</a></li>
                         <li><a href="#">에픽영어학원의 차이</a></li>
                         <li><a href="#">캠퍼스 찾기</a></li>-->
-                        <li><a href="https://blog.naver.com/epiclang" target="_blank">블로그</a></li>
+                        <li><a href="https://blog.naver.com/epiclang" target="_blank"><span style="position: relative; display: inline-block;">블로그 <span style="position: absolute; bottom: -0.1em; left: 100%;">↗</span></a></li>
                         <li><a href="https://global-zone60.renaissance-go.com/welcomeportal/rpna74yw" target="_blank" rel="noopener noreferrer"><span style="position: relative; display: inline-block;">AR+myON <span style="position: absolute; bottom: -0.1em; left: 100%;">↗</span></a></li>
                         <li>
                             <div class="reservation">
