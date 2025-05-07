@@ -520,7 +520,7 @@ nav a.active {
 }
 /* Reading Intro Section (above footer) */
 .reading-intro {
-  background-image: url(/assets/book_bg.svg);
+  background-image: url(../assets/book_bg.svg);
   background-repeat: no-repeat;
   background-size: cover;
   padding: 300px 20px;
