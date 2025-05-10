@@ -9,7 +9,7 @@ class Footer extends HTMLElement {
   <div class="footer-content">
     <div class="footer-top">
       <div class="footer-brand">
-        <img src="/assets/epiclangfooter.svg" alt="EPIC PRAXIS Logo">
+        <img src="assets/epiclangfooter.svg" alt="EPIC PRAXIS Logo">
       </div>
       <div class="footer-columns">
         <div class="footer-column">
