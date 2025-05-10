@@ -339,7 +339,7 @@ nav a.active {
 
 /* Hero section styles */
 .hero {
-    background-image:url(/assets/main/hero.png);
+    background-image:url(assets/main/hero.png);
     background-size: cover;      /* 화면을 꽉 채우도록 */
     background-repeat: no-repeat;
     background-position: center center;
