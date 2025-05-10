@@ -16,7 +16,7 @@ class Header extends HTMLElement {
             <header>
                 <div class="logo">
                     <a href="index.html">
-                        <img src="/assets/epiclang.svg" alt="EPIC PRAXIS Logo">
+                        <img src="assets/epiclang.svg" alt="EPIC PRAXIS Logo">
                     </a>
                 </div>
                 <nav style="display: flex; justify-content: space-between; align-items: center; width: 80%;">
@@ -35,11 +35,11 @@ class Header extends HTMLElement {
                     <ul class="cta-menu">
                       <li><a href="https://global-zone60.renaissance-go.com/welcomeportal/rpna74yw" target="_blank" rel="noopener noreferrer">
                         <span class="cta-button">
-                        <img src="/assets/ar.png" style="height: 17px; vertical-align: middle; position: relative; top: -2px;">독서프로그램(AR)</span></a></li>
+                        <img src="assets/ar.png" style="height: 17px; vertical-align: middle; position: relative; top: -2px;">독서프로그램(AR)</span></a></li>
 
                       <li><a href="https://global-zone60.renaissance-go.com/welcomeportal/rpna74yw" target="_blank" rel="noopener noreferrer">
                         <span class="cta-button">
-                        <img src="/assets/myON.png" style="height: 17px; vertical-align: middle; position: relative; top: -2px;"> 영어도서관(myON)</span></a></li>
+                        <img src="assets/myON.png" style="height: 17px; vertical-align: middle; position: relative; top: -2px;"> 영어도서관(myON)</span></a></li>
 
                       <li class="reservation"><a href="https://naver.me/xIezt86L" target="_blank">입학상담예약</a></li>
                     </ul>
