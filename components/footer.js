@@ -9,7 +9,7 @@ class Footer extends HTMLElement {
   <div class="footer-content">
     <div class="footer-top">
       <div class="footer-brand">
-        <img src="/assets/epiclangfooter.svg" alt="EPIC PRAXIS Logo">
+        <img src="assets/epiclangfooter.svg" alt="EPIC PRAXIS Logo">
       </div>
       <div class="footer-columns">
         <div class="footer-column">
@@ -27,9 +27,9 @@ class Footer extends HTMLElement {
       <p>© Epic English Academy. All Rights Reserved.</p>
       <div class="footer-branding-row">
         <div class="footer-logos">
-          <a href="https://global-zone60.renaissance-go.com/welcomeportal/rpna74yw" target="_blank" rel="noopener"><img src="/assets/logo1.png" alt="Logo 1"></a>
-          <a href="https://global-zone60.renaissance-go.com/welcomeportal/rpna74yw" target="_blank" rel="noopener"><img src="/assets/logo2.png" alt="Logo 2"></a>
-          <a href="https://blog.naver.com/epiclang" target="_blank" rel="noopener"><img src="/assets/logo3.png" alt="Logo 3"></a>
+          <a href="https://global-zone60.renaissance-go.com/welcomeportal/rpna74yw" target="_blank" rel="noopener"><img src="assets/logo1.png" alt="Logo 1"></a>
+          <a href="https://global-zone60.renaissance-go.com/welcomeportal/rpna74yw" target="_blank" rel="noopener"><img src="assets/logo2.png" alt="Logo 2"></a>
+          <a href="https://blog.naver.com/epiclang" target="_blank" rel="noopener"><img src="assets/logo3.png" alt="Logo 3"></a>
         </div>
         <p>An Epic Praxis Brand</p>
       </div>
