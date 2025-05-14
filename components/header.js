@@ -14,7 +14,7 @@ class Header extends HTMLElement {
             </div>
                 <div class="logo">
                     <a href="index.html">
-                        <img src="assets/epiclang.svg" alt="EPIC PRAXIS Logo">
+                        <img src="../assets/epiclang.svg" alt="EPIC PRAXIS Logo">
                     </a>
                 </div>
                 <nav>
@@ -32,10 +32,10 @@ class Header extends HTMLElement {
 
                     <ul class="cta-menu">
                       <li><a href="https://global-zone60.renaissance-go.com/welcomeportal/rpna74yw" target="_blank" rel="noopener noreferrer">
-                        <img src="/assets/ar.png" style="height: 17px; vertical-align: middle; position: relative; top: -1px;"> 독서프로그램(AR)</span></a></li>
+                        <img src="../assets/ar.png" style="height: 17px; vertical-align: middle; position: relative; top: -1px;"> 독서프로그램(AR)</span></a></li>
 
                       <li><a href="https://global-zone60.renaissance-go.com/welcomeportal/rpna74yw" target="_blank" rel="noopener noreferrer">
-                        <img src="/assets/myON.png" style="height: 17px; vertical-align: middle; position: relative; top: -1px;"> 온라인도서관(myON)</span></a></li>
+                        <img src="../assets/myON.png" style="height: 17px; vertical-align: middle; position: relative; top: -1px;"> 온라인도서관(myON)</span></a></li>
 
                       <li class="reservation"><a href="https://naver.me/xIezt86L" target="_blank">입학상담예약</a></li>
                     </ul>
@@ -64,10 +64,10 @@ class Header extends HTMLElement {
                             <span style="border: 1px solid #ddd; border-radius: 0px; padding: 1.2px 1.2px 0px 1px; font-size:11px;">↗</span></span></a></li>
                             <li style="display: flex; gap: 8px; justify-content: flex-end;" class="outlink">
                               <a href="https://global-zone60.renaissance-go.com/welcomeportal/rpna74yw" target="_blank" rel="noopener noreferrer" class="outlink">
-                                <img src="/assets/ar.png" style="height: 16px; vertical-align: middle; position: relative; top: -0.4px;"> 독서프로그램(AR)
+                                <img src="../assets/ar.png" style="height: 16px; vertical-align: middle; position: relative; top: -0.4px;"> 독서프로그램(AR)
                               </a>
                               <a href="https://global-zone60.renaissance-go.com/welcomeportal/rpna74yw" target="_blank" rel="noopener noreferrer" class="outlink">
-                                <img src="assets/myON.png" style="height: 16px; vertical-align: middle; position: relative; top: -0.4px;"> 온라인도서관(myON)
+                                <img src="../assets/myON.png" style="height: 16px; vertical-align: middle; position: relative; top: -0.4px;"> 온라인도서관(myON)
                               </a>
                             </li>
                         </ul>

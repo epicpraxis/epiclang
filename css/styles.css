@@ -145,7 +145,7 @@ nav a.active {
 
 /* Hero section styles */
 .hero {
-  background-image:url(/assets/main/hero.png);
+  background-image:url(../assets/main/hero.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -669,7 +669,7 @@ nav a.active {
     }
     /* Hero section styles */
 .hero {
-  background-image:url(/assets/main/hero.png);
+  background-image:url(../assets/main/hero.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
