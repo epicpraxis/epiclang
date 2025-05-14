@@ -149,8 +149,8 @@ nav a.active {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  height: 500px;
-  padding: 160px calc((100% - 1020px) / 2);
+  height: 600px;
+  padding: 230px calc((100% - 1020px) / 2);
 }
 .hero h2 {
     font-size: 51px;
