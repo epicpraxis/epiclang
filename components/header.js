@@ -14,7 +14,7 @@ class Header extends HTMLElement {
             </div>
                 <div class="logo">
                     <a href="index.html">
-                        <img src="/assets/epiclang.svg" alt="EPIC PRAXIS Logo">
+                        <img src="assets/epiclang.svg" alt="EPIC PRAXIS Logo">
                     </a>
                 </div>
                 <nav>
@@ -47,7 +47,7 @@ class Header extends HTMLElement {
                     <div class="mobile-header-inner">
                         <div class="logo">
                             <a href="index.html">
-                                <img src="/assets/epiclang.svg" alt="EPIC PRAXIS Logo">
+                                <img src="assets/epiclang.svg" alt="EPIC PRAXIS Logo">
                             </a>
                         </div>
                         <div class="mobile-cta">
@@ -67,7 +67,7 @@ class Header extends HTMLElement {
                                 <img src="/assets/ar.png" style="height: 16px; vertical-align: middle; position: relative; top: -0.4px;"> 독서프로그램(AR)
                               </a>
                               <a href="https://global-zone60.renaissance-go.com/welcomeportal/rpna74yw" target="_blank" rel="noopener noreferrer" class="outlink">
-                                <img src="/assets/myON.png" style="height: 16px; vertical-align: middle; position: relative; top: -0.4px;"> 온라인도서관(myON)
+                                <img src="assets/myON.png" style="height: 16px; vertical-align: middle; position: relative; top: -0.4px;"> 온라인도서관(myON)
                               </a>
                             </li>
                         </ul>
