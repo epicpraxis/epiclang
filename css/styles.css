@@ -58,8 +58,6 @@ body {
   text-align: center;
 }
 .concerns h2 {
-  font-size: 48px;
-  line-height: 1.6;
   margin-bottom: 4px;
 }
 .speech-bubbles{
@@ -103,8 +101,6 @@ body {
   text-align: center;
 }
 .precise-diagnosis h2 {
-  font-size: 48px;
-  line-height: 1.6;
   margin-bottom: 4px;
 }
 .solutions {
@@ -333,7 +329,7 @@ body {
 }
 .concerns h2 {
   margin-bottom: 0px;
-    line-height: 1.4;
+  font-size: 4vw;
 }
 .speech-bubbles{
   margin-bottom: 20px;
