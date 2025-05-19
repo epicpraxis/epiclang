@@ -107,7 +107,7 @@ class Header extends HTMLElement {
         const topLinks = this.querySelectorAll('.top-header a');
         topLinks.forEach(link => {
             const text = link.textContent.trim();
-            if ((text === '로그인' || text === '회원가입') && !link.hasAttribute('data-alert-initialized')) {
+            if ((text === '로그인' || text === '회원가입' || text === '마이페이지' ) && !link.hasAttribute('data-alert-initialized')) {
                 link.setAttribute('data-alert-initialized', 'true');
                 link.addEventListener('click', (e) => {
                     e.preventDefault();
