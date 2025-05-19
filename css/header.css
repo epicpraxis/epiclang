@@ -133,6 +133,10 @@ nav a.active {
 
 /*tablet*/
 @media (max-width: 1020px) {
+    
+  .mobile-header {
+    display: block;
+  }
     .desktop-header{
       display: none;
     }
