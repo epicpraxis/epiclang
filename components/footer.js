@@ -10,8 +10,8 @@ class Footer extends HTMLElement {
     <div class="footer-service">
       <div class="service-wrap">
         <ul class="service-list">
-          <li class="service-item"><a href="#">회사소개</a></li>
-          <li class="service-item"><a href="#">회사소개</a></li>
+          <li class="service-item"><a href="#">회사소개(프랙시스 링크넣을 예정)</a></li>
+          <li class="service-item"><a href="#">뭐 넣을지 고민 필요</a></li>
           <li class="service-item"><a href="#">커리큘럼</a></li>
         </ul>
         <ul class="service-list">
