@@ -48,7 +48,7 @@ class Footer extends HTMLElement {
             tempInput.select();
             document.execCommand('copy');
             document.body.removeChild(tempInput);
-            alert('링크가 복사되었습니다. 지인들에게 에픽영어학원 홈페이지를 공유해 주세요!🙌');
+            alert('링크가 복사되었습니다🙌 지인들에게 에픽영어학원 홈페이지를 공유해 주세요!');
           });
         }
     }
