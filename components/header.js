@@ -29,7 +29,7 @@ class Header extends HTMLElement {
                     <ul class="main-menu">
                       <li><a href="#curriculum" class="${this.isActive('#')}">커리큘럼</a></li>
                       <li><a href="#roadmap">학습 로드맵</a></li>
-                      <li><a href="#campus.html">캠퍼스 찾기</a></li>
+                      <li><a href="campus.html">캠퍼스 찾기</a></li>
                       <li><a href="https://blog.naver.com/epiclang" target="_blank" rel="noopener noreferrer">
                         <span style="display: inline-flex; align-items: center; gap: 3px;">블로그 
                         <span style="border: 1px solid #ddd; border-radius: 0px; padding: 2px 1px 0px 2px; font-size:11px;">↗</span></span></a></li>
