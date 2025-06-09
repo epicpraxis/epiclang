@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>에픽영어학원</title>
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css"/>
+    <!-- AOS CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/campus.css">
+    <link rel="icon" href="assets/Favicon.svg" />
+    <script src="components/header.js" type="text/javascript" defer></script>
+    <script src="components/footer.js" type="text/javascript" defer></script>
+</head>
+<body>
+    <header-component></header-component>
+    <main>
+      <!--HERO Section-->
+          <section class="hero">
+            <h1>캠퍼스 찾기</h1>
+            <img src="assets/main/map.svg" alt="네이버 지도">
+            <div class="container">
+                <!-- 여의도 캠퍼스 -->
+                <div class="card">
+                  <div class="yeouido">
+                      <h2>여의도 캠퍼스</h2>
+                      <p class="info">📍 서울특별시 영등포구 국제금융로 78 1013호</p>
+                      <p class="info">💬 02-783-6806</p>
+                  </div>
+                  <div class="buttons">
+                      <button class="chat-btn">1:1 채팅 문의</button>
+                      <button class="reserve-btn">입학상담 예약하기</button>
+                  </div>
+                </div>
+
+                <!-- 목동 캠퍼스 -->
+                <div class="card disabled">
+                  <p>현재 <strong>목동 캠퍼스<br>오픈 준비중</strong>입니다.</p>
+                </div>
+            </div>
+          </section>
+    </main>
+    <footer-component></footer-component>
+</body>
+</html>
