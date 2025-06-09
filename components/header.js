@@ -64,7 +64,7 @@ class Header extends HTMLElement {
                         </div>
                         <div class="mobile-cta">
                             <a href="https://naver.me/xIezt86L" target="_blank" class="reservation">입학상담 예약</a>
-                            <a href="#" target="_blank" rel="noopener noreferrer" class="login">로그인</a>
+                            <a href="#" rel="noopener noreferrer" class="login">로그인</a>
                             <button class="hamburger"><span></span><span></span><span></span></button>
                         </div>
                     </div>
@@ -76,7 +76,7 @@ class Header extends HTMLElement {
                             <img src="assets/menu/reservation.svg" alt="입학상담 예약"loading="lazy">
                             <p>입학상담 예약</p>
                             </a>
-                            <a href="#" target="_blank" class="mobile-card">
+                            <a href="#"class="mobile-card">
                             <img src="assets/menu/login.svg" alt="로그인"loading="lazy">
                             <p>로그인</p>
                             </a>
