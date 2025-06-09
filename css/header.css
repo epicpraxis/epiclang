@@ -1,3 +1,6 @@
+.mobile-header{
+      display: none;
+    }
 .top-header {
     font-size: 13px;
     color: #555;
