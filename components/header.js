@@ -27,8 +27,8 @@ class Header extends HTMLElement {
                 </div>
                 <nav>
                     <ul class="main-menu">
-                      <li><a href="#curriculum" class="${this.isActive('#')}">커리큘럼</a></li>
-                      <li><a href="#roadmap">학습 로드맵</a></li>
+                      <li><a href="index.html#curriculum" class="${this.isActive('#')}">커리큘럼</a></li>
+                      <li><a href="index.html#roadmap">학습 로드맵</a></li>
                       <li><a href="campus.html">캠퍼스 찾기</a></li>
                       <li><a href="https://blog.naver.com/epiclang" target="_blank" rel="noopener noreferrer">
                         <span style="display: inline-flex; align-items: center; gap: 3px;">블로그 
