@@ -225,7 +225,7 @@ body {
   gap:160px;
   /*max-width: 1020px;*/
 }
-.aiso-left{
+.{
   max-width: 30%;
 }
 .aiso-right{
@@ -603,10 +603,10 @@ body {
 gap: 30px;
 }
 .aiso-left{
-    width:60%;
+    max-width:50%;
 }
 .aiso-right{
-  width: 40%;
+  width: 100%;
 }
 /*Roadmap*/
 .roadmap {
