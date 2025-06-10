@@ -605,6 +605,9 @@ gap: 0px;
 .aiso-left{
     width:50%;
 }
+.aiso-right{
+  width: 100%;
+}
 /*Roadmap*/
 .roadmap {
   padding:70px 0 40px;
