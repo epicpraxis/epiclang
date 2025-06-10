@@ -603,10 +603,10 @@ body {
 gap: 0px;
 }
 .aiso-left{
-    width:60%;
+    width:50%;
 }
 .aiso-right{
-  width: 40%;
+  width: 100%;
 }
 /*Roadmap*/
 .roadmap {
