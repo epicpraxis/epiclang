@@ -600,10 +600,10 @@ body {
 .curriculum-graphic {
   padding: 0 0 50px 10px;
   /*max-width: 1020px;*/
-gap: 30px;
+gap: 0px;
 }
 .aiso-left{
-    max-width:50%;
+    max-width:100%;
 }
 .aiso-right{
   width: 100%;
