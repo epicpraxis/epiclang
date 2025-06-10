@@ -14,8 +14,8 @@ class Footer extends HTMLElement {
         <a href="javascript:void(0)" class="open-channel-talk" class="social-icon"><img src="assets/footer/channeltalk.svg" alt="channel talk"></a>
       </div>
       <div class="footer-right-icons">
-        <a href="javascript:void(0)" class="copy-link"><img src="assets/footer/external.svg" alt="external link"></a>
-        <a href="#" class="btn-top"><img src="assets/footer/top.svg" alt="top button"></a>
+        <a href="javascript:void(0)" class="copy-link"><img src="assets/footer/external.png" alt="external link"></a>
+        <a href="#" class="btn-top"><img src="assets/footer/top.png" alt="top button"></a>
       </div>    
     </div>
       <div class="service-wrap">
