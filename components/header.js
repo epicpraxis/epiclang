@@ -135,10 +135,10 @@ class Header extends HTMLElement {
         `;
 
         // 로그인, 회원가입 알림 처리
-        const topLinks = this.querySelectorAll('.top-header a, .mobile-drop a, .mobile-drop, .login, .open-channel-talk');
+        const topLinks = this.querySelectorAll('.top-header a, .mobile-drop a, .mobile-drop, .login,');
         topLinks.forEach(link => {
             const text = link.textContent.trim();
-            if ((text === '로그인' || text === '회원가입' || text === '마이페이지' || text === '자주 묻는 질문') && !link.hasAttribute('data-alert-initialized')) {
+            if ((text === '로그인' || text === '회원가입' || text === '마이페이지' || text === '자주 묻는 질문' & !link.hasAttribute('data-alert-initialized')) {
                 link.setAttribute('data-alert-initialized', 'true');
                 link.addEventListener('click', (e) => {
                     e.preventDefault();
@@ -220,15 +220,15 @@ class Header extends HTMLElement {
             pluginKey: "91db4e6e-c65d-42b3-bfbc-bdab19413610",
         });
 
-        const csLink = this.querySelector('.open-channel-talk');
-        if (csLink) {
-            csLink.addEventListener('click', (e) => {
-                e.preventDefault();
-                if (window.ChannelIO) {
-                    window.ChannelIO('showMessenger');
-                }
-            });
-        }
+        const csLinks = this.querySelectorAll('.open-channel-talk');
+csLinks.forEach(link => {
+  link.addEventListener('click', (e) => {
+    e.preventDefault();
+    if (window.ChannelIO) {
+      window.ChannelIO('showMessenger');
+    }
+  });
+});
     }
 
     isActive(path) {
