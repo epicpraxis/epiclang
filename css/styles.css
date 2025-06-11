@@ -83,6 +83,7 @@ body {
   display: flex;
   justify-content: flex-start;
   height: 170px;
+  padding-left: 30px;
 }
 .speech-bubble-four {
   display: flex;
