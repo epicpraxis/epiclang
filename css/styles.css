@@ -597,12 +597,6 @@ padding:0;
   /*max-width: 1020px;*/
 gap: 0px;
 }
-.aiso-left{
-    max-width:100%;
-}
-.aiso-right{
-  width: 100%;
-}
 /*Roadmap*/
 .roadmap {
   padding:70px 0 40px;
