@@ -108,7 +108,6 @@ class Header extends HTMLElement {
                             </a>
                             </li>
 
-
                             <li class="menu-title">메뉴</li>
                             <li><a href="index.html#curriculum">커리큘럼</a></li> <!-- (노션 안내 페이지로 연동) -->
                             <li><a href="index.html#roadmap">학습 로드맵</a></li>
@@ -120,13 +119,11 @@ class Header extends HTMLElement {
                             </a>
                             </li>
 
-
                             <li class="menu-title">고객센터</li>
                             <li><a href="#">자주 묻는 질문</a></li> <!-- (고객센터 페이지로 연동) -->
                             <li><a href="javascript:void(0)" class="open-channel-talk">1:1 채팅 문의</a></li> <!-- (채널톡 페이지로 연동) -->
                             <li><a href="tel:02-783-6806">전화 문의</a></li> <!-- 실제 전화번호로 변경하세요 -->
                             <li><a href="https://tr.ee/epic-yc-feedback" target="_blank">에픽에 바란다</a></li> 
-
 
                         </ul>
                     </div>  
@@ -135,10 +132,10 @@ class Header extends HTMLElement {
         `;
 
         // 로그인, 회원가입 알림 처리
-        const topLinks = this.querySelectorAll('.top-header a, .mobile-drop a, .mobile-drop, .login');
+        const topLinks = this.querySelectorAll('.top-header a, .mobile-drop a, .mobile-drop, .login,');
         topLinks.forEach(link => {
             const text = link.textContent.trim();
-            if ((text === '로그인' || text === '회원가입' || text === '마이페이지' || text === '자주 묻는 질문' || text === '방학 특강 안내' & !link.hasAttribute('data-alert-initialized')) {
+            if ((text === '로그인' || text === '회원가입' || text === '마이페이지' || text === '자주 묻는 질문' & !link.hasAttribute('data-alert-initialized')) {
                 link.setAttribute('data-alert-initialized', 'true');
                 link.addEventListener('click', (e) => {
                     e.preventDefault();
@@ -221,14 +218,15 @@ class Header extends HTMLElement {
         });
 
         const csLink = this.querySelector('.open-channel-talk');
-if (csLink) {
-    csLink.addEventListener('click', (e) => {
-        e.preventDefault();
-        if (window.ChannelIO) {
-            window.ChannelIO('showMessenger');
+        if (csLink) {
+            csLink.addEventListener('click', (e) => {
+                e.preventDefault();
+                if (window.ChannelIO) {
+                    window.ChannelIO('showMessenger');
+                }
+            });
         }
-    });
-}
+    }
 
     isActive(path) {
         return window.location.pathname.includes(path) ? 'active' : '';
