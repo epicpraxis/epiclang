@@ -135,7 +135,7 @@ class Header extends HTMLElement {
         `;
 
         // 로그인, 회원가입 알림 처리
-        const topLinks = this.querySelectorAll('.top-header a, .mobile-drop a, .mobile-drop, .login');
+        const topLinks = this.querySelectorAll('.top-header a, .mobile-drop a, .mobile-drop, .login, .mobile-menu-list');
         topLinks.forEach(link => {
             const text = link.textContent.trim();
             if ((text === '로그인' || text === '회원가입' || text === '마이페이지' || text === '자주 묻는 질문') && !link.hasAttribute('data-alert-initialized')) {
