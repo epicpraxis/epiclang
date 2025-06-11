@@ -220,16 +220,15 @@ class Header extends HTMLElement {
             pluginKey: "91db4e6e-c65d-42b3-bfbc-bdab19413610",
         });
 
-        const csLinks = this.querySelectorAll('.open-channel-talk');
-csLinks.forEach(link => {
-  link.addEventListener('click', (e) => {
-    e.preventDefault();
-    if (window.ChannelIO) {
-      window.ChannelIO('showMessenger');
-    }
-  });
-});
-    }
+        const csLink = this.querySelector('.open-channel-talk');
+if (csLink) {
+    csLink.addEventListener('click', (e) => {
+        e.preventDefault();
+        if (window.ChannelIO) {
+            window.ChannelIO('showMessenger');
+        }
+    });
+}
 
     isActive(path) {
         return window.location.pathname.includes(path) ? 'active' : '';
