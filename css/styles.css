@@ -222,14 +222,7 @@ body {
   margin: 0 auto;
   padding: 30px 0 80px 80px;
   overflow: hidden;
-  gap:160px;
   /*max-width: 1020px;*/
-}
-.{
-  max-width: 30%;
-}
-.aiso-right{
-  width: 34%;
 }
 .curriculum-graphic img {
   max-width: 100%;
