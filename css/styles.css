@@ -85,7 +85,7 @@ body {
   height: 170px;
   padding-left: 50px;
 }
-.speech-bubble-four {
+.-four {
   display: flex;
   justify-content: flex-end;
   height: 170px;
@@ -503,6 +503,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 16vw;
+padding:0;
 } 
 .speech-bubbles img {
   height: 16vw;
