@@ -138,7 +138,7 @@ class Header extends HTMLElement {
         const topLinks = this.querySelectorAll('.top-header a, .mobile-drop a, .mobile-drop, .login, .mobile-menu-list');
         topLinks.forEach(link => {
             const text = link.textContent.trim();
-            if ((text === '로그인' || text === '회원가입' || text === '마이페이지' || text === '자주 묻는 질문') && !link.hasAttribute('data-alert-initialized')) {
+            if ((text === '로그인' || text === '회원가입' || text === '마이페이지' || text === '방학 특강 안내' || text === '자주 묻는 질문' || text === '1:1 채팅 문의') && !link.hasAttribute('data-alert-initialized')) {
                 link.setAttribute('data-alert-initialized', 'true');
                 link.addEventListener('click', (e) => {
                     e.preventDefault();
