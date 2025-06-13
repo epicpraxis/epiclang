@@ -816,7 +816,7 @@ gap: 0px;
     margin: 0 auto;
     width: 588px;
     height: 100px;
-    background: url("../assets/main/consult") no-repeat center / cover;
+    background: url("../assets/main/consult.svg") no-repeat center / cover;
     border-radius: 15px;
     cursor: pointer;
 }
