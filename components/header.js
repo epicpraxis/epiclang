@@ -90,8 +90,8 @@ class Header extends HTMLElement {
                         <ul class="mobile-menu-list">
                             <li class="menu-title-top">특별 안내 링크</li>
                             <li>
-                            <a href="https://tr.ee/elayc-2025s-booster-brochure" target="_blank" style="display: inline-flex; align-items: center; gap: 3px;">
-                                방학 특강 안내 
+                            <a href="https://tr.ee/elayc-2025s-booster-brochure" target="_blank" style="display: inline-flex; align-items: center; gap: 3px; " >
+                                2025 에픽 썸머 부스터
                                 <span style="border: 1px solid #ddd; border-radius: 0px; padding: 1.2px 1.2px 0px 1px; font-size:11px;">↗</span>
                             </a>
                             </li>
