@@ -803,4 +803,21 @@ gap: 0px;
 .step-card{
   display: none;
 }
+
+.fixedBanner{
+    position: fixed;
+    bottom: 15px;
+    width: 100%;
+    max-width: 1920px;
+    z-index: 3;
+}
+.fixedBanner > div{
+    position: relative;
+    margin: 0 auto;
+    width: 588px;
+    height: 100px;
+    background: url("../assets/main/consult") no-repeat center / cover;
+    border-radius: 15px;
+    cursor: pointer;
+}
 }
