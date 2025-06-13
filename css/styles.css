@@ -827,13 +827,10 @@ gap: 0px;
 }
 
 .fixedBanner{
-    position: fixed;
-    bottom: 15px;
-    width: 100%;
-    max-width: 1020px;
-    z-index: 3;
+    padding: 0 20px;
 }
 .fixedBanner > div{
     width: 100%;
+    background-size: contain;
 }
 }
