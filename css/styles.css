@@ -430,6 +430,22 @@ body {
 .step-card-mobile{
   display: none;
 }
+.fixedBanner{
+    position: fixed;
+    bottom: 15px;
+    width: 100%;
+    max-width: 1920px;
+    z-index: 3;
+}
+.fixedBanner > div{
+    position: relative;
+    margin: 0 auto;
+    width: 588px;
+    height: 100px;
+    background: url("../assets/main/consult.svg") no-repeat center / cover;
+    border-radius: 15px;
+    cursor: pointer;
+}
 
 /*고해상도*/ 
 @media (min-width: 1921px) {
@@ -804,20 +820,4 @@ gap: 0px;
   display: none;
 }
 
-.fixedBanner{
-    position: fixed;
-    bottom: 15px;
-    width: 100%;
-    max-width: 1920px;
-    z-index: 3;
-}
-.fixedBanner > div{
-    position: relative;
-    margin: 0 auto;
-    width: 588px;
-    height: 100px;
-    background: url("../assets/main/consult.svg") no-repeat center / cover;
-    border-radius: 15px;
-    cursor: pointer;
-}
 }
