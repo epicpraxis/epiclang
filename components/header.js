@@ -90,7 +90,7 @@ class Header extends HTMLElement {
                         <ul class="mobile-menu-list">
                             <li class="menu-title-top">특별 안내 링크</li>
                             <li>
-                            <a href="#" target="_blank" style="display: inline-flex; align-items: center; gap: 3px;">
+                            <a href="https://tr.ee/elayc-2025s-booster-brochure" target="_blank" style="display: inline-flex; align-items: center; gap: 3px;">
                                 방학 특강 안내 
                                 <span style="border: 1px solid #ddd; border-radius: 0px; padding: 1.2px 1.2px 0px 1px; font-size:11px;">↗</span>
                             </a>
@@ -138,7 +138,7 @@ class Header extends HTMLElement {
         const topLinks = this.querySelectorAll('.top-header a, .mobile-drop a, .mobile-drop, .login, .mobile-menu-list');
         topLinks.forEach(link => {
             const text = link.textContent.trim();
-            if ((text === '로그인' || text === '회원가입' || text === '마이페이지' || text === '방학 특강 안내' || text === '자주 묻는 질문' || text === '1:1 채팅 문의') && !link.hasAttribute('data-alert-initialized')) {
+            if ((text === '로그인' || text === '회원가입' || text === '마이페이지' || text === '자주 묻는 질문' || text === '1:1 채팅 문의') && !link.hasAttribute('data-alert-initialized')) {
                 link.setAttribute('data-alert-initialized', 'true');
                 link.addEventListener('click', (e) => {
                     e.preventDefault();
