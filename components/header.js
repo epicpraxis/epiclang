@@ -97,7 +97,7 @@ class Header extends HTMLElement {
                                         background: linear-gradient(90deg, #476bff, #a030ff);
                                 -webkit-background-clip: text;
                                 -webkit-text-fill-color: transparent; " >
-                                2025 에픽 썸머 부스터
+                                <strong>2025 에픽 썸머 부스터</strong>
                                 <span style="border: 1px solid #ddd; border-radius: 0px; padding: 1.2px 1.2px 0px 1px; font-size:11px;">↗</span>
                             </a>
                             </li>
