@@ -90,7 +90,13 @@ class Header extends HTMLElement {
                         <ul class="mobile-menu-list">
                             <li class="menu-title-top">특별 안내 링크</li>
                             <li>
-                            <a href="https://tr.ee/elayc-2025s-booster-brochure" target="_blank" style="display: inline-flex; align-items: center; gap: 3px; " >
+                            <a href="https://tr.ee/elayc-2025s-booster-brochure" target="_blank" 
+                                style=" display: inline-flex;
+                                        align-items: center;
+                                        gap: 3px;
+                                        background: linear-gradient(90deg, #476bff, #a030ff);
+                                -webkit-background-clip: text;
+                                -webkit-text-fill-color: transparent; " >
                                 2025 에픽 썸머 부스터
                                 <span style="border: 1px solid #ddd; border-radius: 0px; padding: 1.2px 1.2px 0px 1px; font-size:11px;">↗</span>
                             </a>
