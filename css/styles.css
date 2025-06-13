@@ -433,7 +433,7 @@ body {
 .fixedBanner{
     position: fixed;
     bottom: 15px;
-    max-width: 1920px;
+    width: 100%;
     z-index: 3;
 }
 .fixedBanner > div{
