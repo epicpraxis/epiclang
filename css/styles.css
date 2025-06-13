@@ -440,9 +440,9 @@ body {
 .fixedBanner > div{
     position: relative;
     margin: 0 auto;
-    width: 588px;
-    height: 100px;
-    background: url("../assets/main/consult.svg") no-repeat center / cover;
+    max-width: 1020px;
+    height: 170px;
+    background: url("../assets/main/booster_reservation.svg") no-repeat center / cover;
     border-radius: 15px;
     cursor: pointer;
 }
@@ -821,4 +821,14 @@ gap: 0px;
   display: none;
 }
 
+.fixedBanner{
+    position: fixed;
+    bottom: 15px;
+    width: 100%;
+    max-width: 1020px;
+    z-index: 3;
+}
+.fixedBanner > div{
+    width: 100%;
+}
 }
