@@ -446,6 +446,7 @@ body {
     border-radius: 15px;
     cursor: pointer;
 }
+}
 
 /*고해상도*/ 
 @media (min-width: 1921px) {
