@@ -341,6 +341,31 @@
         duration: 1000,
         delay: 100
       });
+    // footer가 비동기로 불러오니까 MutationObserver로 감지
+  const banner = document.querySelector('.fixed-banner');
+
+  const observer = new MutationObserver(() => {
+    const footer = document.getElementById('footer');
+    if (footer) {
+      const checkVisibility = () => {
+        const footerTop = footer.getBoundingClientRect().top;
+        if (footerTop < window.innerHeight) {
+          banner.classList.add('hide');
+        } else {
+          banner.classList.remove('hide');
+        }
+      };
+
+      // 처음 실행 + 스크롤/리사이즈 이벤트 등록
+      checkVisibility();
+      window.addEventListener('scroll', checkVisibility);
+      window.addEventListener('resize', checkVisibility);
+
+      observer.disconnect(); // footer 발견했으면 감지 중단
+    }
+  });
+
+  observer.observe(document.body, { childList: true, subtree: true });
     </script>
 </body>
 </html>
