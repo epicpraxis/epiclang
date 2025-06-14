@@ -224,7 +224,6 @@ class Header extends HTMLElement {
 
         ChannelIO("boot", {
             pluginKey: "91db4e6e-c65d-42b3-bfbc-bdab19413610",
-            hidePopup: true;
         });
 
         const csLink = this.querySelector('.open-channel-talk');
