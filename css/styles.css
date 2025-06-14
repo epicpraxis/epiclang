@@ -837,7 +837,7 @@ gap: 0px;
 .fixedBanner > div{
     width: 100%;
     background-size: contain;
-    background: url("../assets/main/BoosterRegister_mobile.svg") no-repeat center / cover;
+    background: url("../assets/main/BoosterRegister_mobile.png") no-repeat center / cover;
     height: 40vw;
 }
 }
