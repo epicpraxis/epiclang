@@ -831,6 +831,8 @@ gap: 0px;
 }
 .fixedBanner > div{
     width: 100%;
+    height: 370px;
     background-size: contain;
+    background: url("../assets/main/BoosterRegister_mobile.svg") no-repeat center / cover;
 }
 }
