@@ -889,7 +889,8 @@ gap: 0px;
     width: 100%;
     background-size: contain;
     background: url("../assets/main/BoosterRegister_mobile.png") no-repeat center / cover;
-    height: 40vw;
+    height: auto;
+    aspect-ratio:1020/430;
     overflow: hidden;
     position: relative;
 }
