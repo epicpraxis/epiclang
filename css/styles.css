@@ -911,7 +911,9 @@ gap: 0px;
 }
 .fixedBanner > div::before {
   position: absolute;
-  height: 24.8vw;
+  height: auto;
+  aspect-ratio: 1020/295;
+  border-radius: 73px;
 }
 
 /*fixedBanner*/
