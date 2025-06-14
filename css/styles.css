@@ -490,9 +490,9 @@ body {
   z-index: 2;
 }
 
-.fixedBanner > div:hover::before {
+/*.fixedBanner > div:hover::before {
   animation-play-state: paused;
-}
+}*/
 
 .fixedBanner > div {
   transition: transform 0.3s ease;
