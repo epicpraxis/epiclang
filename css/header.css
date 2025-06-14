@@ -331,7 +331,4 @@ nav a.active {
       .mobile-menu-list a:hover {
         color: #3179F6;
       }
-      .ch-plugin-entry-popup {
-  display: none !important;
-}
 }
