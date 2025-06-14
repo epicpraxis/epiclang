@@ -833,5 +833,6 @@ gap: 0px;
     width: 100%;
     background-size: contain;
     background: url("../assets/main/BoosterRegister_mobile.svg") no-repeat center / cover;
+    height: 150px;
 }
 }
