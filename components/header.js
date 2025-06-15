@@ -16,7 +16,7 @@ class Header extends HTMLElement {
                     <span class="divider"></span>
                     <li><a href="javascript:void(0)" class="open-channel-talk">고객센터</a></li> <!--고객센터 페이지 생기면 링크 바꾸기-->
                     <span class="divider"></span>
-                    <li><a href="https://tr.ee/epic-yc-feedback" target="_blank">에픽에 바란다</a></li>
+                    <li><a href="https://tr.ee/epic-yc-feedback">에픽에 바란다</a></li>
                     <span class="divider"></span>
                 </ul>
             </div>
@@ -30,11 +30,11 @@ class Header extends HTMLElement {
                       <li><a href="index.html#curriculum" class="${this.isActive('#')}">커리큘럼</a></li>
                       <li><a href="index.html#roadmap">학습 로드맵</a></li>
                       <li><a href="campus.html">캠퍼스 찾기</a></li>
-                      <li><a href="https://tr.ee/blog-epiclang" target="_blank" rel="noopener noreferrer">
+                      <li><a href="https://tr.ee/blog-epiclang" rel="noopener noreferrer">
                         <span style="display: inline-flex; align-items: center; gap: 3px;">블로그 
                         <span style="border: 1px solid #ddd; border-radius: 0px; padding: 2px 1px 0px 2px; font-size:11px;">↗</span></span></a></li>
                     
-                      <li><a href="https://tr.ee/ar-myon-homepage" target="_blank" rel="noopener noreferrer">
+                      <li><a href="https://tr.ee/ar-myon-homepage" rel="noopener noreferrer">
                         <span style="display: inline-flex; align-items: center; gap: 3px;">온라인도서관(myON)
                         <span style="border: 1px solid #ddd; border-radius: 0px; padding: 2px 1px 0px 2px; font-size:11px;">↗</span></span></a></li>
 
@@ -43,13 +43,13 @@ class Header extends HTMLElement {
                     </ul>
 
                     <ul class="cta-menu">
-                      <!--<li><a href="https://global-zone60.renaissance-go.com/welcomeportal/rpna74yw" target="_blank" rel="noopener noreferrer">
+                      <!--<li><a href="https://global-zone60.renaissance-go.com/welcomeportal/rpna74yw" rel="noopener noreferrer">
                         <img src="assets/ar.svg" style="height: 17px; vertical-align: middle; position: relative; top: -1px;"> 독서프로그램(AR)</span></a></li>
 
-                      <li><a href="https://tr.ee/ar-myon-homepage" target="_blank" rel="noopener noreferrer">
+                      <li><a href="https://tr.ee/ar-myon-homepage" rel="noopener noreferrer">
                         <img src="assets/myON.svg" style="height: 17px; vertical-align: middle; position: relative; top: -1px;"> 온라인도서관(myON)</span></a></li>-->
 
-                      <li class="reservation"><a href="https://tr.ee/elayc-reservation-homepage" target="_blank">입학상담 예약</a></li>
+                      <li class="reservation"><a href="https://tr.ee/elayc-reservation-homepage" >입학상담 예약</a></li>
                     </ul>
                 </nav>
             </header>
@@ -63,7 +63,7 @@ class Header extends HTMLElement {
                             </a>
                         </div>
                         <div class="mobile-cta">
-                            <a href="https://tr.ee/elayc-reservation-homepage" target="_blank" class="reservation">입학상담 예약</a>
+                            <a href="https://tr.ee/elayc-reservation-homepage" class="reservation">입학상담 예약</a>
                             <a href="#" rel="noopener noreferrer" class="login">로그인</a>
                             <button class="hamburger"><span></span><span></span><span></span></button>
                         </div>
@@ -72,7 +72,7 @@ class Header extends HTMLElement {
                         <h2>우리 아이 영어 완성의 원픽</h2>
                         <!-- 상단 카드 영역 -->
                         <div class="mobile-card-grid">
-                            <a href="https://tr.ee/ar-myon-homepage" target="_blank" class="mobile-card">
+                            <a href="https://tr.ee/ar-myon-homepage" class="mobile-card">
                             <img src="assets/menu/myON.svg" alt="myON" loading="lazy">
                             <p>온라인 도서관</p>
                             </a>
@@ -80,7 +80,7 @@ class Header extends HTMLElement {
                             <img src="assets/menu/login.svg" alt="로그인"loading="lazy">
                             <p>로그인</p>
                             </a>
-                            <a href="https://tr.ee/elayc-reservation-homepage" target="_blank" class="mobile-card">
+                            <a href="https://tr.ee/elayc-reservation-homepage" class="mobile-card">
                             <img src="assets/menu/reservation.svg" alt="입학상담 예약"loading="lazy">
                             <p>입학상담 예약</p>
                             </a>
@@ -90,7 +90,7 @@ class Header extends HTMLElement {
                         <ul class="mobile-menu-list">
                             <li class="menu-title-top">특별 안내 링크</li>
                             <li>
-                            <a href="https://tr.ee/elayc-2025-sb-preregistration-hp-fixed" target="_blank" 
+                            <a href="https://tr.ee/elayc-2025-sb-preregistration-hp-fixed" 
                                 style=" display: inline-flex;
                                         align-items: center;
                                         gap: 3px;
@@ -102,13 +102,13 @@ class Header extends HTMLElement {
                             </a>
                             </li>
                             <li>
-                            <a href="https://tr.ee/ar-myon-manual-sms" target="_blank" style="display: inline-flex; align-items: center; gap: 3px;">
+                            <a href="https://tr.ee/ar-myon-manual-sms" style="display: inline-flex; align-items: center; gap: 3px;">
                                 온라인 도서관(myON) 안내 
                                 <span style="border: 1px solid #ddd; border-radius: 0px; padding: 1.2px 1.2px 0px 1px; font-size:11px;">↗</span>
                             </a>
                             </li>
                             <li>
-                            <a href="https://tyf30bc2.forms.app/epicyeouido-online-session" target="_blank" style="display: inline-flex; align-items: center; gap: 3px;">
+                            <a href="https://tyf30bc2.forms.app/epicyeouido-online-session" style="display: inline-flex; align-items: center; gap: 3px;">
                                 온라인 설명회 신청
                                 <span style="border: 1px solid #ddd; border-radius: 0px; padding: 1.2px 1.2px 0px 1px; font-size:11px;">↗</span>
                             </a>
@@ -120,7 +120,7 @@ class Header extends HTMLElement {
                             <li><a href="index.html#roadmap">학습 로드맵</a></li>
                             <li><a href="campus.html">캠퍼스 찾기</a></li>
                             <li>
-                            <a href="https://tr.ee/blog-epiclang" target="_blank" style="display: inline-flex; align-items: center; gap: 3px;">
+                            <a href="https://tr.ee/blog-epiclang" style="display: inline-flex; align-items: center; gap: 3px;">
                                 블로그
                                 <span style="border: 1px solid #ddd; border-radius: 0px; padding: 1.2px 1.2px 0px 1px; font-size:11px;">↗</span>
                             </a>
@@ -131,7 +131,7 @@ class Header extends HTMLElement {
                             <li><a href="#">자주 묻는 질문</a></li> <!-- (고객센터 페이지로 연동) -->
                             <li><a href="javascript:void(0)" class="open-channel-talk">1:1 채팅 문의</a></li> <!-- (채널톡 페이지로 연동) -->
                             <li><a href="tel:02-783-6806">전화 문의</a></li> <!-- 실제 전화번호로 변경하세요 -->
-                            <li><a href="https://tr.ee/epic-yc-feedback" target="_blank">에픽에 바란다</a></li> 
+                            <li><a href="https://tr.ee/epic-yc-feedback" >에픽에 바란다</a></li> 
 
 
                         </ul>
