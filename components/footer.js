@@ -9,8 +9,8 @@ class Footer extends HTMLElement {
   <div class="footer-inner">
     <div class="footer-service">
       <div class="icon-wrap">
-        <a href="https://tr.ee/ar-myon-homepage" target="_blank" class="social-icon"><img src="assets/footer/myon.svg" alt="myon"></a>
-        <a href="https://tr.ee/blog-epiclang" class="social-icon" target="_blank"><img src="assets/footer/blog.svg" alt="blog"></a>
+        <a href="https://tr.ee/ar-myon-homepage" class="social-icon"><img src="assets/footer/myon.svg" alt="myon"></a>
+        <a href="https://tr.ee/blog-epiclang" class="social-icon" ><img src="assets/footer/blog.svg" alt="blog"></a>
         <a href="javascript:void(0)" class="open-channel-talk" class="social-icon"><img src="assets/footer/channeltalk.svg" alt="channel talk"></a>
       </div>
       <div class="footer-right-icons">
