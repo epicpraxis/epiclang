@@ -63,7 +63,6 @@
 .logo {
     height: 43px;
     padding-top: 0px;
-    /*transform: rotate(-2deg);*/
 }
 .logo img {
     height: 90%;
@@ -136,10 +135,6 @@ nav a.active {
 
 /*tablet*/
 @media (max-width: 1020px) {
-    
-  .mobile-header {
-    display: block;
-  }
     .desktop-header{
       display: none;
     }
@@ -152,10 +147,14 @@ nav a.active {
       padding-top: 0;
     }
     /* Mobile Header Styles */
+      
+.logo {
+    height: 38px;
+}
     .mobile-header {
       display: block;
       background: white;
-      padding: 15px 10px;
+      padding: 15px 20px;
       position: fixed;
       top: 0;
       left: 0;
@@ -170,11 +169,11 @@ nav a.active {
       flex-wrap: wrap;
     }
     .mobile-header .logo img {
-      height: 82%;
+      height: 100%;
     }
     .mobile-cta{
       position: absolute;
-      right: 15px;
+      right: 20px;
       display: flex;
       align-items: center;
     }
