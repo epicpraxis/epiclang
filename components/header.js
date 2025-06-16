@@ -22,7 +22,7 @@ class Header extends HTMLElement {
             </div>
                 <div class="logo">
                     <a href="index.html">
-                        <img src="assets/epiclang.svg" alt="EPIC PRAXIS Logo">
+                        <img src="assets/ELA-text-logo-blacktext.png" alt="Epic English Logo">
                     </a>
                 </div>
                 <nav>
