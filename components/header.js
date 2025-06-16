@@ -59,7 +59,7 @@ class Header extends HTMLElement {
                     <div class="mobile-header-inner">
                         <div class="logo">
                             <a href="index.html">
-                                <img src="assets/ELA-text-logo-blacktext.png" alt="EPIC PRAXIS Logo">
+                                <img src="assets/ELA-symbol-logo.png" alt="EPIC PRAXIS Logo">
                             </a>
                         </div>
                         <div class="mobile-cta">
