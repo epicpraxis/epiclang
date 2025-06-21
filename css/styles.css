@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding-top: 0px; /* Height of the fixed header */
     font-family: 'Pretendard', sans-serif;
-    background: linear-gradient(to right, #d8eaff, #ede4ff);
+    background: linear-gradient(to bottom, #fff, #d8eaff, #ede4ff);
 
 }
 /* Reset styles */
