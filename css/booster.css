@@ -345,6 +345,7 @@ body {
 }
 .roadmap-graphic img {
   height: auto;
+  width: 350px;
 }
 .roadmap-graphic img:first-child{
   padding-right: 10px;
