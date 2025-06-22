@@ -44,10 +44,516 @@
     <header-component></header-component>
     <main>
       <!--HERO Section-->
-        <section class="hero">
-            <h2>우리 아이 영어 완성의 원픽</h2>
-            <h1>에픽영어학원</h1>
-        </section>
+        <style>
+        :root {
+            --anim-duration: 3000ms;
+        }
+
+        .carousel-wrapper {
+            width: 100%;
+            /*max-width: 1200px;*/
+            position: relative;
+            margin: 8rem auto 2rem;
+        }
+        
+        .slides-viewport {
+            overflow: hidden;
+            width: 100%;
+            cursor: pointer;
+        }
+
+        .slides-viewport.dragging {
+            cursor: grab;
+        }
+
+        .slides-container {
+            display: flex; 
+        }
+
+        .slide {
+            flex-shrink: 0;
+            width: 90%;
+            max-width: 80rem;
+            margin: 0 10px;
+            border-radius: 1rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            user-select: none;
+            background-size: cover;
+            background-position: center;
+            aspect-ratio: 5 / 2;
+            height: auto;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .text-content-block {
+            padding: 0 3rem 3rem;
+            text-align: left;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: left;
+        }
+        
+        .slide-title {
+            color: #fff;
+            text-decoration: none;
+            font-size: 40px;
+            font-weight: 600;
+            line-height: 1.5;
+            word-break: keep-all;
+        }
+        .slide-subtitle {
+            font-size: 40px;
+            font-weight: 600;
+            margin: 0px 0;
+            opacity: 0.9;
+        }
+        .slide-description { 
+            color: #fff;
+            font-size: 20px; 
+            margin-top: 20px; 
+            opacity: 0.9; 
+            line-height: 1.5; 
+            max-width: 65%; }
+        
+        /* --- Desktop Controls --- */
+        .desktop-controls {
+            width: 93%;
+            max-width: 83rem;
+            margin: 0 auto;
+            position: absolute;
+            bottom: 1.5rem;
+            left: 51%;
+            transform: translateX(-50%);
+            padding: 0 4rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1;
+            box-sizing: border-box;
+        }
+        .button-panel {
+            background-color: rgba(60, 60, 60, 0.6);
+            border-radius: 9999px;
+            display: flex;
+            align-items: center;
+            gap: 0.25rem;
+        }
+        .button-panel img{
+            width: 0.8rem;
+            height: 0.8rem;
+        }
+
+        .control-button {
+            background: none; 
+            border: none; 
+            color: white; 
+            font-size: 1.25rem;
+            cursor: pointer; 
+            padding: 0.5rem; 
+            border-radius: 9999px;
+            transition: background-color 0.3s ease;
+            display: flex;
+            justify-content: center; 
+            align-items: center; 
+            width: 2rem; 
+            height: 2rem;
+        }
+        .control-button img{
+            width: 0.84rem;
+            height: 0.84rem;
+        }
+        .control-button:hover { background-color: rgba(255, 255, 255, 0.2); }
+
+        .slide-position {
+            background-color: rgba(60, 60, 60, 0.8);
+            color: white;
+            padding: 0.5rem 1rem; 
+            border-radius: 9999px;
+            font-size: 0.875rem;
+            overflow: hidden; 
+            position: relative;
+            
+        }
+        
+        #positionText { position: relative; z-index: 2; }
+        .slide-position::before {
+            content: ''; position: absolute; top: 0; left: 0; height: 100%; width: 0;
+            background-color: rgba(90, 90, 90, 0.8); z-index: 1;
+        }
+        .slide-position.animate::before {
+            animation-name: fill-timeline; animation-timing-function: linear; animation-fill-mode: forwards;
+            animation-duration: var(--anim-duration);
+        }
+        @keyframes fill-timeline { from { width: 0%; } to { width: 100%; } }
+
+        /* --- Mobile Controls & Layout --- */
+        .mobile-controls { display: none; }
+        @media (max-width: 1020px) {
+            .slide {
+                aspect-ratio: 1 / 1; /* NEW: Square aspect ratio for mobile */
+            flex-shrink: 0;
+            width: 90%;
+            max-width: 27rem;
+            }
+
+            .text-content-block {
+            padding: 0rem 3rem 13rem;
+            text-align: center;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+            .slide-title { 
+                font-size: 26px; 
+            }
+            .slide-subtitle { 
+                font-size: 26px; 
+            }
+            .slide-description { 
+                margin-top: 10px; 
+                font-size: 16px; 
+                max-width: 100%;
+            }
+            .desktop-controls {
+                display: none; /* Hide desktop controls */
+            }
+            .mobile-controls {
+                display: block; /* Show mobile controls wrapper */
+                position: absolute;
+                bottom: 1rem;
+                left: 51%;
+                /* Corresponds to slide width (70%) + margin (1% * 2) */
+                width: calc(68% + 2vw); 
+                max-width: 24rem;
+                transform: translateX(-50%);
+                z-index: 20;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                pointer-events: none; /* Let clicks pass through the container */
+            }
+            .mobile-controls .slide-position, .mobile-controls .control-button {
+                pointer-events: auto; /* Make buttons clickable */
+            }
+
+            .mobile-controls .slide-position {
+                padding: 0.5rem 0.8rem;
+                font-size: 0.75rem;
+            }
+             .mobile-controls .control-button {
+                background-color: rgba(60, 60, 60, 0.8);
+                width: 2rem;
+                height: 2rem;
+            }
+            
+            /* FIX: Ensure mobile indicator text is on top of the progress bar */
+            #positionTextMobile {
+                position: relative;
+                z-index: 2;
+            }
+        }
+@media (max-width: 439px) {
+            .slide {
+                aspect-ratio: 1 / 1; /* NEW: Square aspect ratio for mobile */
+                flex-shrink: 0;
+                width: 90%;
+                max-width: 27rem;
+            }
+            .text-content-block {
+                padding: 0rem 3rem 10rem;
+        }
+            .slide-title { 
+                font-size: 22px; 
+                max-width: 100%;
+            }
+            .slide-subtitle { 
+                font-size: 20px; 
+                max-width: 100%;
+            }
+            .slide-description { 
+                margin-top: 8px; 
+                font-size: 14px; 
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+
+    <div class="carousel-wrapper">
+        <div class="slides-viewport">
+            <div class="slides-container">
+                <!-- Slides will be dynamically generated by JavaScript -->
+            </div>
+        </div>
+
+        <!-- Desktop Controls -->
+        <div class="desktop-controls">
+            <div id="slidePosition" class="slide-position">
+                 <span id="positionText">1 / 4</span>
+            </div>
+            <div class="button-panel">
+                <button id="prevBtn" class="control-button" aria-label="Previous Slide">
+                    <img src="assets/prev.svg">
+                </button>
+                <button id="playPauseBtnDesktop" class="control-button" aria-label="Pause Autoplay">⏸</button>
+                <button id="nextBtn" class="control-button" aria-label="Next Slide">
+                    <img src="assets/next.svg">
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile Controls -->
+        <div class="mobile-controls">
+            <div id="slidePositionMobile" class="slide-position">
+                 <span id="positionTextMobile">1 / 5</span>
+            </div>
+            <button id="playPauseBtnMobile" class="control-button" aria-label="Pause Autoplay">⏸</button>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const viewport = document.querySelector('.slides-viewport');
+            const slidesContainer = document.querySelector('.slides-container');
+            
+            const positionText = document.getElementById('positionText');
+            const timelineIndicator = document.getElementById('slidePosition');
+            const prevBtn = document.getElementById('prevBtn');
+            const nextBtn = document.getElementById('nextBtn');
+            const playPauseBtnDesktop = document.getElementById('playPauseBtnDesktop');
+
+            const positionTextMobile = document.getElementById('positionTextMobile');
+            const timelineIndicatorMobile = document.getElementById('slidePositionMobile');
+            const playPauseBtnMobile = document.getElementById('playPauseBtnMobile');
+
+
+            const slideData = [
+                {
+                    imageDesktop: 'assets/banner/SummerBooster.webp',
+                    imageMobile: 'assets/banner/SummerBooster_mobile.webp',
+                    title: '우리 아이 영어 부스트업',
+                    subtitle: '<span style="background: linear-gradient(90deg, #AB35CF, #ff8587); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">2025 에픽 썸머부스터 모집!</span>',
+                    description: '단 3주, 맞춤형 영어 몰입 프로그램 <br>사전 등록하고 혜택받기 7/7(월) 마감',
+                    link:'https://tr.ee/elayc-2025s-booster-hp-banner'
+                },
+                {
+                    imageDesktop: 'assets/banner/Consultation.webp',
+                    imageMobile: 'assets/banner/Consultation_mobile.webp',
+                    title: '영어 공부의 새로운 방향',
+                    subtitle: '<span style="background: linear-gradient(90deg, #FF5950, #FFB66C); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">지금 바로 입학상담을 받아보세요 ',
+                    description: '감이 아닌 진단으로 출발하세요! <br>입학 상담과 SR테스트는 매주 토요일 진행됩니다 →',
+                    link:'https://tr.ee/elayc-reservation-homepage'
+                },
+                {
+                    imageDesktop: 'assets/banner/InfoSession.webp',
+                    imageMobile: 'assets/banner/InfoSession_mobile.webp',
+                    title: '에픽은 뭐가 다를까?',
+                    subtitle: '<span style="background: linear-gradient(90deg, #75FFE9, #83FFA4); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">에픽 정기 온라인 설명회',
+                    description: '읽기 중심 AI-SO모델을 통한 영어 습득의 모든 것 <Br>매주 토요일, 지금 바로 신청하세요 →',
+                    link:'https://tr.ee/epic-yc-session-signup-hp-banner'
+                },
+                {
+                    imageDesktop: 'assets/banner/PhonicsBeginner.webp',
+                    imageMobile: 'assets/banner/PhonicsBeginner_mobile.webp',
+                    title: '우리 아이 영어 완성의 원픽',
+                    subtitle: '<span style="background: linear-gradient(90deg, #FFA1B8, #C46AFF); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">파닉스 비기너 입학 모집 중!',
+                    description: '독립적으로 읽는 힘을 기르는 첫 단계, 에픽에서.<br>매주 토요일 입학 상담을 진행합니다 →',
+                    link:'https://tr.ee/elayc-reservation-homepage'
+                }
+            ];
+            const totalActualSlides = slideData.length;
+            const autoplayDelay = 3000;
+            const transitionStyle = 'transform 0.5s ease-out';
+
+            let currentIndex = 0;
+            let isAutoplayPlaying = true;
+            let autoplayInterval;
+            let isTransitioning = false;
+            let isDragging = false;
+            let startPos = 0;
+            let currentTranslate = 0;
+            let prevTranslate = 0;
+
+            function createSlide(data) {
+    const slide = document.createElement('div');
+    slide.className = 'slide';
+    const imageUrl = window.innerWidth <= 1020 ? data.imageMobile : data.imageDesktop;
+    slide.style.backgroundImage = `url('${imageUrl}')`;
+
+    // Add anchor tag if link exists
+    const linkStart = data.link ? `<a href="${data.link}" target="_blank" style="display:block; width:100%; height:100%; text-decoration:none;">` : '';
+    const linkEnd = data.link ? '</a>' : '';
+
+    slide.innerHTML = `
+        ${linkStart}
+        <div class="text-content-block">
+            <h3 class="slide-title" >${data.title}</h3>
+            <p class="slide-subtitle">${data.subtitle}</p>
+            <p class="slide-description">${data.description}</p>
+        </div>
+        ${linkEnd}
+    `;
+
+    return slide;
+}
+            
+            function initialize() {
+                slidesContainer.innerHTML = '';
+                slidesContainer.appendChild(createSlide(slideData[totalActualSlides - 1]));
+                slideData.forEach(data => slidesContainer.appendChild(createSlide(data)));
+                slidesContainer.appendChild(createSlide(slideData[0]));
+                
+                addEventListeners();
+                slidesContainer.style.transition = 'none';
+                positionToShow(1); 
+                
+                setTimeout(() => {
+                    requestAnimationFrame(() => startAutoplay());
+                }, 50);
+            }
+            
+            function getSlideWidth() {
+                const firstSlide = slidesContainer.querySelector('.slide');
+                return firstSlide ? firstSlide.offsetWidth + parseFloat(window.getComputedStyle(firstSlide).marginRight) * 2 : 0;
+            }
+
+            function getCenteringOffset() {
+                const slideWidth = slidesContainer.querySelector('.slide').offsetWidth;
+                return (viewport.offsetWidth - slideWidth) / 2;
+            }
+
+            function positionToShow(index) {
+                currentTranslate = -index * getSlideWidth() + getCenteringOffset();
+                prevTranslate = currentTranslate;
+                setSliderPosition();
+                updateSlidePositionDisplay();
+            }
+            
+            function setSliderPosition() { slidesContainer.style.transform = `translateX(${currentTranslate}px)`; }
+            function updateSlidePositionDisplay() {
+                const logicalIndex = ((currentIndex % totalActualSlides) + totalActualSlides) % totalActualSlides;
+                positionText.textContent = `${logicalIndex + 1} / ${totalActualSlides}`;
+                positionTextMobile.textContent = `${logicalIndex + 1} / ${totalActualSlides}`;
+            }
+
+            function nextSlide() { moveTo(++currentIndex + 1); }
+            function prevSlide() { moveTo(--currentIndex + 1); }
+
+            function moveTo(index) {
+                if (isTransitioning) return;
+                isTransitioning = true;
+                slidesContainer.style.transition = transitionStyle;
+                positionToShow(index);
+            }
+            
+            function startAutoplay() {
+                stopAutoplay();
+                autoplayInterval = setInterval(nextSlide, autoplayDelay);
+                isAutoplayPlaying = true;
+                playPauseBtnDesktop.innerHTML = '<img src="assets/pause.svg">';
+                playPauseBtnMobile.innerHTML = '<img src="assets/pause.svg">';
+                // Animate both timelines
+                [timelineIndicator, timelineIndicatorMobile].forEach(el => {
+                    el.classList.remove('animate');
+                    el.offsetHeight; 
+                    el.classList.add('animate');
+                });
+            }
+
+            function stopAutoplay() {
+                clearInterval(autoplayInterval);
+                isAutoplayPlaying = false;
+                playPauseBtnDesktop.innerHTML = '<img src="assets/play.svg">';
+                playPauseBtnMobile.innerHTML = '<img src="assets/play.svg">';
+                 [timelineIndicator, timelineIndicatorMobile].forEach(el => el.classList.remove('animate'));
+            }
+
+            function toggleAutoplay() { isAutoplayPlaying ? stopAutoplay() : startAutoplay(); }
+            
+            function addEventListeners() {
+                viewport.addEventListener('mousedown', dragStart);
+                viewport.addEventListener('touchstart', dragStart, { passive: true });
+                window.addEventListener('mouseup', dragEnd);
+                window.addEventListener('touchend', dragEnd);
+                window.addEventListener('mousemove', drag);
+                window.addEventListener('touchmove', drag, { passive: true });
+                slidesContainer.addEventListener('transitionend', handleTransitionEnd);
+                playPauseBtnDesktop.addEventListener('click', toggleAutoplay);
+                playPauseBtnMobile.addEventListener('click', toggleAutoplay);
+                prevBtn.addEventListener('click', () => { stopAutoplay(); prevSlide(); });
+                nextBtn.addEventListener('click', () => { stopAutoplay(); nextSlide(); });
+                // Improved resize event handler for mobile/desktop breakpoint
+                let previousIsMobile = window.innerWidth <= 1020;
+                window.addEventListener('resize', () => {
+                  const isMobile = window.innerWidth <= 1020;
+                  if (isMobile !== previousIsMobile) {
+                    previousIsMobile = isMobile;
+                    initialize(); // Reinitialize only if breakpoint crossed
+                  } else {
+                    // Adjust position to prevent layout shift on small resize
+                    slidesContainer.style.transition = 'none';
+                    positionToShow(currentIndex + 1);
+                  }
+                });
+            }
+
+            function dragStart(event) {
+                if (event.target.closest('.desktop-controls, .mobile-controls')) return;
+                isDragging = true;
+                startPos = event.type.includes('mouse') ? event.pageX : event.touches[0].clientX;
+                slidesContainer.style.transition = 'none';
+                viewport.classList.add('dragging');
+                stopAutoplay();
+            }
+
+            function drag(event) {
+                if (isDragging) {
+                    const currentPosition = event.type.includes('mouse') ? event.pageX : event.touches[0].clientX;
+                    currentTranslate = prevTranslate + currentPosition - startPos;
+                    setSliderPosition();
+                }
+            }
+
+            function dragEnd() {
+                if (!isDragging) return;
+                isDragging = false;
+                viewport.classList.remove('dragging');
+                const movedBy = currentTranslate - prevTranslate;
+                if (movedBy < -50) { currentIndex++; } 
+                else if (movedBy > 50) { currentIndex--; }
+                moveTo(currentIndex + 1);
+            }
+
+            function handleTransitionEnd() {
+                isTransitioning = false;
+                let needsJump = false;
+                if (currentIndex >= totalActualSlides) {
+                    currentIndex = 0; needsJump = true;
+                } else if (currentIndex < 0) {
+                    currentIndex = totalActualSlides - 1; needsJump = true;
+                }
+                if (needsJump) {
+                    slidesContainer.style.transition = 'none';
+                    positionToShow(currentIndex + 1);
+                }
+                if(isAutoplayPlaying) { startAutoplay(); }
+            }
+            
+            document.documentElement.style.setProperty('--anim-duration', `${autoplayDelay}ms`);
+            initialize();
+        });
+    </script>
 
         <!--1. Concern Section-->
         <!--section-title/ gradient-text/ bottom-text로 전체 영역 타이틀/ 서브 타이트 동일하게 수정-->
