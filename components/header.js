@@ -27,7 +27,13 @@ class Header extends HTMLElement {
                 </div>
                 <nav>
                     <ul class="main-menu">
-                      <li><a href="booster.html" class="${this.isActive('#')}">썸머부스터</a></li>
+                      <li><a href="booster.html" class="${this.isActive('#')}"
+                                        style=" display: inline-flex;
+                                        align-items: center;
+                                        gap: 3px;
+                                        background: linear-gradient(90deg, #476bff, #a030ff);
+                                -webkit-background-clip: text;
+                                -webkit-text-fill-color: transparent; ">2025 에픽 썸머부스터</a></li>
                       <li><a href="campus.html">캠퍼스 찾기</a></li>
                       <li><a href="https://tr.ee/blog-epiclang" rel="noopener noreferrer">
                         <span style="display: inline-flex; align-items: center; gap: 3px;">블로그 
@@ -89,7 +95,7 @@ class Header extends HTMLElement {
                         <ul class="mobile-menu-list">
                             <li class="menu-title-top">특별 안내 링크</li>
                             <li>
-                            <a href="https://tr.ee/elayc-2025-sb-preregistration-hp-fixed" 
+                            <a href="booster.html" 
                                 style=" display: inline-flex;
                                         align-items: center;
                                         gap: 3px;
