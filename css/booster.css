@@ -346,9 +346,7 @@ body {
 .roadmap-graphic img {
   height: auto;
   width: 350px;
-}
-.roadmap-graphic img:first-child{
-  padding-right: 10px;
+  padding-right:10px;
 }
 .banner{
   background: linear-gradient(to bottom, #000000, #042350);
