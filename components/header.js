@@ -27,7 +27,7 @@ class Header extends HTMLElement {
                 </div>
                 <nav>
                     <ul class="main-menu">
-                      <li><a href="booster.html" class="${this.isActive('#')}">🌴 2025 썸머부스터</a></li>
+                      <li><a href="booster.html" class="${this.isActive('#')}">🌴 2025 썸머부스터</a></li>|
                       <li><a href="campus.html">캠퍼스 찾기</a></li>
                       <li><a href="https://tr.ee/blog-epiclang" rel="noopener noreferrer">
                         <span style="display: inline-flex; align-items: center; gap: 3px;">블로그 
