@@ -33,7 +33,7 @@ class Header extends HTMLElement {
                                         gap: 3px;
                                         background: linear-gradient(90deg, #476bff, #a030ff);
                                 -webkit-background-clip: text;
-                                -webkit-text-fill-color: transparent; ">2025 에픽 썸머부스터</a></li>
+                                -webkit-text-fill-color: transparent; "><strong>2025 에픽 썸머부스터<strong></a></li>
                       <li><a href="campus.html">캠퍼스 찾기</a></li>
                       <li><a href="https://tr.ee/blog-epiclang" rel="noopener noreferrer">
                         <span style="display: inline-flex; align-items: center; gap: 3px;">블로그 
