@@ -339,13 +339,13 @@
         // Fixed banner hide on footer
         const banner = document.querySelector('.fixedBanner');
         const targets = [
-  document.querySelector('#registration'),
-  document.querySelector('footer-component')
-];
+          document.querySelector('#registration'),
+          document.querySelector('footer-component')
+        ];
 
-targets.forEach(target => {
-  if (target) observer.observe(target);
-});
+    targets.forEach(target => {
+      if (target) observer.observe(target);
+        });
         const observer = new IntersectionObserver((entries) => {
           entries.forEach(entry => {
             banner.style.display = entry.isIntersecting ? 'none' : 'block';
