@@ -336,25 +336,20 @@
         delay: 100
       });
       document.addEventListener('DOMContentLoaded', () => {
-    const banner = document.querySelector('.fixedBanner');
-    const targets = [
-      document.querySelector('#registration'),
-      document.querySelector('footer-component')
-    ];
+  const banner = document.querySelector('.fixedBanner');
+  const footer = document.querySelector('footer-component');
 
-    const observer = new IntersectionObserver((entries) => {
-      // Check if ANY target is intersecting
-      const shouldHideBanner = entries.some(entry => entry.isIntersecting);
-      banner.style.display = shouldHideBanner ? 'none' : 'block';
-    }, {
-      root: null,
-      threshold: 0
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      banner.style.display = entry.isIntersecting ? 'none' : 'block';
     });
-
-    targets.forEach(target => {
-      if (target) observer.observe(target);
-    });
+  }, {
+    root: null,
+    threshold: 0
   });
+
+  if (footer) observer.observe(footer);
+});
 
         // Accordion toggle logic
         const toggles = document.querySelectorAll('.accordion-toggle');
