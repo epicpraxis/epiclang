@@ -841,15 +841,7 @@
     </div>
   </div>
 </section>
-
-<div class="fixedBanner">
-  <div data-menucontent="consult_apply" class="shimmer-container">
-    <a href="booster.html#registration" ></a>
-    <div class="shimmer-overlay"></div>
-  </div>
-</div>
-
-        
+  
   </main>
     <footer-component></footer-component>
     <!-- AOS JS -->
@@ -860,21 +852,6 @@
         duration: 1000,
         delay: 100
       });
-    document.addEventListener('DOMContentLoaded', () => {
-    const banner = document.querySelector('.fixedBanner');
-    const footer = document.querySelector('footer-component');
-
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        banner.style.display = entry.isIntersecting ? 'none' : 'block';
-      });
-    }, {
-      root: null,
-      threshold: 0
-    });
-
-    if (footer) observer.observe(footer);
-  });
     </script>
 </body>
 </html>
