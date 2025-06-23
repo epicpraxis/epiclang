@@ -841,7 +841,14 @@
     </div>
   </div>
 </section>
-  
+
+    <!--fixedBanner
+  <div class="fixedBanner">
+  <div data-menucontent="consult_apply" class="shimmer-container">
+    <a href="https://tr.ee/elayc-2025-sb-preregistration-hp-fixed" ></a>
+    <div class="shimmer-overlay"></div>
+  </div>
+</div>-->
   </main>
     <footer-component></footer-component>
     <!-- AOS JS -->
@@ -852,6 +859,30 @@
         duration: 1000,
         delay: 100
       });
+      document.addEventListener('DOMContentLoaded', () => {
+        // Fixed banner hide on footer
+        const banner = document.querySelector('.fixedBanner');
+        const footer = document.querySelector('footer-component');
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            banner.style.display = entry.isIntersecting ? 'none' : 'block';
+          });
+        }, {
+          root: null,
+          threshold: 0
+        });
+        if (footer) observer.observe(footer);
+
+        // Accordion toggle logic
+        const toggles = document.querySelectorAll('.accordion-toggle');
+        toggles.forEach(toggle => {
+          toggle.addEventListener('click', function () {
+            this.classList.toggle('active');
+            this.nextElementSibling.classList.toggle('open');
+          });
+        });
+      });
+        
     </script>
 </body>
 </html>
