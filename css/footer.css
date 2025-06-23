@@ -1,4 +1,7 @@
-
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
 .footer {
   background-color: white;
   padding: 60px 15px;
