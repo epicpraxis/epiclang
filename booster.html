@@ -338,27 +338,17 @@
       document.addEventListener('DOMContentLoaded', () => {
         // Fixed banner hide on footer
         const banner = document.querySelector('.fixedBanner');
-        const targets = [
-      document.querySelector('#registration'),
-      document.querySelector('footer-component')
-    ];
-
-    // Create a new IntersectionObserver
-    // It watches if any of the target elements are visible in the viewport
-    const observer = new IntersectionObserver((entries) => {
-      // Check if at least one of the observed elements is currently visible
-      const shouldHideBanner = entries.some(entry => entry.isIntersecting);
-
-      // If any element is visible, hide the banner; otherwise, show it
-      banner.style.display = shouldHideBanner ? 'none' : 'block';
-    }, {
-      root: null,       // Observe visibility relative to the viewport
-      threshold: 0      // Trigger when even a small part is visible
-    });
-
-    // Start observing each target element
-    targets.forEach(target => {
-      if (target) observer.observe(target);
+        const footer = document.querySelector('#registration');
+        const footer = document.querySelector('footer-component');
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            banner.style.display = entry.isIntersecting ? 'none' : 'block';
+          });
+        }, {
+          root: null,
+          threshold: 0
+        });
+        if (footer) observer.observe(footer);
 
         // Accordion toggle logic
         const toggles = document.querySelectorAll('.accordion-toggle');
