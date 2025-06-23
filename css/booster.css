@@ -532,7 +532,7 @@ body {
   position: relative;
   margin: 0 auto;
   max-width: 1120px;
-  height: 150px;
+  height: 130px;
   background: url("../assets/main/BoosterRegister.svg") no-repeat center / cover;
   border-radius: 15px;
   cursor: pointer;
