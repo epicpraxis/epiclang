@@ -18,7 +18,10 @@ body {
     margin: 0 auto;
     padding: 0 30px;
 }
-
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
 /* Hero section styles */
 .hero {
   background-image:url(../assets/main/hero.svg);
