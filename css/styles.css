@@ -456,7 +456,7 @@ html {
   margin: 0 auto;
   max-width: 1120px;
   height: 130px;
-  background: url("../assets/main/BoosterRegister.svg") no-repeat center / cover;
+  background: url("../assets/00./ConsultationFloating.png") no-repeat center / cover;
   border-radius: 15px;
   cursor: pointer;
   overflow: hidden; /* 중요: shimmer 잘리게 */
@@ -892,7 +892,7 @@ gap: 0px;
 .fixedBanner > div{
     width: 100%;
     background-size: contain;
-    background: url("../assets/main/BoosterRegister_mobile.png") no-repeat center / cover;
+    background: url("../assets/00.main/ConsultationFloating_mobile.png") no-repeat center / cover;
     height: auto;
     aspect-ratio:1020/430;
     overflow: hidden;
