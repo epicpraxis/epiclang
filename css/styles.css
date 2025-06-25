@@ -454,10 +454,10 @@ html {
 .fixedBanner > div {
   position: relative;
   margin: 0 auto;
-  max-width: 1120px;
-  height: 130px;
+  max-width: 600px;
+  height: 110px;
   background: url("../assets/00.main/ConsultationFloating.png") no-repeat center / cover;
-  border-radius: 15px;
+  border-radius: 30px;
   cursor: pointer;
   overflow: hidden; /* 중요: shimmer 잘리게 */
 }
