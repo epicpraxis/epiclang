@@ -456,7 +456,7 @@ html {
   margin: 0 auto;
   max-width: 1120px;
   height: 130px;
-  background: url("../assets/00./ConsultationFloating.png") no-repeat center / cover;
+  background: url("../assets/00.main/ConsultationFloating.png") no-repeat center / cover;
   border-radius: 15px;
   cursor: pointer;
   overflow: hidden; /* 중요: shimmer 잘리게 */
