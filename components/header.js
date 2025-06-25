@@ -98,7 +98,6 @@ class Header extends HTMLElement {
                                 -webkit-background-clip: text;
                                 -webkit-text-fill-color: transparent; " >
                                 <strong>2025 에픽 썸머부스터</strong>
-                                <span style="border: 1px solid #ddd; border-radius: 0px; padding: 1.2px 1.2px 0px 1px; font-size:11px;">↗</span>
                             </a>
                             </li>
                             <li>
