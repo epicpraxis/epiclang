@@ -983,7 +983,7 @@ gap: 0px;
 .fixedBanner > div{
     width: 100%;
     background-size: contain;
-    background: url("../assets/main/BoosterRegister_mobile.png") no-repeat center / cover;
+    background: url("../assets/02.booster/BoosterRegister_mobile.png") no-repeat center / cover;
     height: auto;
     aspect-ratio:1020/430;
     overflow: hidden;
