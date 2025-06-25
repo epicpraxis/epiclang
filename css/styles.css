@@ -894,7 +894,8 @@ gap: 0px;
     background-size: contain;
     background: url("../assets/00.main/ConsultationFloating_mobile.png") no-repeat center / cover;
     height: auto;
-    aspect-ratio:1020/430;
+    aspect-ratio:1020/230;
+    border-radius:40px;
     overflow: hidden;
     position: relative;
 }
@@ -916,8 +917,8 @@ gap: 0px;
 .fixedBanner > div::before {
   position: absolute;
   height: auto;
-  aspect-ratio: 1020/295;
-  border-radius: 11.1vw;
+  aspect-ratio: 1020/230;
+  border-radius:40px;
 }
 
 /*fixedBanner*/
