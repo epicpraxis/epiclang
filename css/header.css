@@ -51,6 +51,7 @@ html {
 
 /* Header styles */
 .desktop-header {
+    border-bottom: 0.7px solid #ddd;
     position: fixed;
     top: 0;
     left: 0;
