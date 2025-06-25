@@ -985,7 +985,7 @@ gap: 0px;
     background-size: contain;
     background: url("../assets/02.booster/BoosterRegisterFloating_mobile.png") no-repeat center / cover;
     height: auto;
-    aspect-ratio:1020/430;
+    aspect-ratio:1090/420;
     overflow: hidden;
     position: relative;
 }
@@ -1007,7 +1007,7 @@ gap: 0px;
 .fixedBanner > div::before {
   position: absolute;
   height: auto;
-  aspect-ratio: 1020/295;
+  aspect-ratio: 1070/267;
   border-radius: 11.1vw;
 }
 
