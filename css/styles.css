@@ -917,7 +917,7 @@ gap: 0px;
 .fixedBanner > div::before {
   position: absolute;
   height: auto;
-  aspect-ratio: 1020/230;
+  aspect-ratio: 1020/190;
   border-radius:40px;
 }
 
