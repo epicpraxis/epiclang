@@ -163,7 +163,10 @@ body {
   font-weight: 400;
   margin: 0 auto;
 }
-
+.BottomDescription{
+  font-size:16px;
+  color: #666;
+}
 .banner{
   background: linear-gradient(to bottom, #000000, #042350);
   color: #fff;
@@ -628,6 +631,9 @@ body {
 }
 .description{
   font-size: 14px;
+}
+.BottomDescription{
+  font-size:10px;
 }
 .banner{
   font-size: 2.5vw;
