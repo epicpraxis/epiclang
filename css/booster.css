@@ -637,7 +637,10 @@ body {
 .BottomDescription{
   font-size:10px;
 }
-.brMobile { display: inline; }
+.brMobile {
+  display: inline;
+  
+}
 .banner{
   padding: 35px;
   line-height: 1.4;
