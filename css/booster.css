@@ -20,7 +20,7 @@ html {
 }
 
 .accordion-toggle {
-  background: linear-gradient(90deg, #AB35CF, #FF8587, #7300FF);
+  background: linear-gradient(90deg, #7300FF, #AB35CF, #FF8587);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: 600;
@@ -56,7 +56,7 @@ html {
   max-height: 0;
   overflow: hidden;
   padding: 0 15px;
-  background: #FF85871A;
+  background: #F0f0f01A;
   transition: max-height 0.3s ease, padding 0.3s ease;
 }
 .accordion-text{
@@ -144,7 +144,7 @@ body {
 
 /*Title, Sub-title*/
 .gradient-text {
-  background: linear-gradient(90deg, #FF8587, #AB35CF, #7300FF);
+  background: linear-gradient(90deg, #7300FF, #AB35CF, #FF8587);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: 700;
@@ -281,7 +281,7 @@ body {
   white-space: nowrap;
 }
 .reading-intro .highlight {
-  background: linear-gradient(90deg, #FF8587, #AB35CF, #7300FF);
+  background: linear-gradient(90deg, #7300FF, #AB35CF, #FF8587);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: 700;
