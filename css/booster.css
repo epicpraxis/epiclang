@@ -627,8 +627,8 @@ body {
 }
 .hero-content img{
   margin-top:10px;
-  padding-left:60px;
-  width: 40%;
+  padding-left:10px;
+  width: 30%;
 }
 .hero-content{
   gap:0.6vw;
