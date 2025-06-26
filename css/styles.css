@@ -440,7 +440,7 @@ html {
 /*fixedBanner*/
 .fixedBanner {
   position: fixed;
-  bottom: 10px;
+  bottom: 30px;
   width: 100%;
   z-index: 3;
   transition: opacity 0.3s ease;
@@ -882,9 +882,9 @@ gap: 0px;
 }
 
 .fixedBanner{
-    padding: 0 20px;
+  padding: 0 20px;
   position: fixed;
-  bottom: 15px;
+  bottom: 30px;
   width: 100%;
   z-index: 3;
   transition: opacity 0.3s ease;
