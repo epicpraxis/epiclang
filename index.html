@@ -399,56 +399,55 @@
             let resizeTimeout;
 
             function createSlide(data) {
-                const slide = document.createElement('div');
-                slide.className = 'slide';
-                const imageUrl = window.innerWidth <= 1020 ? data.imageMobile : data.imageDesktop;
-                slide.style.backgroundImage = `url('${imageUrl}')`;
-                const linkElement = document.createElement('div');
-                linkElement.style.display = 'block';
-                linkElement.style.width = '100%';
-                linkElement.style.height = '100%';
-                linkElement.style.textDecoration = 'none';
-                linkElement.innerHTML = `<div class="text-content-block"><h3 class="slide-title">${data.title}</h3><p class="slide-subtitle">${data.subtitle}</p><p class="slide-description">${data.description}</p></div>`;
-                slide.appendChild(linkElement);
-                return slide;
-            }
-            
-            function buildSlides() {
-                slidesContainer.innerHTML = '';
-                slidesContainer.appendChild(createSlide(slideData[totalActualSlides - 1]));
-                slideData.forEach(data => slidesContainer.appendChild(createSlide(data)));
-                slidesContainer.appendChild(createSlide(slideData[0]));
-            }
+    const slide = document.createElement('div');
+    slide.className = 'slide';
+    const imageUrl = window.innerWidth <= 1020 ? data.imageMobile : data.imageDesktop;
+    slide.style.backgroundImage = `url('${imageUrl}')`;
+    const linkElement = document.createElement('div');
+    linkElement.style.display = 'block';
+    linkElement.style.width = '100%';
+    linkElement.style.height = '100%';
+    linkElement.style.textDecoration = 'none';
+    linkElement.innerHTML = `<div class="text-content-block"><h3 class="slide-title">${data.title}</h3><p class="slide-subtitle">${data.subtitle}</p><p class="slide-description">${data.description}</p></div>`;
+    slide.appendChild(linkElement);
+    return slide;
+}
 
-            function initialize() {
-                buildSlides();
-                addEventListeners();
-                positionToShow(currentDomIndex, false);
-                setTimeout(() => requestAnimationFrame(() => startAutoplay()), 100);
-            }
-            
-            function getSlideWidth() {
-                const firstSlide = slidesContainer.querySelector('.slide');
-                if (!firstSlide || firstSlide.offsetWidth === 0) return 0;
-                const margin = 10; // consistent with .slide { margin: 0 10px; }
-                return firstSlide.offsetWidth + margin * 2;
-            }
+function buildSlides() {
+    slidesContainer.innerHTML = '';
+    slidesContainer.appendChild(createSlide(slideData[totalActualSlides - 1]));
+    slideData.forEach(data => slidesContainer.appendChild(createSlide(data)));
+    slidesContainer.appendChild(createSlide(slideData[0]));
+}
 
-            function getCenteringOffset() {
-                const firstSlide = slidesContainer.querySelector('.slide');
-                if (!firstSlide || firstSlide.offsetWidth === 0) return 0;
-                return (viewport.offsetWidth - firstSlide.offsetWidth) / 2+10;
-            }
+function initialize() {
+    buildSlides();
+    addEventListeners();
+    positionToShow(currentDomIndex, false);
+    setTimeout(() => requestAnimationFrame(() => startAutoplay()), 100);
+}
 
-            function positionToShow(domIndex, animate = true) {
-                const slideWidth = getSlideWidth();
-                if (slideWidth <= 0) return;
-                slidesContainer.style.transition = animate ? transitionStyle : 'none';
-                currentTranslate = -domIndex * slideWidth + getCenteringOffset();
-                setSliderPosition();
-                updateSlidePositionDisplay();
-            }
-            
+function getSlideWidth() {
+    const firstSlide = slidesContainer.querySelector('.slide');
+    if (!firstSlide || firstSlide.offsetWidth === 0) return 0;
+    const gap = parseFloat(getComputedStyle(slidesContainer).gap || 0);
+    return firstSlide.offsetWidth + gap;
+}
+
+function getCenteringOffset() {
+    const firstSlide = slidesContainer.querySelector('.slide');
+    if (!firstSlide || firstSlide.offsetWidth === 0) return 0;
+    return Math.round((viewport.offsetWidth - firstSlide.offsetWidth) / 2);
+}
+
+function positionToShow(domIndex, animate = true) {
+    const slideWidth = getSlideWidth();
+    if (slideWidth <= 0) return;
+    slidesContainer.style.transition = animate ? transitionStyle : 'none';
+    currentTranslate = -domIndex * slideWidth + getCenteringOffset();
+    setSliderPosition();
+    updateSlidePositionDisplay();
+}    
             function setSliderPosition() { slidesContainer.style.transform = `translateX(${currentTranslate}px)`; }
             
             function updateSlidePositionDisplay() {
