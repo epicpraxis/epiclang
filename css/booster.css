@@ -167,6 +167,7 @@ body {
   font-size:16px;
   color: #666;
 }
+.brMobile { display: none; }
 .banner{
   background: linear-gradient(to bottom, #000000, #042350);
   color: #fff;
@@ -634,6 +635,8 @@ body {
 }
 .BottomDescription{
   font-size:10px;
+}
+.brMobile { display: inline; }
 }
 .banner{
   font-size: 2.5vw;
