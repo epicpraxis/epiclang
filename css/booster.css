@@ -209,6 +209,7 @@ body {
 }
 .solutions img{
   margin-top:40px;
+  padding-top:10px;
 }
 .solutions a{
   display: inline-block;
@@ -635,7 +636,7 @@ body {
   font-size: 14px;
 }
 .BottomDescription{
-  font-size:10px;
+  font-size:12px;
 }
 .brMobile {
   display: inline;
