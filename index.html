@@ -437,7 +437,7 @@
             function getCenteringOffset() {
                 const firstSlide = slidesContainer.querySelector('.slide');
                 if (!firstSlide || firstSlide.offsetWidth === 0) return 0;
-                return (viewport.offsetWidth - firstSlide.offsetWidth) / 2-10;
+                return (viewport.offsetWidth - firstSlide.offsetWidth) / 2+10;
             }
 
             function positionToShow(domIndex, animate = true) {
