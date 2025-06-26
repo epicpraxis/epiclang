@@ -639,7 +639,7 @@ body {
 .brMobile { display: inline; }
 }
 .banner{
-  font-size: 2.5vw;
+  padding: 35px;
   line-height: 1.4;
 }
 
@@ -647,7 +647,10 @@ body {
   padding-top:10px;
   font-size:2.5vw;
 }
-
+.banner h2{
+  padding-top:00px;
+  font-size:4.2vw;
+}
 /*Title, Sub-title*/
 .gradient-text {
   font-size: 5vw;
