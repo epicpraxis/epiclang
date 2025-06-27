@@ -128,15 +128,15 @@ nav a.active {
   font-size: 16px;
 }
 .reservation a {
-  background: white;
-  color: #3179F6;
-  border: 1px solid #3179F6;
-}
-
-.reservation a:hover {
   background:linear-gradient(90deg, #3179f6, #a01aff);
   color: #fff;
   font-weight: 00;
+}
+
+.reservation a:hover {
+  background: white;
+  color: #3179F6;
+  border: 1px solid #3179F6;
 }
 
 /*tablet*/
