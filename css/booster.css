@@ -745,12 +745,9 @@ body {
 }
 .timetable img{
   width: 90%;
-  padding:2px 80px;
+  padding:2px 40px;
 }
 
-.timetable img:first-child{
-  padding-right: 80px;
-}
 .register-text{
   padding-top:60px;
   font-size:5vw;
