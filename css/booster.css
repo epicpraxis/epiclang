@@ -764,12 +764,6 @@ body {
   margin-bottom: 0px;
   line-height: 0;
 }
-.curriculum p {
-  font-size: 14px;
-  max-width: 90vw;
-  margin: 10px auto 30px;
-  font-weight: 400;
-}
 .curriculum-graphic {
   padding: 0;
   /*max-width: 1020px;*/
@@ -778,12 +772,6 @@ gap: 0px;
 /*Roadmap*/
 .roadmap {
   padding:70px 0 40px;
-}
-.roadmap p {
-  font-size: 14px;
-  max-width: 90vw;
-  margin: 10px auto 30px;
-  font-weight: 400;
 }
 .roadmap-graphic{
 }
