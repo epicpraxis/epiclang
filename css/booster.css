@@ -339,10 +339,12 @@ body {
   width: 100%;
 }
 .timetable img{
-  width: 350px;
+  width: 380px;
   padding-right:10px;
 }
-
+.timetable-mobile{
+  display: none;
+}
 /*Roadmap*/
 .roadmap {
   padding: 100px 0px 60px;
@@ -782,6 +784,7 @@ body {
   padding-bottom:60px;
   line-height: 1.4;
 }
+
 /*Curriculum*/
 .curriculum {
   padding: 70px 0px 0px;
@@ -795,8 +798,24 @@ body {
 .curriculum-graphic {
   padding: 0;
   /*max-width: 1020px;*/
-gap: 0px;
+  gap: 0px;
 }
+.timetable-mobile{
+  text-align: center;
+  display: block;
+  padding: 20px 60px 20px 50px;
+  position: relative;
+  margin-bottom: 40px; /* 하단 여백 필요시 */
+  overflow: hidden;
+}
+.timetable{
+  display: none;
+}
+.timetable-mobile img{
+  max-width: 380px;
+  width: 100%;
+}
+    
 /*Roadmap*/
 .roadmap {
   padding:70px 0 40px;
