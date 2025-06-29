@@ -710,7 +710,23 @@ body {
 .critical-period-cards-mobile{
   text-align: center;
   display: block;
-  padding: 4vw 12vw 3vw;
+  padding: 20px 60px 20px;
+  position: relative;
+  margin-bottom: 40px; /* 하단 여백 필요시 */
+  overflow: hidden;
+}
+
+.swiper-container {
+  position: relative;
+  width: 100%;
+}
+
+.swiper-pagination {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+  z-index: 10;
 }
 .critical-period h2{
   line-height: 0;
