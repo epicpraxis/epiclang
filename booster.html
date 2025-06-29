@@ -33,12 +33,16 @@
     <link rel="stylesheet" href="css/booster.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
+        <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
     
     <!-- Favicon -->
     <link rel="icon" href="assets/ELA-favicon.ico" />
     
     <script src="components/header.js" type="text/javascript" defer></script>
     <script src="components/footer.js" type="text/javascript" defer></script>
+        <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
   </head>
 <body>
@@ -120,12 +124,20 @@
 
         <!-- 모바일 전용 구조 -->
             <div class="critical-period-cards-mobile">
-              <div class="critical-period-section-mobile">
-                <div class="critical-wrapper">
-                  <img src="assets/02.booster/schedule01.svg"/>
-                  <img src="assets/02.booster/schedule02.svg"/>
-                  <img src="assets/02.booster/schedule03.svg"/>
+              <div class="swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="assets/02.booster/schedule01.svg"/>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="assets/02.booster/schedule02.svg"/>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="assets/02.booster/schedule03.svg"/>
+                  </div>
                 </div>
+                <!-- Optional: Add pagination -->
+                <div class="swiper-pagination"></div>
               </div>
             </div>
           </section>
@@ -363,6 +375,15 @@
             this.classList.toggle('active');
             this.nextElementSibling.classList.toggle('open');
           });
+        });
+        // Initialize Swiper for mobile critical period cards
+        new Swiper('.swiper-container', {
+          slidesPerView: 1,
+          spaceBetween: 20,
+          pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+          },
         });
       });
     </script>
