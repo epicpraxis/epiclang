@@ -179,23 +179,34 @@ body {
 }
 /*Concern Section*/
 .concerns {
-  padding: 100px 0px 0px;
+  display: block;
+  padding: 80px 0px 0px;
   text-align: center;
 }
+.concerns h2 {
+  font-size: 48px;
+  line-height: 1.6;
+}
+
 .speech-bubbles{
   display: flex;
-  width: 100%;
-  margin-top: 43px;
-  margin-bottom: 120px;
+  flex-direction: row;
   justify-content: center;
+  max-width: 1020px;
+  margin: 0 auto;
 }
 .speech-bubble-section {
-  margin: 0 auto;
+  display: flex;
+  justify-content: flex-start; /* 꼭 필요! */
+  margin-bottom: 100px;
+  margin-top: 50px;
 }
 .speech-bubble-one{
   padding-right: 20px;
 }
-
+.speech-bubbles-mobile{
+  display: none;
+}
 /*Precise-diagnosis Section*/
 .precise-diagnosis{
   text-align: center;
@@ -657,27 +668,26 @@ body {
 }
 /*Concern Section*/
 .concerns {
-  padding: 70px 0px 0px;
-}
-.concerns h2 {
-  margin-bottom: 0px;
-  font-size: 4vw;
+  margin-top: 40px;
+  padding-top: 0px;
 }
 .speech-bubbles{
-  margin-top: 8px;
-  margin-bottom: 20px;
+  display: none;
 }
-.speech-bubble-section{
-  margin: 20px 0 40px;
-  gap: 20px;
+/*Speech Bubbles Mobile*/
+.speech-bubbles-mobile{
+  text-align: center;
+  display: block;
+  padding: 20px 60px 20px 50px;
+  position: relative;
+  margin-bottom: 40px; /* 하단 여백 필요시 */
+  overflow: hidden;
 }
-.speech-bubble-one{
-  padding-right: 10px;
+.speech-bubbles-mobile img{
+  max-width: 380px;
+  width: 100%;
 }
-.speech-bubble-section img{
-  width: 45vw;
-}
-
+    
 /*Precise-diagnosis Section*/
 .precise-diagnosis{
   text-align: center;
@@ -710,7 +720,7 @@ body {
 .critical-period-cards-mobile{
   text-align: center;
   display: block;
-  padding: 20px 60px 20px;
+  padding: 20px 60px 20px 50px;
   position: relative;
   margin-bottom: 40px; /* 하단 여백 필요시 */
   overflow: hidden;
