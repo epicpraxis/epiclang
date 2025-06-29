@@ -323,7 +323,7 @@ body {
   /*max-width: 1020px;*/
 }
 .timetable{
-  margin: 0 auto;
+  margin: 0 auto 30px;
   width: 100%;
 }
 .timetable img{
