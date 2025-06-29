@@ -735,13 +735,14 @@ body {
   width: 100%;
 }
 
+/*Hidden
 .swiper-pagination {
   position: absolute;
   bottom: 10px;
   width: 100%;
   text-align: center;
   z-index: 1;
-}
+}*/
 .critical-period h2{
   line-height: 0;
 }
