@@ -177,6 +177,7 @@ body {
   font-size: 28px;
   line-height: 1.4;
 }
+
 /*Concern Section*/
 .concerns {
   display: block;
@@ -187,7 +188,6 @@ body {
   font-size: 48px;
   line-height: 1.6;
 }
-
 .speech-bubbles{
   display: flex;
   flex-direction: row;
@@ -207,6 +207,7 @@ body {
 .speech-bubbles-mobile{
   display: none;
 }
+
 /*Precise-diagnosis Section*/
 .precise-diagnosis{
   text-align: center;
@@ -687,6 +688,7 @@ body {
   max-width: 380px;
   width: 100%;
 }
+    
     
 /*Precise-diagnosis Section*/
 .precise-diagnosis{
