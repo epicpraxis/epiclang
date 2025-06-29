@@ -367,6 +367,10 @@ body {
   width: 350px;
   padding-right:10px;
 }
+.roadmap-graphic-mobile{
+  display: none;
+}
+
 .banner{
   background: linear-gradient(to bottom, #000000, #042350);
   color: #fff;
@@ -822,10 +826,21 @@ body {
   padding:70px 0 40px;
 }
 .roadmap-graphic{
+  display: none;
 }
-.roadmap-graphic img {
-  width: 50vw;
+.roadmap-graphic-mobile{
+  text-align: center;
+  display: block;
+  padding: 20px 60px 20px 50px;
+  position: relative;
+  margin-bottom: 40px; /* 하단 여백 필요시 */
+  overflow: hidden;
 }
+.roadmap-graphic-mobile img{
+  max-width: 380px;
+  width: 100%;
+}
+
 /*flagship*/
 .flagship{
   max-width: 90vw;
