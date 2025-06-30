@@ -71,6 +71,11 @@ html {
   padding: 15px 60px 15px 15px;
   max-height: 500px; /* adjust as needed */
 }
+.faq{
+  text-decoration:none;
+  color: #7300FF;
+  font-weight:600;
+}
 /* Global styles */
 body {
     margin: 0;
