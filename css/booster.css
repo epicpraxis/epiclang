@@ -671,6 +671,9 @@ body {
   margin-top: 40px;
   padding-top: 0px;
 }
+.concerns h2{
+  line-height:0;
+}
 .speech-bubbles{
   display: none;
 }
