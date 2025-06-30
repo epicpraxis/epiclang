@@ -408,7 +408,7 @@ body {
 .register-text{
   padding-top:60px;
   font-size:40px;
-  padding-bottom:60px;
+  padding-bottom:50px;
   line-height: 1.4;
 }
 .arrow{
@@ -788,7 +788,7 @@ body {
 
 /*Curriculum*/
 .curriculum {
-  padding: 70px 0px 0px;
+  padding: 60px 0px 0px;
   text-align: center;
   line-height: 1.4;
 }
@@ -922,7 +922,7 @@ body {
 /*Instructor Qualification*/
 .instructor-period{
   display: block;
-  padding: 70px 0px 0px;
+  padding: 60px 0px 0px;
   text-align: center;
   background-color: #fff;
 }
