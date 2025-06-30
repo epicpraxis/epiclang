@@ -818,7 +818,7 @@ body {
     
 /*Roadmap*/
 .roadmap {
-  padding:0px;
+  padding:50px 0 0px;
 }
 .roadmap-graphic{
   display: none;
