@@ -548,7 +548,7 @@ body {
   margin: 0 auto;
   max-width: 1120px;
   height: 130px;
-  background: url("../assets/02.booster/BoosterRegisterFloating.png") no-repeat center / cover;
+  background: url("../assets/02.booster/BoosterRegisterFloating_02.png") no-repeat center / cover;
   border-radius: 15px;
   cursor: pointer;
   overflow: hidden; /* 중요: shimmer 잘리게 */
@@ -1040,7 +1040,7 @@ body {
 .fixedBanner > div{
     width: 100%;
     background-size: contain;
-    background: url("../assets/02.booster/BoosterRegisterFloating_mobile.png") no-repeat center / cover;
+    background: url("../assets/02.booster/BoosterRegisterFloating_mobile_02.png") no-repeat center / cover;
     height: auto;
     aspect-ratio:1090/420;
     overflow: hidden;
