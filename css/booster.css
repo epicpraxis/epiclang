@@ -170,6 +170,7 @@ body {
   line-height:1.4;
 }
 .BottomDescription{
+  padding-top: 30px;
   font-size:16px;
   color: #666;
   margin: 0 auto 50px;
@@ -221,9 +222,6 @@ body {
 .solutions{
   margin: 0 auto;
   max-width: 1020px;
-}
-.solutions p{
-  padding-top: 30px;
 }
 .solutions img{
   width: 100%;
@@ -300,6 +298,7 @@ body {
 
 /* Reading Intro Section (above footer) */
 .reading-intro {
+  padding-top:80px;
   position: relative;
   text-align: center;
   padding: 0;
