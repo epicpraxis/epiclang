@@ -789,6 +789,9 @@ body {
 .reading-intro .highlight {
   font-size: 5vw;
 }
+.reading-bg-image{
+  padding-top:50px;
+}
 .boostercard{
   width: 100%;
   margin: 0 auto;
