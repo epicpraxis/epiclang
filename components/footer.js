@@ -11,7 +11,7 @@ class Footer extends HTMLElement {
       <div class="icon-wrap">
         <a href="https://tr.ee/ar-myon-homepage" class="social-icon"><img src="assets/footer/myon.svg" alt="myon"></a>
         <a href="https://tr.ee/blog-epiclang" class="social-icon" ><img src="assets/footer/blog.svg" alt="blog"></a>
-        <a href="javascript:void(0)" class="open-channel-talk" class="social-icon"><img src="assets/footer/channeltalk.svg" alt="channel talk"></a>
+        <a href="http://pf.kakao.com/_xeYVrn/chat" class="open-channel-talk" class="social-icon"><img src="assets/footer/channeltalk.svg" alt="channel talk"></a>
       </div>
       <div class="footer-right-icons">
         <a href="javascript:void(0)" class="copy-link"><img src="assets/footer/external.png" alt="external link"></a>
