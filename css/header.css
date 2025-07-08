@@ -178,7 +178,7 @@ nav a.active {
     }
     .mobile-cta{
       position: absolute;
-      right: 10px;
+      right: 15px;
       display: flex;
       align-items: center;
     }
