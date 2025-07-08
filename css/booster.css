@@ -286,7 +286,7 @@ body {
 .mealplan-section img{
   width: 100%;
   margin-top:20px;
-  padding:0px 30px;
+  padding:0px 15px;
 }
 .mealplan-section a{
   display: inline-block;
@@ -728,7 +728,7 @@ body {
 .solutions img{
   margin-top:0px;
   width: 100%;
-  padding:20px 15px 0px;
+  padding:15px 15px 0px;
 }
 
 .arrow img{
