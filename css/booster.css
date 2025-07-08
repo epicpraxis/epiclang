@@ -662,6 +662,7 @@ body {
 }
 .BottomDescription{
   font-size:12px;
+  padding-top:10px;
 }
 .brMobile {
   display: inline;
@@ -692,7 +693,7 @@ body {
 }
 /*Concern Section*/
 .concerns {
-  margin-top: 40px;
+  margin-top: 50px;
   padding-top: 0px;
 }
 .concerns h2{
@@ -705,7 +706,7 @@ body {
 .speech-bubbles-mobile{
   text-align: center;
   display: block;
-  padding: 20px 60px 20px 50px;
+  padding: 20px 60px 0px 50px;
   position: relative;
   margin-bottom: 40px; /* 하단 여백 필요시 */
   overflow: hidden;
@@ -724,13 +725,10 @@ body {
   margin: 0 auto;
   max-width: 1020px;
 }
-.solutions p{
-  padding-top: 0px;
-}
 .solutions img{
   margin-top:0px;
   width: 100%;
-  padding:20px 30px 10px;
+  padding:20px 15px 0px;
 }
 
 .arrow img{
@@ -748,7 +746,7 @@ body {
 .critical-period-cards-mobile{
   text-align: center;
   display: block;
-  padding: 20px 60px 20px 50px;
+  padding: 20px 60px 0px 50px;
   position: relative;
   margin-bottom: 40px; /* 하단 여백 필요시 */
   overflow: hidden;
