@@ -277,6 +277,26 @@ body {
 .critical-period-section > div:nth-child(2) {
   transform: translateY(-20px);
 }
+/*MealPlan Section*/
+.mealplan{
+  text-align: center;
+}
+.mealplan-section{
+  margin: 0 auto;
+  max-width: 1020px;
+}
+.mealplan-section img{
+  width: 100%;
+  margin-top:40px;
+  padding-top:10px;
+}
+.mealplan-section a{
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+.mealplan-section a:hover{
+  transform: scale(1.03);
+}
 
 /* Reading Intro Section (above footer) */
 .reading-intro {
