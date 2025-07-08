@@ -830,7 +830,7 @@ body {
 .timetable-mobile{
   text-align: center;
   display: block;
-  padding: 20px 60px 10px 50px;
+  padding: 20px 60px 0px 50px;
   position: relative;
   overflow: hidden;
 }
@@ -852,7 +852,7 @@ body {
 .roadmap-graphic-mobile{
   text-align: center;
   display: block;
-  padding: 20px 60px 10px 50px;
+  padding: 20px 60px 0px 50px;
   position: relative;
   overflow: hidden;
 }
