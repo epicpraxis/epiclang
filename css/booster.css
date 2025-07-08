@@ -357,7 +357,7 @@ body {
   /*max-width: 1020px;*/
 }
 .timetable{
-  margin: 40px auto 30px;
+  margin: 40px auto 0px;
   width: 100%;
 }
 .timetable img{
