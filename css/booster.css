@@ -822,7 +822,7 @@ body {
   line-height: 0;
 }
 .curriculum-graphic {
-  padding: 0;
+  padding-bottom: 50px
   /*max-width: 1020px;*/
   gap: 0px;
 }
@@ -843,7 +843,7 @@ body {
     
 /*Roadmap*/
 .roadmap {
-  padding:50px 0 0px;
+  padding:50px 0 50px;
 }
 .roadmap-graphic{
   display: none;
