@@ -1060,7 +1060,7 @@ body {
 .fixedBanner > div{
     width: 100%;
     background-size: contain;
-    background: url("../assets/02.booster/BoosterRegisterFloating_mobile_03.png") no-repeat center / cover;
+    background: url("../assets/02.booster/BoosterRegisterFloating_03_mobile.png") no-repeat center / cover;
     height: auto;
     aspect-ratio:1090/420;
     overflow: hidden;
