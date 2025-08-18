@@ -64,7 +64,7 @@ class Header extends HTMLElement {
                         </div>
                         <div class="mobile-cta">
                             <a href="https://tr.ee/elayc-reservation-homepage" class="reservation">입학상담 예약</a>
-                            <a href="#" rel="noopener noreferrer" class="login">로그인</a>
+                            <!--<a href="#" rel="noopener noreferrer" class="login">로그인</a>-->
                             <button class="hamburger"><span></span><span></span><span></span></button>
                         </div>
                     </div>
