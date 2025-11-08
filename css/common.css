@@ -1,0 +1,847 @@
+/*BASIC - 이 폰트들 다 정리 해야함. 디자인 시스템 재정립 필요*/
+:root {
+  --anim-duration: 3000ms;
+  /* Font Scale */
+  --title-xxl: 6rem;
+  --title-xl:  5.4rem;
+  --title-lg:  4.8rem;
+  --title-md:  4.2rem;
+  --title-sm:  3.6rem;
+  --title-xs:  3rem; 
+
+  --body-xxl: 2.4rem; /*600*/
+  --body-xl: 2.2rem; /*600*/
+  --body-lg: 2rem; /*600*/
+  --body-md: 1.8rem; /*500*/
+  --body-sm: 1.6rem; /*400*/
+  --body-xs: 1.4rem; /*400*/
+
+  --caption: 1.2rem;
+
+  /* Spacing Scale */
+  --space-lg: 4rem;     /* 40px */
+  --space-md: 2rem;     /* 20px */
+  --space-sm: 1rem;     /* 10px */
+}
+
+h1{font-size: var(--title-xxl);}
+h2{font-size: var(--title-xl);}
+h3{font-size: var(--title-lg);}
+h4{font-size: var(--title-md);}
+h5{font-size: var(--title-sm);}
+
+.body-lg{
+  font-size: 2rem;
+  padding-bottom: 10px;
+}
+
+
+.title-xxl {font-size: var(--title-xxl); font-weight: 600; line-height: 1.6;}
+.title-xl {font-size: var(--title-xl); font-weight: 600; line-height: 1.6;}
+.title-lg {font-size: var(--title-lg); font-weight: 600; line-height: 1.6;}
+.title-md {font-size: var(--title-md); font-weight: 600;
+  background: linear-gradient(90deg, #3182F6, #5309FF);
+  -webkit-background-clip: text;  /* clip bg to text */
+  -webkit-text-fill-color: transparent; /* hide normal text color */
+}
+.title-sm {font-size: var(--title-sm); font-weight: 500;}
+.title-xs {font-size: var(--title-sm); font-weight: 400;}
+
+.body-xxl {font-size: var(--body-xxl); font-weight: 600; line-height: 1.6;}
+.body-xl {font-size: var(--body-xl); font-weight: 600; line-height: 1.6;}
+.body-lg {font-size: var(--body-lg); font-weight: 500; line-height: 1.6;}
+.body-md {font-size: var(--body-md); font-weight: 400; line-height: 1.6;}
+.body-sm {font-size: var(--body-sm); font-weight: 400; line-height: 1.6;}
+
+.caption{font-size: var(--caption); font-weight: 400; line-height: 1.5;}
+
+
+
+html, body, * {
+  font-family: 'Pretendard', sans-serif;
+  margin: 0;
+  line-height: 1.4;
+  box-sizing: border-box;
+  padding: 0;
+  font-size: 62.5%;  /* 16px * 62.5% = 10px → 1rem = 10px  보통의 브라우저가 16px로 기준을 잡음*/
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+.container {
+    max-width: 1020px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+.section{
+  text-align: center;
+  padding-top: 100px;
+}
+
+.title-container{
+  padding-bottom: 10px;
+}
+
+.bottom-text{
+  margin-bottom: 10px;
+}
+
+
+/*FIXED BANNER*/
+.fixedBanner {
+  position: fixed;
+  bottom: 30px;
+  width: 100%;
+  z-index: 3;
+  transition: opacity 0.3s ease;
+}
+
+.fixed-banner.hide {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.fixedBanner > div {
+  position: relative;
+  margin: 0 auto;
+  max-width: 470px;
+  height: 100px;
+  background: url("../assets/00.main/reservation.png") no-repeat center / cover;
+  border-radius: 20px;
+  cursor: pointer;
+  overflow: hidden; /* 중요: shimmer 잘리게 */
+}
+
+.fixedBanner a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -100% 0;
+  }
+}
+
+.fixedBanner > div::before {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0) 10%,
+    rgba(255, 255, 255, 0.6) 20%,
+    rgba(255, 255, 255, 0) 40%
+  );
+  background-size: 300% 100%;
+  animation: shimmer 3.5s infinite linear;
+  pointer-events: none;
+  z-index: 2;
+}
+
+/*.fixedBanner > div:hover::before {
+  animation-play-state: paused;
+}*/
+
+.fixedBanner > div {
+  transition: transform 0.3s ease;
+}
+
+.fixedBanner > div:hover {
+  transform: scale(1.02);
+}
+
+/*RESULT*/
+#result{
+  background: linear-gradient(180deg, #dbe3f9, #ffffff, #dbe3f9);
+  padding:100px 0 100px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#result .title-container{
+  padding:0;
+  padding-bottom:20px;
+}
+
+.assessment-container {
+  display: flex;
+  justify-content: center; /* 가로 중앙 */
+  align-items: center;     /* 세로 중앙 */
+  margin-bottom: 50px;
+}
+
+.img-stack {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.img-base{          /* 상하좌우 0 → 부모에 맞춤 */
+  width: 100%;
+  min-width: 300px;
+  max-width: 1020px;
+  height: 100%;
+}
+
+.img-top {
+  position: absolute;
+  top: 50%;    /* 부모의 정가운데 Y */
+  left: 50%;   /* 부모의 정가운데 X */
+  transform: translate(-50%, -50%);  /* 자기 크기만큼 보정 */
+  width: 90%;
+  min-width: 300px;
+  max-width: 1020px;
+  height: auto;
+}
+
+.strength{
+  position: absolute;
+  top: 75%;    /* 부모의 정가운데 Y */
+  left: 50%;   /* 부모의 정가운데 X */
+  transform: translate(-50%, -50%);  /* 자기 크기만큼 보정 */
+  width: 100%; /* 원하는 크기 */
+  min-width: 300px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.strength-card{
+  border: 4px solid #3182F6;
+  background-color: #fff;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  width: 322px;
+  height: 294px;
+  text-align: center;
+}
+
+.strength-card img{
+  height: 300px;
+}
+
+.strength-card .body-xxl{
+  font-weight: 600;
+}
+
+/*TESTIMONIALS*/
+.testimonials {
+  --testimonials-gap: 60px;          /* 카드 간격 */
+  --testimonials-radius: 20px;
+  --testimonials-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  --testimonials-card-height: 240px; 
+  position: relative;
+  width: 100%; 
+  padding:100px 0;
+}
+
+/* Swiper 컨테이너 */
+.testimonials-container {
+  overflow: visible; /* 카드가 살짝 튀어나와도 보이도록 */
+}
+
+/* 카드 3장 보이기 위한 기본 간격 */
+.testimonials .swiper {
+  padding: 0; /* 필요시 조정 */
+}
+
+.testimonials .swiper-wrapper {
+  align-items: stretch;
+}
+
+.testimonials .swiper-slide {
+  height: auto;             /* 내부 카드가 높이 제어 */
+  display: flex;
+}
+
+/* ====== Card ====== */
+.testimonials-card {
+  display: flex;
+  gap: 16px;
+  width: 100%;
+  height: var(--testimonials-card-height);
+  border-radius: var(--testimonials-radius);
+  background: #fff;
+  box-shadow: var(--testimonials-shadow);
+  overflow: hidden;
+  padding: 24px;
+}
+
+.testimonials-card__text {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.testimonials-tag {
+  margin: 0 0 8px 0;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: .2px;
+  color: #000;
+}
+
+.testimonials-headline {
+  margin: 0 0 10px 0;
+  font-size: 24px;
+  line-height: 1.35;
+  font-weight: 700;
+}
+
+.testimonials-desc {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* ====== Navigation Buttons (카드 사이에 배치) ====== */
+.testimonials-nav {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%); /* X는 각각에서 덮어씀 */
+  z-index: 5;
+  width: 44px;
+  height: 44px;
+  border: 0;
+  border-radius: 999px;
+  background: #E8F1FF;
+  color: #5D7EFF;
+  box-shadow: 0 6px 18px rgba(93, 126, 255, .25);
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+}
+
+/* 버튼을 ‘카드 사이’ 시각적 위치로 고정 */
+.testimonials-prev { left: 29.2%; display: none;}
+.testimonials-next { left: 70.7%; display: none;}
+
+/* hover */
+.testimonials-nav:hover { filter: brightness(.96); }
+
+
+.enrollment-process{
+  width: 100%;
+  padding-top:80px;
+  padding-bottom: 80px;
+}
+
+.enrollment-process img{
+  width: 90%;
+  min-width: 300px;
+  max-width: 1020px;
+  align-items: center;
+}
+
+#consultation{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.consultation-form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#consultation .arrow{
+  display: flex; 
+  flex-direction: column; 
+  align-items: center;
+  width: 100%;
+  padding-top: 50px;
+}
+
+#consultation .arrow img{
+  width: 90%; 
+  min-width: 300px; 
+  max-width: 1020px; 
+  margin: 0 auto;
+}
+
+.enrollment-process{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Accordion Styles */
+.accordion-container{
+  width: 980px;
+  margin: 20px auto 100px;
+  background: #fff;
+  padding:20px;
+  border-radius: 30px;
+}
+.accordion {
+  overflow: hidden;
+  width: 950px;
+  align-items: center;
+}
+
+.accordion-item {
+  border-top: 1px solid #ddd;
+}
+
+.accordion-item:first-child {
+  border-top: none;
+}
+
+.accordion-toggle {
+  font-weight: 600;
+  color: #333;
+  padding: 10px;
+  padding-left:20px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: var(--body-lg);
+}
+
+.accordion-icon {
+  margin-left: 10px;
+  transition: transform 0.3s ease;
+}
+
+.accordion-icon svg {
+  width: 40px;
+  height: 40px;
+  stroke: currentColor;
+  stroke-width: 1;
+  fill: none;
+}
+
+.accordion-toggle.active .accordion-icon {
+  transform: rotate(180deg);
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0px;
+  transition: max-height 0.3s ease, padding 0.3s ease;
+}
+
+.accordion-text{
+  font-size: var(--body-md);
+  color: #000;
+  text-align: left;
+  padding-left: 8px;
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+.accordion-content.open {
+  padding: 10px 40px 15px 15px;
+  max-height: 500px; /* adjust as needed */
+}
+
+.faq{
+  text-decoration:none;
+  color: #3182F6;
+  font-weight:600;
+}
+
+
+
+/* --- Tablet Controls & Layout --- */
+.resultSwiper-container{display: none;}
+.system-container{display:flex;}
+.system-mobile{display: none;}
+.mobile-controls { display: none; }
+
+.only-desktop {display: inline;}
+.only-tablet {display: none;}
+.only-mobile {display: none;}
+
+.enrollment-process .desktop{display: block;}
+.enrollment-process .tablet{display: none;}
+.enrollment-process .mobile{display:none; }
+
+
+@media (max-width: 1020px){
+.only-desktop {display: inline;}
+.only-tablet {display: none;}
+.only-mobile {display: none;}
+
+
+/*RESULT*/
+.img-stack {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 90%;
+}
+.img-top{width: 90%; padding-bottom: 50px;}
+.strength{ align-items: center; gap: 8px; min-width: 768px;}
+#result{padding: 60px 0;}
+.strength-card{ height: 230px; padding: 6px; justify-content: center;}
+.strength-card img{height: 110px; padding: 10px;}
+.testimonials-video{width: 100%; display: flex; flex-direction: column; align-items: center;}
+.testimonials-video iframe{
+  height: 450px;
+}  
+
+.testimonials .swiper {
+  padding: 0;
+}
+.testimonials-card {
+  padding: 20px;
+}
+.testimonials-prev { left: 39.5%; display: none; } /* 2장 기준 살짝 재조정 */
+.testimonials-next { left: 81%; display: none; }
+
+/*CONSULTATION*/
+.consultation-form iframe{
+  width: 100%;
+}
+
+#consultation .arrow{
+  display: flex; 
+  flex-direction: column; 
+  align-items: center;
+}
+
+.accordion{
+  width: 628px;
+}
+
+.accordion-container{
+  width: 668px; 
+  margin-top: 60px;
+}
+
+.accordion-toggle{
+  padding-left: 10px;
+}
+
+.accordion-icon svg{
+  width: 30px; 
+  height: 30px;
+}
+/*FIXED BANNER*/
+.fixedBanner{
+  padding: 0 20px;
+}
+
+.fixedBanner{
+  padding: 0 20px;
+  position: fixed;
+  bottom: 30px;
+  width: 100%;
+  z-index: 3;
+  transition: opacity 0.3s ease;
+}
+.fixedBanner > div{
+    width: 100%;
+    background-size: contain;
+    background: url("../assets/00.main/reservation.png") no-repeat center / cover;
+    height: auto;
+    aspect-ratio:1020/190;
+    border-radius:20px;
+    overflow: hidden;
+    position: relative;
+}
+
+.fixedBanner a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -100% 0;
+  }
+}
+.fixedBanner > div::before {
+  position: absolute;
+  height: auto;
+  aspect-ratio: 1020/190;
+  border-radius:20px;
+}
+/*accordion*/
+.accordion{width: 760px;}
+.accordion-container{width: 800px; margin-top: 60px;}
+.accordion-toggle{padding-left: 10px;}
+.accordion-icon svg{width: 30px; height: 30px;}
+}
+
+@media (max-width: 830px) {
+
+.only-desktop {display: none;}
+.only-tablet {display: inline;}
+.only-mobile {display: none;}
+
+
+:root {
+  /* Font Scale */
+  --title-xxl: 4.8rem;
+  --title-xl:  4.4rem;
+  --title-lg:  4rem;
+  --title-md:  3.6rem;
+  --title-sm:  3.2rem;
+  --title-xs:  2.8rem; 
+
+  --body-xxl: 2.4rem; /*600*/
+  --body-xl: 2.2rem; /*600*/
+  --body-lg: 2rem; /*600*/
+  --body-md: 1.8rem; /*500*/
+  --body-sm: 1.6rem; /*400*/
+  --body-xs: 1.4rem; /*400*/
+
+  --caption: 1.2rem;
+
+  /* Spacing Scale */
+  --space-lg: 4rem;     /* 40px */
+  --space-md: 2rem;     /* 20px */
+  --space-sm: 1rem;     /* 10px */
+}
+
+h1{font-size: var(--title-xxl);}
+h2{font-size: var(--title-xl);}
+h3{font-size: var(--title-lg);}
+h4{font-size: var(--title-md);}
+h5{font-size: var(--title-sm);}
+h6{font-size: var(--title-xs);}
+
+.enrollment-process .desktop{display: none;}
+.enrollment-process .tablet{display: block;}
+.enrollment-process .mobile{display:none; }
+
+h1{font-size: 4rem;}
+h2{font-size: 3.4rem;}
+h4{font-size: 2.8rem;}
+h6{font-size: 2.2rem;}
+.strength-card .body-xxl{font-size: 2rem;}
+.body-xl{font-size: 1.8rem;}
+.body-md{font-size: 1.7rem;}
+.title-md{font-size: 3.4rem;}
+.testimonials-desc{font-size: 1.7rem;}
+
+
+.resultSwiper-container{display: flex;}
+
+
+.img-top{padding-bottom: 40px;
+top: 60%;}
+
+.resultSwiper-section {
+  margin-top: -180px;
+  margin-bottom: 50px;
+  position: relative;
+  width: 100%;
+}
+
+/* Swiper container */
+.resultSwiper-container {
+  overflow: hidden;
+  margin-left: 10px;
+}
+
+/* Wrapper */
+.resultSwiper-wrapper {
+  display: flex;
+  
+}
+
+/* Slide */
+.resultSwiper-slide {
+  flex-shrink: 0;
+  height: auto;
+  display: flex;
+}
+
+.strength{display: none;}
+.system{display: none;}
+.system-mobile{display: block;}
+
+/* 기존 디자인 유지 + 높이 고정 */
+.strength-card {
+  width: 300px;
+  flex-shrink: 0;
+  height: 240px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 2px 2px 14px rgba(0,0,0,0.1);
+  padding: 18px;
+  text-align: center;
+}
+.strength-card img{height: 120px;} 
+.testimonials{
+  margin: 0;
+  padding: 50px 0 0 0;
+}
+
+.testimonials-tag{font-size: 1.8rem;}
+.testimonials-headline{font-size: 20px;}
+
+
+  .testimonials-card {
+    grid-template-columns: 1fr;
+    height: 220px;
+  }
+  .testimonials-card__image {
+    place-items: center;
+  }
+  .testimonials-card__image img {
+    max-width: 200px;
+  }
+
+  /* 버튼은 좌우 오버레이 */
+  .testimonials-prev, .testimonials-next {
+    top: 50%;
+    transform: translateY(-50%); /* 좌표 기준 변경 */
+  }
+  .testimonials-prev { left: 16px; display: none;}
+  .testimonials-next { right: 16px; left: auto; display: none;}
+
+  .accordion{width: 100%;}
+.accordion-container{width: 90%; margin-top: 30px; border-radius: 15px;}
+}
+
+
+
+@media (max-width: 570px) {
+.only-desktop {display: none;}
+.only-tablet {display: none;}
+.only-mobile {display: inline;}
+.brMobile{
+  display: inline;
+}
+.brDesktop{display: none;}
+
+/*Responsive Font-size Control*/
+h1{font-size: 2.8rem;}
+h2{font-size: 2.6rem;}
+h4{font-size: 2.4rem;}
+h6{font-size: 2rem;}
+
+.body-xl{font-size: 1.8rem;}
+.body-lg{font-size: 1.7rem;}
+.body-md{font-size: 1.5rem;}
+.title-md{font-size: 2.3rem;}
+
+.gradient-text{
+  font-size: 2rem;
+}
+.bottom-text{
+  font-size: 2.2rem;
+}
+
+.section{
+  padding-top: 60px;
+}
+
+/*TESTIMONIAL*/
+.testimonials-card{
+  height: 240px;
+}
+.testimonials-headline{
+  font-size: 1.7rem;
+}
+.testimonials-card__text .gradient-text{font-size: 1.8rem;}
+.testimonials-desc{
+  font-size: 1.6rem; 
+  padding-top: 4px;
+}
+
+.testimonials-tag{
+  font-size: 1.5rem;
+}
+
+.consultation-form iframe{width: 98%; height: 940px}
+
+
+#consultation{padding-top: 60px;}
+
+/*RESULT */
+#consultation{
+  padding-top: 60px;
+}
+
+.enrollment-process{
+  padding:0 0 80px;
+}
+
+#consultation .arrow{
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  padding-top: 50px; 
+  padding-bottom: 50px;
+}
+
+.strength-card .body-xxl{
+  font-size: 1.8rem;
+}
+
+.accordion-toggle{
+  padding-left: 10px; 
+  font-size: 1.5rem;
+}
+
+.accordion-text{
+  font-size: 1.5rem;
+}
+
+.accordion-icon svg{
+  width: 30px; 
+  height: 30px;
+}
+
+.accordion-toggle{padding-left: 10px; font-size: 1.5rem;}
+.accordion-text{font-size: 1.5rem;}
+.accordion-icon svg{width: 30px; height: 30px;}
+
+/*Responsive Image Control*/
+.enrollment-process .desktop{display: none;}
+.enrollment-process .tablet{display: none;}
+.enrollment-process .mobile{display:block; }
+
+
+.img-top{padding-bottom: 110px;}
+#result iframe{width: 340px; height: 200px;}
+#consultation .arrow{display: flex; flex-direction: column; align-items: center;}
+.strength-card .body-xxl{font-size: 1.8rem;}
+
+
+.kakao-floating {
+    display: none;
+  }
+}

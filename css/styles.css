@@ -1,0 +1,871 @@
+:root{
+
+h6{font-size: var(--title-xs);}
+}
+/* 기본 스타일 */
+.title-container{
+  padding-bottom: 50px;
+}
+.title-container .body-lg{
+  padding-top: 14px;
+}
+
+.gradient-text{
+  background: linear-gradient(90deg, #3182F6, #5309FF);
+  -webkit-background-clip: text;  /* clip bg to text */
+  -webkit-text-fill-color: transparent; /* hide normal text color */
+}
+
+.white-text{
+  color: #fff;
+}
+
+.main-title{font-size: 2.4rem; font-weight: 600;padding-top: 14px;text-align: center;}
+
+
+/*Banner*/
+.carousel-wrapper {
+  width: 100%;
+  /*max-width: 1200px;*/
+  position: relative;
+  margin: 13rem auto 5rem;
+}
+
+.slides-viewport {
+  overflow: hidden;
+  width: 100%;
+  cursor: pointer;
+}
+
+.slides-viewport.dragging {
+  cursor: grab;
+}
+
+.slides-container {
+  display: flex;
+  gap: 20px;
+}
+
+.slide {
+  top: 0;
+  flex-shrink: 0;
+  width: 90%;
+  max-width: 110rem;
+  /* margin removed */
+  border-radius: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  user-select: none;
+  background-size: cover;
+  background-position: center;
+  aspect-ratio: 5 / 2;
+  height: auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.text-content-block {
+  padding: 0 5rem 2rem;
+  text-align: left;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+        
+.slide-title {
+  color: #fff;
+  text-decoration: none;
+  font-size: var(--title-sm);
+  font-weight: 600;
+  line-height: 1.2;
+  word-break: keep-all;
+}
+
+.slide-description { 
+  color: #fff;
+  font-size: var(--body-lg);
+  margin-top: 20px; 
+  opacity: 0.9; 
+  line-height: 1.6; 
+  max-width: 65%; 
+}
+        
+/* --- Desktop Controls --- */
+.desktop-controls {
+  width: 91%;
+  max-width: 110rem;
+  margin: 0 auto;
+  position: absolute;
+  bottom: 4rem;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+  box-sizing: border-box;
+}
+
+.button-panel {
+  background-color: rgba(60, 60, 60, 0.2);
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.button-panel img{
+  width: 5rem;
+  height: 5rem;
+}
+
+.control-button{
+  background: none; 
+  border: none; 
+  color: white; 
+  font-size: var(--caption);
+  cursor: pointer; 
+  padding: 1.6rem; 
+  border-radius: 9999px;
+  transition: background-color 0.3s ease;
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  width: 2rem; 
+  height: 2rem;
+}
+
+.control-button img{
+  width: 1.3rem;
+  height: 1.3rem;
+}
+
+.control-button:hover { background-color: rgba(255, 255, 255, 0.2); }
+.slide-position {
+  background-color: rgba(60, 60, 60, 0.2);
+  color: white;
+  padding: 0.7rem 2rem; 
+  border-radius: 9999px;
+  font-size: var(--body-sm);
+  line-height: 0;
+  overflow: hidden; 
+  position: relative;
+}
+        
+#positionText { position: relative; z-index: 2; }
+.slide-position::before {
+  content: ''; position: absolute; top: 0; left: 0; height: 100%; width: 0;
+  background-color: rgba(90, 90, 90, 0.8); z-index: 1;
+}
+.slide-position.animate::before {
+  animation-name: fill-timeline; animation-timing-function: linear; animation-fill-mode: forwards;
+  animation-duration: var(--anim-duration);
+}
+@keyframes fill-timeline { from { width: 0%; } to { width: 100%; } }
+
+
+/* 카드 레이아웃 */
+.system-container {
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.system {
+  border: 4px solid transparent;
+  background:
+  linear-gradient(#fff) padding-box,
+  linear-gradient(90deg, #3182F6, #5309FF) border-box;
+  padding: 46px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row; /* center horizontally (optional) */
+  gap: 40px;              /* space between images */
+  text-align: left;
+  width: 900px;
+}
+
+.system-title{
+  width: 282px;
+  display: flex;
+  flex-direction: column;
+}
+
+.system-text{
+  font-size: var(--body-lg);
+  font-weight: 600;
+  padding-bottom: 10px;
+}
+
+.system-line{
+  border: 1px solid #007aff;
+  height: 150px;
+}
+
+/*Promotion Section*/
+#promotion{
+  background: 
+  url("../assets/00.main/difference-bg.svg") no-repeat center center,
+  linear-gradient(180deg, #ffffff, #dbe3f9, #f1e9f3);
+  background-size: cover;
+  padding-bottom: 100px;
+  padding-top: 0px;
+}
+
+#promotion-header{
+  margin-bottom:50px;
+}
+
+#promotion-header h1{
+  background: linear-gradient(90deg, #3182F6, #5309FF);
+  -webkit-background-clip: text;  /* clip bg to text */
+  -webkit-text-fill-color: transparent; /* hide normal text color */
+  text-align: center;
+  font-size: var(--title-xxl);
+  padding-top: 50px;
+}
+
+/*Key Section*/
+#key{
+  padding:0;
+}
+
+.key-container{
+  background: 
+  url("../assets/00.main/key-bg.svg") no-repeat center center,
+  linear-gradient(180deg,#f1e9f3, #dbe3f9, #ffffff);
+  width: 100%;
+  height: 1020px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.key-container img{
+  padding: 30px;
+  margin-top: 20px;
+}
+
+.key-container h1{
+  color: #fff;
+}
+
+.key-container h2{
+  background: linear-gradient(90deg, #3182F6, #5309FF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/*Program Section*/
+#program{
+  max-width: 1020px;
+  margin: 0 auto;
+  padding:0;
+  padding-top: 150px;
+  padding-bottom: 120px;
+  position:relative;
+  height: 500vh;
+}
+
+.scroll-feature-section {
+  top: 0; 
+  position: sticky;
+  background-color: #FFFFFF;
+  overflow: visible; /* Important: hides the slides that are off-screen */
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top:62px;
+  padding-bottom: 100px;
+
+  min-height: 600px;
+  height: 90vh;
+}
+
+.title-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* This flex container holds both the left navigation and the right slides. */
+
+.feature-wrapper {
+  display: flex;
+  align-items: flex-start;
+
+  width: 90%;
+  max-width: 1020px;
+            
+  margin: 0 auto;
+  gap: 2%;
+}
+
+/* The left navigation panel */
+.feature-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  flex-basis: 35%; /* Allocate space for the nav */
+  position: relative;
+}
+
+/* The vertical line connecting the nav circles */
+.nav-line {
+  position: absolute;
+  top: 7px;
+  border: 4px solid transparent;
+  border-radius: 60px;
+  width: 100px;
+  height: 342px;
+  z-index: 0;
+  overflow: hidden;
+  background: linear-gradient(#fff, #fff) padding-box, linear-gradient(120deg, #3182F6, #066af6, #3639ff, #c72cff, #5309FF, #ff85b8) border-box;
+  background-size: 400% 400%;
+  animation: rainbowBorder 8s linear infinite;
+}
+
+  @keyframes rainbowBorder {
+  0% {
+  background-position: 0% 50%;
+  }
+  50% {
+  background-position: 100% 50%;
+  }
+  100% {
+  background-position: 0% 50%;
+  }
+  }
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  margin: 19px 0;
+  opacity: 0.4; /* Non-active items are faded */
+  transition: opacity 0.4s ease;
+  cursor: pointer;
+  z-index: 2;
+  width: 100%;
+  margin-left:10px;
+}
+.nav-item.is-active {
+  opacity: 1; /* Active item is fully visible */
+}
+.nav-circle {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 2px solid #E0E0E0;
+  background-color: #FFFFFF;
+  margin-right: 20px;
+  flex-shrink: 0;
+            
+  display: flex;              /* ✅ flex 사용 */
+  align-items: center;        /* ✅ 세로 중앙 */
+  justify-content: center;    /* ✅ 가로 중앙 */
+            
+  font-size: var(--body-xl);            /* ✅ 글자 크기는 필요에 따라 */
+  font-weight: 600;           /* ✅ 강조 */
+  transition: background-color 0.4s ease, border-color 0.4s ease;
+}
+
+.nav-item.is-active .nav-circle {
+  background: linear-gradient(90deg, #3182F6, #5D5FEF);
+  border: 1px solid #5D5FEF;
+  color: #fff;
+  
+}
+
+.nav-text .title {
+  font-size: var(--body-md);
+  font-weight: 600;
+  color: #333;
+}
+
+.nav-item.is-active .nav-text .title {
+  font-size: var(--body-md);
+  color: #5D5FEF;
+  font-weight: 700;
+}
+
+.feature-slides-mobile{display: none;}
+/* The right-side container for all the sliding cards */
+.feature-slides {
+  position: relative;
+  flex-basis: 75%;
+  height: 550px; /* Adjust based on your card image aspect ratio */
+}
+
+/* Individual slide cards. They are stacked on top of each other using position: absolute */
+.slide-card {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+
+  align-items: left;
+  justify-content: center;
+  gap: 4px;
+
+  top: 0;
+  left: 0;
+  width: 510px;
+  height: 100%;
+  border: 4px solid #000;
+  border-radius: 30px;
+  padding: 10px 30px;
+  background: #fff;
+
+  /* Initial state: invisible and slightly off-screen to the right */
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(40px) scale(0.98);
+  transition: opacity 0.6s ease, transform 0.6s ease, visibility 0.6s;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* State for the card that is becoming visible */
+.slide-card.is-entering {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0) scale(1);
+}
+
+/* State for the card that is fading out */
+.slide-card.is-leaving {
+  opacity: 0;
+  visibility: visible;
+  transform: translateX(-40px) scale(0.98);
+}
+
+/* State for the next card, partially visible */
+.slide-card.is-next {
+  opacity: 0.3;
+  visibility: visible;
+  transform: translateX(60px) scale(0.95);
+  z-index: -1;
+}
+
+.slide-card .body-lg{
+  font-weight: 600;
+}
+
+.slide-card img{
+  width: 250px;
+  height: 240px;
+  padding: 10px 10px;
+}
+
+.slide-card button{
+  all:unset;
+  text-align: center;
+  border-radius: 999px;
+  width: 440px;
+  height: 60px;
+}
+
+.slide-card a{
+  all:unset;
+  font-size: var(--body-xxl);
+  font-weight: 600;
+  color: #fff;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.slide-card .kinder{
+  background: linear-gradient(90deg, #FFAC3F, #ffeb6c);
+  -webkit-background-clip: text;  /* clip bg to text */
+  -webkit-text-fill-color: transparent; /* hide normal text color */
+}
+
+.slide-card .base{
+  background: linear-gradient(90deg, #C3E985, #39AEDC);
+  -webkit-background-clip: text;  /* clip bg to text */
+  -webkit-text-fill-color: transparent; /* hide normal text color */
+}
+
+.slide-card .core{
+  background: linear-gradient(90deg, #0064F2, #2BD8FF);
+  -webkit-background-clip: text;  /* clip bg to text */
+  -webkit-text-fill-color: transparent; /* hide normal text color */
+}
+
+.slide-card .next{
+  background: linear-gradient(90deg, #3182F6, #5309FF);
+  -webkit-background-clip: text;  /* clip bg to text */
+  -webkit-text-fill-color: transparent; /* hide normal text color */
+}
+
+.slide-card .middle{
+  background: linear-gradient(90deg, #133352, #88A3FA);
+  -webkit-background-clip: text;  /* clip bg to text */
+  -webkit-text-fill-color: transparent; /* hide normal text color */
+}
+
+.slide-card .kinder-button{
+  background: linear-gradient(90deg, #FFAC3F, #ffeb6c);
+}
+
+.slide-card .base-button{
+  background: linear-gradient(90deg, #C3E985, #39AEDC);
+}
+
+.slide-card .core-button{
+  background: linear-gradient(90deg, #0064F2, #2BD8FF);
+}
+
+.slide-card .next-button{
+  background: linear-gradient(90deg, #3182F6, #5309FF);
+}
+
+.slide-card .middle-button{
+  background: linear-gradient(90deg, #133352, #88A3FA);
+}
+
+#result .body-lg{
+  padding-bottom: 0px;
+}
+
+
+
+
+/*Tablet 831px ~ 1020px*/
+@media (max-width: 1020px) {
+.text-content-block {
+  padding: 0rem 1rem 36rem;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.slide {
+  aspect-ratio: 1 / 1;
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 70rem;
+  min-width: 30rem;
+}
+
+.desktop-controls {display: none;}
+
+.mobile-controls {
+  display: block;
+  position: absolute;
+  bottom: 4rem;
+  left: 50%;
+  width: calc(77% + 2vw); 
+  max-width: 55rem;
+  transform: translateX(-50%);
+  z-index: 20;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  pointer-events: none;
+}
+
+.mobile-controls .slide-position, .mobile-controls .control-button {
+  pointer-events: auto;
+  font-size: var(--body-xxl);
+}
+
+.mobile-controls .control-button { background-color: rgba(60, 60, 60, 0.8);}
+.slide-description { font-size: var(--body-lg); max-width: 100%;}
+#positionTextMobile { position: relative; z-index: 2;}
+
+.system {
+  border: 3px solid transparent;
+  background:
+  linear-gradient(#fff) padding-box,
+  linear-gradient(90deg, #3182F6, #5309FF) border-box;
+  padding: 28px 18px;
+  border-radius: 20px;
+  gap: 30px;        
+  width: 800px;
+  margin: 0 auto;
+}
+
+.system-title{ width: 260px; display: flex; flex-direction: column;}
+.system-title h5{font-size: 3rem;}
+.system-title p{font-size: 2rem;}
+.system-line{ border: 1px solid #007aff; height: 150px;}
+.system-text{ padding-bottom: 4px;}
+
+/*program*/
+.feature-slides{height: 480px;}
+.slide-card{width: 450px;}
+.nav-circle{font-size: 1.8rem;}
+.slide-card img{
+  padding: 0;
+  width: 220px; 
+  height: 220px;
+}
+.slide-card button{display: block; width: 380px; height: 50px;}
+}
+
+/*Tablet - 615px ~ 830px*/
+@media (max-width: 830px) {
+.slides-container {
+  display: flex;
+  gap: 15px;
+}
+
+.slide-title{font-size: 2.9rem;}
+.slide-description{margin-top: 10px;}
+.text-content-block h5{font-size: 2.9rem;}
+.main-title{font-size: 2.2rem;}
+.text-content-block{padding: 0rem 1rem 30rem;}
+
+.carousel-wrapper{
+margin: 11rem auto 0rem;
+}
+
+.slide {
+  aspect-ratio: 1 / 1;
+  flex-shrink: 0;
+  width: 90%;
+  max-width: 60rem;
+}
+
+.text-content-block {
+  padding: 0rem 1rem 28rem;
+}
+
+.mobile-controls {
+  max-width: 50rem;
+}
+.mobile-controls .slide-position{font-size: 20px;}
+
+
+/*PROMOTION*/
+#promotion-header h1{font-size: 4rem;}
+
+
+#promotion{
+  padding-bottom: 50px;
+  background: 
+  url("../assets/00.main/difference-bg-tablet.svg") no-repeat center center,
+  linear-gradient(180deg, #ffffff, #dbe3f9, #f1e9f3);
+}
+
+.title-container{padding-bottom: 30px;}
+.slide-card .body-lg{text-align:left;}
+
+
+/*PROGRAM*/
+.feature-slides{display: none;}
+.feature-nav{display: none;}
+
+#program{
+  padding:0;
+  height: 100%;
+
+}
+
+.scroll-feature-section{
+  position: relative;
+  height: 100%;
+  padding-bottom: 60px;
+}
+
+.feature-wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  
+}
+
+.feature-slides-mobile{
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+
+  gap: 20px;
+}
+
+.slide-card-mobile{
+  width: 400px;
+
+  border-radius: 20px;
+  padding: 20px;
+  text-align: left;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.slide-card-mobile img{width: 180px; height: 190px;margin-left: 70px;}
+.slide-card-mobile button{
+  all:unset;
+  text-align: center;
+  border-radius: 999px;
+  width: 350px;
+  height: 50px;
+}
+.slide-card-mobile a{
+  all:unset;
+  font-size: var(--body-lg);
+  font-weight: 600;
+  color: #fff;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.slide-card-mobile .kinder-button-mobile{
+  background: linear-gradient(90deg, #FFAC3F, #ffeb6c);
+}
+
+.slide-card-mobile .base-button-mobile{
+  background: linear-gradient(90deg, #C3E985, #39AEDC);
+}
+
+.slide-card-mobile .core-button-mobile{
+  background: linear-gradient(90deg, #0064F2, #2BD8FF);
+}
+
+.slide-card-mobile .next-button-mobile{
+  background: linear-gradient(90deg, #3182F6, #5309FF);
+}
+
+.slide-card-mobile .middle-button-mobile{
+  background: linear-gradient(90deg, #133352, #88A3FA);
+}
+
+
+
+/*SYSTEM*/
+.system-container{display: none;}
+.system-mobile {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.system-swiper-wrapper{
+  width: 100%;
+  display: flex;
+}
+
+.system-swiper-slide {
+  border: 4px solid transparent;
+  background:
+  linear-gradient(#fff) padding-box,
+  linear-gradient(90deg, #3182F6, #5309FF) border-box;
+  padding: 24px;
+  border-radius: 15px;
+  text-align: left;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  gap: 10px;
+  width: 400px;
+  flex-shrink: 0;
+}
+
+
+
+.system-line-mobile{width: auto; border: 1px solid #3182F6 ;}
+.system-text-mobile{
+  font-size: 1.8rem;
+  font-weight: 600; 
+  line-height: 1.8;
+}
+
+.body-texts p{font-size: 1.7rem;line-height: 1.6;}
+.system-title-mobile h6{line-height: 1.6;}
+
+
+
+.strengths{display: none;}
+}
+
+@media (max-width: 570px) {
+.only-desktop {display: none;}
+.only-tablet {display: none;}
+.only-mobile {display: inline;}
+
+/*Responsive Font-size Control*/
+h1{font-size: 2.8rem;}
+h2{font-size: 2.6rem;}
+h4{font-size: 2.4rem;}
+.text-content-block h5{font-size: 2rem;}
+h6{font-size: 2rem;}
+
+.body-lg{font-size: 1.8rem;}
+.body-lg{font-size: 1.8rem;}
+.body-md{font-size: 1.7rem;}
+.title-md{font-size: 1.5rem;}
+
+/*Program*/
+.slide-card-mobile button{
+  all:unset;
+  text-align: center;
+  border-radius: 999px;
+  width: 310px;
+  height: 40px;
+  font-size: 1.7rem;
+}
+.slide-card-mobile{
+  width: 360px;
+}
+.slide-card-mobile h6{
+  font-size: 1.8rem;
+}
+
+.slide-title{font-size: 2rem;}
+#promotion-header h1{font-size: 2.8rem;}
+
+/*Key-container img*/
+.key-container img{
+  width: 200px; 
+  padding: 0 10px 30px;
+}
+.key-container{
+  height: 420px;
+  background-size: auto 100%;    /* 세로 100% 맞추기 = 위/아래 절대 안 잘림 */
+}
+
+#promotion{
+  padding-bottom: 50px;
+  background: 
+  url("../assets/00.main/difference-bg-mobile.svg") no-repeat center center,
+  linear-gradient(180deg, #ffffff, #dbe3f9, #f1e9f3);
+  background-size: cover;
+}
+.text-content-block{padding: 0rem 1rem 20rem;}
+.slide-description{font-size: 1.48rem; line-height: 1.4;}
+.main-title{font-size: 1.8rem;}
+
+/*SYSTEM*/
+.system-title-mobile h6{font-size: 1.6rem;}
+.system-text-mobile{
+  font-size: 1.5rem; 
+  line-height: 1.5;
+  display: block;
+  padding-bottom: 4px;
+}
+.body-texts p{font-size: 1.5rem;}
+.system-swiper-slide{padding: 20px;}
+}

@@ -1,0 +1,141 @@
+.map-box-mobile{display: none;}
+.campus-section {
+  padding: 180px 0 100px;
+  font-family: 'Noto Sans KR', sans-serif;
+  color: #222;
+}
+.campus-section h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.campus-section h3 {
+  font-size: 4rem;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+
+.map-box {
+  border-radius: 16px;
+  overflow: hidden;
+  margin-bottom: 40px;
+}
+
+.map-box img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.campus-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.campus-card {
+  border: 1px solid #e5e5e5;
+  border-radius: 16px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.campus-card h4 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.campus-card p {
+  margin: 4px 0;
+  color: #555;
+  font-size: 1.6rem;
+}
+
+.campus-card .tel {
+  margin-bottom: 16px;
+}
+
+.btn-box {
+  display: flex;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+.btn {
+  flex: 1;
+  text-align: center;
+  padding: 12px 0;
+  border-radius: 10px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-size: 1.6rem;
+}
+
+.btn.primary {
+  background-color: #2563eb;
+  color: #fff;
+}
+
+.btn.primary:hover {
+  background-color: #1d4ed8;
+}
+
+.btn.outline {
+  border: 1px solid #2563eb;
+  color: #2563eb;
+}
+
+.btn.outline:hover {
+  background-color: #eef3ff;
+}
+
+.campus-card.center {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.highlight {
+  color: #2563eb;
+  font-weight: 600;
+  font-size: 1.6rem;
+}
+
+@media (min-width: 768px) {
+  .campus-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 570px){
+  .campus-section{
+    padding-top: 120px;
+  }
+    .btn-box{
+        display: flex;
+        flex-direction: column;
+    }
+    .map-box-mobile{display: block;}
+    .map-box{display: none;}
+    .map-box-mobile {
+      border-radius: 16px;
+      overflow: hidden;
+      margin-bottom: 40px;
+    }
+
+    .map-box-mobile img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .campus-section h3{
+      font-size: 2.4rem;
+      margin-bottom: 20px;
+    }
+
+}
