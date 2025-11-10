@@ -9,13 +9,13 @@ document.body.insertAdjacentHTML('afterbegin', `
     <header class="header">
         <div class="top-header">
                 <ul>
-                    <li><a href="#">로그인</a></li>
+                    <--li><a href="#">로그인</a></li>
                     <span class="divider"></span>
                     <li><a href="javascript:void(0)" class="open-channel-talk">고객센터</a></li> <!--고객센터 페이지 생기면 링크 바꾸기-->
-                    <span class="divider"></span>
+                    <span class="divider"></span-->
                     <li><a href="https://tr.ee/epic-yc-feedback">에픽에 바란다</a></li>
                     <span class="divider"></span>
-                    <li><a href="campus.html">온라인 도서관</a></li>
+                    <li><a href="https://global-zone60.renaissance-go.com/">온라인 도서관</a></li>
                 </ul>
             </div>
         <div class="header-container">
@@ -25,7 +25,7 @@ document.body.insertAdjacentHTML('afterbegin', `
                     <a href="booster.html">❄️ 2026 윈터부스터</a>
                     <span style="border:1px solid #767676; height:18px; margin-top:3px;" ></span>
                     <a href="core.html" class="nav-trigger">정규 프로그램</a>
-                    <a href="#about">워크숍</a>
+                    <!--a href="#">워크숍</a-->
                     <a href="campus.html">캠퍼스 찾기</a>
                     <a href="https://blog.naver.com/epiclang">블로그</a>
                 </nav>
@@ -81,19 +81,19 @@ document.body.insertAdjacentHTML('afterbegin', `
                 </div>
                 <div class="menu-section">
                     <div class="menu-icon-grid">
-                        <a href="#" class="menu-icon-item">
+                        <a href="https://global-zone60.renaissance-go.com/" class="menu-icon-item">
                         <div class="menu-icon-circle">
                             <img src="assets/menu/myON.svg" alt="myON" class="myON">
                         </div>
                         <span class="menu-icon-text">온라인 도서관</span>
                         </a>
 
-                        <a href="#" class="menu-icon-item">
+                        <!--a href="#" class="menu-icon-item">
                         <div class="menu-icon-circle">
                             <img src="assets/menu/login.svg" alt="login">
                         </div>
                         <span class="menu-icon-text">로그인</span>
-                        </a>
+                        </a-->
 
                         <a href="index.html#consultation" class="menu-icon-item">
                         <div class="menu-icon-circle">
@@ -170,21 +170,21 @@ document.body.insertAdjacentHTML('afterbegin', `
                     <div class="menu-group">
                         <h3 class="menu-group-title">특별 프로그램</h3>
                         <ul class="menu-group-list">
-                        <li>
-                            <a href="booster.html" class="menu-link">
+                        <!--li>
+                            <a href="#" class="menu-link">
                             <span>워크숍</span>
                             </a>
-                        </li>
+                        </li-->
                         <li>
                             <a href="booster.html" class="menu-link">
                             <span>부스터</span>
                             </a>
                         </li>
-                        <li>
+                        <!--li>
                             <a href="#" class="menu-link">
                             <span>커뮤니티</span>
                             </a>
-                        </li>
+                        </li-->
                     </div>
 
                     <div class="menu-group">
@@ -195,11 +195,11 @@ document.body.insertAdjacentHTML('afterbegin', `
                             <span>캠퍼스 찾기</span>
                             </a>
                         </li>
-                        <li>
+                        <!--li>
                             <a href="#" class="menu-link">
                             <span>고객센터</span>
                             </a>
-                        </li>
+                        </li-->
                         <li>
                             <a href="https://blog.naver.com/epiclang" class="menu-link">
                             <span>블로그</span>
@@ -210,11 +210,11 @@ document.body.insertAdjacentHTML('afterbegin', `
                             <span>에픽에 바란다</span>
                             </a>
                         </li>
-                        <li>
+                        <!--li>
                             <a href="#" class="menu-link">
                             <span>자주 묻는 질문</span>
                             </a>
-                        </li>
+                        </li-->
                         </ul>
                     </div>
                     </div>
