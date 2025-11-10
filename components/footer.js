@@ -25,8 +25,8 @@ class Footer extends HTMLElement {
           <li class="service-item-bold"><a href="https://www.notion.so/ELA-1-0-1894ba0ea49a8052b4fdc1fe79fb51bf?source=copy_link">환불정책</a></li>
         </ul>
         <ul class="service-list">
-          <li class="service-item"><a href="#">회사소개</a></li>
-          <li class="service-item"><a href="#">자주 묻는 질문</a></li>
+          <!--li class="service-item"><a href="#">회사소개</a></li>
+          <li class="service-item"><a href="#">자주 묻는 질문</a></li-->
           <!--li class="service-item-bold"><a href="#">문의하기: 02-783-6806</a></li-->
         </ul>
       </div>
