@@ -22,7 +22,7 @@ document.body.insertAdjacentHTML('afterbegin', `
             <div class="header-inner">
                 <a href="index.html" class="logo"><img src="assets/ELA-Black.png" alt="Epic English Logo"></a>
                 <nav class="nav-menu">
-                    <a href="booster.html">❄️ 2026 윈터부스터</a>
+                    <a href="booster.html">❄️ 2026 윈터부스터 모집</a>
                     <span style="border:1px solid #767676; height:18px; margin-top:3px;" ></span>
                     <a href="core.html" class="nav-trigger">정규 프로그램</a>
                     <!--a href="#">워크숍</a-->
@@ -88,12 +88,12 @@ document.body.insertAdjacentHTML('afterbegin', `
                         <span class="menu-icon-text">온라인 도서관</span>
                         </a>
 
-                        <!--a href="#" class="menu-icon-item">
+                        <a href="#" class="menu-icon-item" onclick="alert('준비중입니다')">
                         <div class="menu-icon-circle">
                             <img src="assets/menu/login.svg" alt="login">
                         </div>
                         <span class="menu-icon-text">로그인</span>
-                        </a-->
+                        </a>
 
                         <a href="index.html#consultation" class="menu-icon-item">
                         <div class="menu-icon-circle">
