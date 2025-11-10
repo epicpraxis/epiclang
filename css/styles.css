@@ -21,11 +21,6 @@ h6{font-size: var(--title-xs);}
 }
 
 .main-title{font-size: 2.4rem; font-weight: 600;padding-top: 14px;text-align: center;}
-/*Testimonials*/
-.testimonials-headline{
-  background:linear-gradient(90deg, #3182F6, #5309FF);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 
 /*Banner*/
 .carousel-wrapper {
