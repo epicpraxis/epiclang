@@ -1500,6 +1500,9 @@ h6{font-size: 1.5rem;}
 .speech-bubble-section{
   gap: 20px;
 }
+.speech-bubble h6{
+  font-size: 1.6rem;
+}
 .speech-bubble .gradient-text{
   font-size: 1.6rem;
 }

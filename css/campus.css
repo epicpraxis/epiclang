@@ -52,7 +52,7 @@
 .campus-card p {
   margin: 4px 0;
   color: #555;
-  font-size: 1.6rem;
+  font-size: 2rem;
 }
 
 .campus-card .tel {
@@ -65,7 +65,8 @@
   margin-top: 8px;
 }
 
-.btn {
+.btn-box a{
+  border: 1px solid #2563eb;
   flex: 1;
   text-align: center;
   padding: 12px 0;
@@ -74,24 +75,7 @@
   text-decoration: none;
   transition: all 0.3s ease;
   font-size: 1.6rem;
-}
-
-.btn.primary {
-  background-color: #2563eb;
-  color: #fff;
-}
-
-.btn.primary:hover {
-  background-color: #1d4ed8;
-}
-
-.btn.outline {
-  border: 1px solid #2563eb;
   color: #2563eb;
-}
-
-.btn.outline:hover {
-  background-color: #eef3ff;
 }
 
 .campus-card.center {
@@ -103,7 +87,7 @@
 .highlight {
   color: #2563eb;
   font-weight: 600;
-  font-size: 1.6rem;
+  font-size: 2rem;
 }
 
 @media (min-width: 768px) {
@@ -137,5 +121,4 @@
       font-size: 2.4rem;
       margin-bottom: 20px;
     }
-
 }

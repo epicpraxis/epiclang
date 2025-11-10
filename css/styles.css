@@ -1,7 +1,3 @@
-:root{
-
-h6{font-size: var(--title-xs);}
-}
 /* 기본 스타일 */
 .title-container{
   padding-bottom: 50px;
@@ -86,7 +82,7 @@ h6{font-size: var(--title-xs);}
 
 .slide-description { 
   color: #fff;
-  font-size: var(--body-lg);
+  font-size: 2.4rem;
   margin-top: 20px; 
   opacity: 0.9; 
   line-height: 1.6; 
@@ -187,7 +183,7 @@ h6{font-size: var(--title-xs);}
 }
 
 .system {
-  border: 4px solid transparent;
+  border: 3px solid transparent;
   background:
   linear-gradient(#fff) padding-box,
   linear-gradient(90deg, #3182F6, #5309FF) border-box;
@@ -267,7 +263,7 @@ h6{font-size: var(--title-xs);}
 }
 
 .key-container h2{
-  background: linear-gradient(90deg, #3182F6, #5309FF);
+  background: linear-gradient(90deg, #70acff, #9e74ff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -594,7 +590,7 @@ h6{font-size: var(--title-xs);}
 }
 
 .mobile-controls .control-button { background-color: rgba(60, 60, 60, 0.8);}
-.slide-description { font-size: var(--body-lg); max-width: 100%;}
+.slide-description {max-width: 100%;}
 #positionTextMobile { position: relative; z-index: 2;}
 
 .system {
@@ -634,10 +630,9 @@ h6{font-size: var(--title-xs);}
   gap: 15px;
 }
 
-.slide-title{font-size: 2.9rem;}
-.slide-description{margin-top: 10px;}
-.text-content-block h5{font-size: 2.9rem;}
-.main-title{font-size: 2.2rem;}
+.slide-description{
+  margin-top: 10px; 
+}
 .text-content-block{padding: 0rem 1rem 30rem;}
 
 .carousel-wrapper{
@@ -662,7 +657,7 @@ margin: 11rem auto 0rem;
 
 
 /*PROMOTION*/
-#promotion-header h1{font-size: 4rem;}
+#promotion-header h1{font-size: 4.6rem;}
 
 
 #promotion{
@@ -721,7 +716,12 @@ margin: 11rem auto 0rem;
   justify-content: center;
 }
 
-.slide-card-mobile img{width: 180px; height: 190px;margin-left: 70px;}
+.slide-card-mobile img{
+  width: 180px; 
+  height: 190px;
+  margin-left: 84px;
+}
+
 .slide-card-mobile button{
   all:unset;
   text-align: center;
@@ -777,7 +777,7 @@ margin: 11rem auto 0rem;
 }
 
 .system-swiper-slide {
-  border: 4px solid transparent;
+  border: 2px solid transparent;
   background:
   linear-gradient(#fff) padding-box,
   linear-gradient(90deg, #3182F6, #5309FF) border-box;
@@ -794,23 +794,23 @@ margin: 11rem auto 0rem;
   flex-shrink: 0;
 }
 
+.system-line-mobile{
+  width: auto; 
+  border: 1px solid #3182F6;
+}
 
-
-.system-line-mobile{width: auto; border: 1px solid #3182F6 ;}
 .system-text-mobile{
   font-size: 1.8rem;
   font-weight: 600; 
   line-height: 1.8;
 }
 
-.body-texts p{font-size: 1.7rem;line-height: 1.6;}
-.system-title-mobile h6{line-height: 1.6;}
-
 
 
 .strengths{display: none;}
 
 @media (max-width: 570px) {
+
 .only-desktop {display: none;}
 .only-tablet {display: none;}
 .only-mobile {display: inline;}
@@ -819,31 +819,28 @@ margin: 11rem auto 0rem;
 h1{font-size: 2.8rem;}
 h2{font-size: 2.6rem;}
 h4{font-size: 2.4rem;}
-.text-content-block h5{font-size: 2rem;}
+h5{font-size: 2.2rem;}
 h6{font-size: 2rem;}
-
-.body-lg{font-size: 1.8rem;}
-.body-lg{font-size: 1.8rem;}
-.body-md{font-size: 1.7rem;}
-.title-md{font-size: 1.5rem;}
 
 /*Program*/
 .slide-card-mobile button{
   all:unset;
   text-align: center;
   border-radius: 999px;
-  width: 310px;
+  width: 274px;
   height: 40px;
   font-size: 1.7rem;
 }
+
 .slide-card-mobile{
-  width: 360px;
+  width: 320px;
 }
-.slide-card-mobile h6{
-  font-size: 1.8rem;
+.slide-card-mobile img{
+  margin-left: 44px;
 }
 
 .slide-title{font-size: 2rem;}
+.text-content-block h5{font-size: 2rem;}
 #promotion-header h1{font-size: 2.8rem;}
 
 /*Key-container img*/
@@ -863,18 +860,10 @@ h6{font-size: 2rem;}
   linear-gradient(180deg, #ffffff, #dbe3f9, #f1e9f3);
   background-size: cover;
 }
-.text-content-block{padding: 0rem 1rem 20rem;}
-.slide-description{font-size: 1.48rem; line-height: 1.4;}
+.text-content-block{padding: 2rem 1rem 20rem;}
+.slide-description{font-size: 1.6rem; line-height: 1.4;}
 .main-title{font-size: 1.8rem;}
 
-/*SYSTEM*/
-.system-title-mobile h6{font-size: 1.6rem;}
-.system-text-mobile{
-  font-size: 1.5rem; 
-  line-height: 1.5;
-  display: block;
-  padding-bottom: 4px;
-}
-.body-texts p{font-size: 1.5rem;}
+
 .system-swiper-slide{padding: 20px;}
 }
