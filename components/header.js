@@ -9,10 +9,10 @@ document.body.insertAdjacentHTML('afterbegin', `
     <header class="header">
         <div class="top-header">
                 <ul>
-                    <!--li><a href="#">로그인</a></li>
+                    <li><a href="#">로그인</a></li>
                     <span class="divider"></span>
                     <li><a href="javascript:void(0)" class="open-channel-talk">고객센터</a></li> <!--고객센터 페이지 생기면 링크 바꾸기-->
-                    <span class="divider"></span-->
+                    <span class="divider"></span>
                     <li><a href="https://tr.ee/epic-yc-feedback">에픽에 바란다</a></li>
                     <span class="divider"></span>
                     <li><a href="https://global-zone60.renaissance-go.com/">온라인 도서관</a></li>
