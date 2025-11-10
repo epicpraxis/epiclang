@@ -768,6 +768,10 @@ h6{font-size: 2rem;}
   padding-top: 60px;
 }
 
+.fixedBanner{
+  bottom: 15px;
+}
+
 /*TESTIMONIAL*/
 .testimonials-card{
   height: 240px;
