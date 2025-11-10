@@ -150,13 +150,16 @@ h6{font-size: var(--title-xs);}
   color: white;
   padding: 0.7rem 2rem; 
   border-radius: 9999px;
-  font-size: var(--body-sm);
   line-height: 0;
   overflow: hidden; 
   position: relative;
 }
         
-#positionText { position: relative; z-index: 2; }
+#positionText {
+  position: relative; 
+  z-index: 2; 
+  font-size: 1.4rem;
+}
 .slide-position::before {
   content: ''; position: absolute; top: 0; left: 0; height: 100%; width: 0;
   background-color: rgba(90, 90, 90, 0.8); z-index: 1;
@@ -167,6 +170,11 @@ h6{font-size: var(--title-xs);}
 }
 @keyframes fill-timeline { from { width: 0%; } to { width: 100%; } }
 
+.testimonials-headline {
+  background: linear-gradient(90deg, #3182F6, #5309FF);
+  -webkit-background-clip: text;  /* clip bg to text */
+  -webkit-text-fill-color: transparent; /* hide normal text color */
+}
 
 /* 카드 레이아웃 */
 .system-container {
@@ -801,7 +809,6 @@ margin: 11rem auto 0rem;
 
 
 .strengths{display: none;}
-}
 
 @media (max-width: 570px) {
 .only-desktop {display: none;}
