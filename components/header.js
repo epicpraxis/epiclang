@@ -35,7 +35,7 @@ document.body.insertAdjacentHTML('afterbegin', `
                             <span class="hamburger-line top"></span>
                             <span class="hamburger-line bottom"></span>
                         </div>
-                        <a href="#index.html" class="btn-text">입학상담 예약</a>
+                        <a href="index.html#consultation" class="btn-text">입학상담 예약</a>
                     </button>
                 </div>
             </div>
@@ -95,7 +95,7 @@ document.body.insertAdjacentHTML('afterbegin', `
                         <span class="menu-icon-text">로그인</span>
                         </a>
 
-                        <a href="#" class="menu-icon-item">
+                        <a href="index.html#consultation" class="menu-icon-item">
                         <div class="menu-icon-circle">
                             <img src="assets/menu/reservation.svg" alt="reservation" class="reservation">
                         </div>
