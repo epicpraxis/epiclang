@@ -751,6 +751,13 @@ margin: 11rem auto 0rem;
   background: linear-gradient(90deg, #133352, #88A3FA);
 }
 
+/*Testimonials*/
+.testimonials-headline{
+  background:linear-gradient(90deg, #3182F6, #5309FF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 
 
 /*SYSTEM*/
