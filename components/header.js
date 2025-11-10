@@ -9,13 +9,13 @@ document.body.insertAdjacentHTML('afterbegin', `
     <header class="header">
         <div class="top-header">
                 <ul>
-                    <li><a href="#">로그인</a></li>
+                    <!--li><a href="#">로그인</a></li>
                     <span class="divider"></span>
-                    <li><a href="javascript:void(0)" class="open-channel-talk">고객센터</a></li> <!--고객센터 페이지 생기면 링크 바꾸기-->
-                    <span class="divider"></span>
+                    <li><a href="javascript:void(0)" class="open-channel-talk">고객센터</a></li>
+                    <span class="divider"></span-->
                     <li><a href="https://tr.ee/epic-yc-feedback">에픽에 바란다</a></li>
                     <span class="divider"></span>
-                    <li><a href="https://global-zone60.renaissance-go.com/">온라인 도서관</a></li>
+                    <li><a href="https://global-zone08.renaissance-go.com/welcomeportal">온라인 도서관</a></li>
                 </ul>
             </div>
         <div class="header-container">
@@ -46,7 +46,7 @@ document.body.insertAdjacentHTML('afterbegin', `
                     <div class="desktop-menu-grid">
                         <div class="campus"> <h6>킨더관</h6> 
                             <ul> 
-                                <li><a href="#kinder">(준비중)</a></li> 
+                                <li><a>(준비중)</a></li> 
                                 <li><a href="#kinder">&nbsp</a></li> 
                                 <li><a href="#kinder">&nbsp</a></li> 
                             </ul>
@@ -60,7 +60,7 @@ document.body.insertAdjacentHTML('afterbegin', `
                         </div>
                         <div class="campus"> <h6>중등관</h6> 
                             <ul> 
-                                <li><a href="#kinder">(준비중)</a></li> 
+                                <li><a>(준비중)</a></li> 
                                 <li><a href="#kinder">&nbsp</a></li> 
                                 <li><a href="#kinder">&nbsp</a></li> 
                             </ul>
@@ -81,7 +81,7 @@ document.body.insertAdjacentHTML('afterbegin', `
                 </div>
                 <div class="menu-section">
                     <div class="menu-icon-grid">
-                        <a href="https://global-zone60.renaissance-go.com/" class="menu-icon-item">
+                        <a href="https://global-zone08.renaissance-go.com/welcomeportal" class="menu-icon-item">
                         <div class="menu-icon-circle">
                             <img src="assets/menu/myON.svg" alt="myON" class="myON">
                         </div>
@@ -146,7 +146,7 @@ document.body.insertAdjacentHTML('afterbegin', `
                     </div>
 
                     <div class="menu-group">
-                        <h3 class="menu-group-title">초등관</h3>
+                        <h3 class="menu-group-title">킨더관</h3>
                         <ul class="menu-group-list">
                         <li>
                             <a href="#" class="menu-link">
