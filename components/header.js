@@ -119,7 +119,12 @@ document.body.insertAdjacentHTML('afterbegin', `
                             </a>
                         <li>
                             <a href="base.html" class="menu-link">
-                            <span>2026 신규생 모집</span>
+                            <span style="display: inline-flex;
+                                        align-items: center;
+                                        gap: 3px;
+                                        background: linear-gradient(90deg, #9edb47, #5bc7d3);
+                                -webkit-background-clip: text;
+                                -webkit-text-fill-color: transparent;" > 🚌 2026 신규생 모집</span>
                             </a>
                         </li>
                         </li>
