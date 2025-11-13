@@ -109,16 +109,16 @@ document.body.insertAdjacentHTML('afterbegin', `
                         <h3 class="menu-group-title">모집중</h3>
                         <ul class="menu-group-list">
                         <li>
-                            <a href="booster.html" class="menu-link">❄️ 
+                            <a href="booster.html" class="menu-link">
                             <span style="display: inline-flex;
                                         align-items: center;
                                         gap: 3px;
                                         background: linear-gradient(90deg, #476bff, #a030ff);
                                 -webkit-background-clip: text;
-                                -webkit-text-fill-color: transparent;" > 2026 윈터부스터</span>
+                                -webkit-text-fill-color: transparent;" > ❄️ 2026 윈터부스터</span>
                             </a>
                         <li>
-                            <a href="base.html" class="menu-link">🚌 
+                            <a href="base.html" class="menu-link">
                             <span style="display: inline-flex;
                                         align-items: center;
                                         gap: 3px;
