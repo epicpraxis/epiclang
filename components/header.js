@@ -176,18 +176,18 @@ document.body.insertAdjacentHTML('afterbegin', `
                         <h3 class="menu-group-title">특별 프로그램</h3>
                         <ul class="menu-group-list">
                         <!--li>
-                            <a href="#" class="menu-link">
-                            <span>워크숍</span>
+                            <a href="https://epic-praxis.notion.site/2025-2784ba0ea49a80e890b4e5aad93bc577?source=copy_link" class="menu-link">
+                            <span>워크숍: 8주 토요 심화 특강</span>
                             </a>
                         </li-->
                         <li>
                             <a href="booster.html" class="menu-link">
-                            <span>부스터</span>
+                            <span>부스터: 방학 중 몰입형 특강</span>
                             </a>
                         </li>
                         <!--li>
-                            <a href="#" class="menu-link">
-                            <span>커뮤니티</span>
+                            <a class="menu-link" onclick="alert('블로그에 커뮤니티 이벤트 진행 현황이 곧 업로드될 예정입니다. 조금만 기다려 주세요:)')">
+                            <span>커뮤티니: 영어를 자연스럽게</span>
                             </a>
                         </li-->
                     </div>
