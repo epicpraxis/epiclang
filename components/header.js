@@ -77,7 +77,7 @@ document.body.insertAdjacentHTML('afterbegin', `
         <div id="menu-panel" class="menu-panel">
             <div class="menu-content">
                 <div class="menu-header">
-                    <p>감(感)이 아닌 데이터로,<br> 영어의 시작과 끝을 한곳에서</p>
+                    <p>감(感)이 아닌 데이터로,<br>영어의 시작과 끝을 한곳에서</p>
                 </div>
                 <div class="menu-section">
                     <div class="menu-icon-grid">
