@@ -27,7 +27,7 @@ document.body.insertAdjacentHTML('afterbegin', `
                     <a href="core.html" class="nav-trigger">정규 프로그램</a>
                     <!--a href="#">워크숍</a-->
                     <a href="campus.html">캠퍼스 찾기</a>
-                    <a href="https://blog.naver.com/epiclang">블로그</a>
+                    <a href="https://blog.naver.com/epiclang_">블로그</a>
                 </nav>
                 <div>
                      <button id="category-button" class="btn-category">
@@ -206,7 +206,7 @@ document.body.insertAdjacentHTML('afterbegin', `
                             </a>
                         </li-->
                         <li>
-                            <a href="https://blog.naver.com/epiclang" class="menu-link">
+                            <a href="https://blog.naver.com/epiclang_" class="menu-link">
                             <span>블로그</span>
                             </a>
                         </li>
