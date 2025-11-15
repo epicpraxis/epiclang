@@ -1553,8 +1553,6 @@ h6{font-size: 1.5rem;}
 
 /*BOOK*/
 .key-container{
-  background: url(../assets/00.main/key-bg-mobile.svg) no-repeat center center,
-  linear-gradient(180deg, #e5f8fa, #fff);
   background-size: cover;
   height: 500px;
 }
