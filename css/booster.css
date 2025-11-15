@@ -976,7 +976,7 @@ h1{
 }
 
 .whybooster-card li{
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   width: 100%;
 }
 
@@ -1030,7 +1030,7 @@ h1{font-size: 2.8rem;}
 h2{font-size: 2.6rem;}
 h4{font-size: 2.4rem;}
 .text-content-block h5{font-size: 2rem;}
-h6{font-size: 1.5rem;}
+h6{font-size: 1.6rem;}
 
 .body-lg{font-size: 1.6rem;}
 .body-md{font-size: 1.7rem;}
@@ -1114,12 +1114,12 @@ h6{font-size: 1.5rem;}
 }
 
 .schedule-swiper-slide .body-lg{
-  font-size: 1.5rem;
+  font-size: 1.7rem;
 
 }
 
 .caption{
-  font-size: 1.2rem;
+  font-size: 1.4rem;
 }
 
 
@@ -1157,7 +1157,7 @@ h6{font-size: 1.5rem;}
 }
 
 .whybooster-card li{
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   width: 100%;
 }
 
@@ -1175,8 +1175,8 @@ h6{font-size: 1.5rem;}
 
 /*TESTIMONIAL*/
 .tri-card__text .gradient-text{font-size: 1.8rem;}
-.tri-desc{font-size: 1.5rem; padding-top: 4px;}
-.tri-tag{font-size: 1.5rem;}
+.tri-desc{font-size: 1.6rem; padding-top: 4px;}
+.tri-tag{font-size: 1.6rem;}
 
 .consultation-form iframe{width: 90%; height: 940px; margin:0 auto;}
 
@@ -1193,8 +1193,8 @@ h6{font-size: 1.5rem;}
 #consultation .arrow{display: flex; flex-direction: column; align-items: center;}
 .result-card .body-xxl{font-size: 1.8rem;}
 
-.accordion-toggle{padding-left: 10px; font-size: 1.5rem;}
-.accordion-text{font-size: 1.5rem;}
-.accordion-text strong{font-size: 1.5rem;}
+.accordion-toggle{padding-left: 10px; font-size: 1.6rem;}
+.accordion-text{font-size: 1.6rem;}
+.accordion-text strong{font-size: 1.6rem;}
 .accordion-icon svg{width: 30px; height: 30px;}
 }
