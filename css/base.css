@@ -1397,6 +1397,7 @@ gap: 0px;
   height: 1120px;
   background:url("../assets/00.main/key-bg-mobile.svg") no-repeat center center,
   linear-gradient(180deg, #fff, #e5fcf2);
+  background-size: cover;
 }
 
 .difference-card{
