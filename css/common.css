@@ -637,7 +637,6 @@ h2{font-size: var(--title-xl);}
 h3{font-size: var(--title-lg);}
 h4{font-size: var(--title-md);}
 h5{font-size: var(--title-sm);}
-h6{font-size: var(--title-xs);}
 
 .enrollment-process .desktop{display: none;}
 .enrollment-process .tablet{display: block;}
