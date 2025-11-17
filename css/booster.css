@@ -302,6 +302,7 @@ h1{
 }
 #timetable{
   background: linear-gradient(180deg, #fff, #ebf4ff);
+  padding-top: 50px;
 }
 #timetable img{
   margin: 0 auto;
@@ -636,7 +637,7 @@ h1{
   url("../assets/00.main/key-bg.svg") no-repeat center center,
   linear-gradient(180deg, #c0d5ff, #fff);
   width: 100%;
-  height: 1180px;
+  height: 1020px;
   display: flex;
   flex-direction: column;
   align-items: center;
