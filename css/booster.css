@@ -48,6 +48,7 @@ html, body, * {
   box-sizing: border-box;
   padding: 0;
   font-size: 62.5%;  /* 16px * 62.5% = 10px → 1rem = 10px  보통의 브라우저가 16px로 기준을 잡음*/
+  list-style: none;
 }
 .fixedBanner > div{
   background: url("../assets/sub/winterbooster_reservation.png") no-repeat center / cover !important;
