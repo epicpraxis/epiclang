@@ -504,14 +504,6 @@ h1{
   width: 90%;
   margin: 0 auto;
 }
-
-#consultation .arrow{
-  display: flex; 
-  flex-direction: column; 
-  align-items: center;
-  width: 100%;
-  padding-top: 0px;
-}
 #consultation .arrow img{
   width: 90%; 
   min-width: 300px; 
