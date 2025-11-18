@@ -1,6 +1,4 @@
-.fixedBanner > div{
-  background: url("../assets/sub/winterbooster_reservation.png") no-repeat center / cover;
-}
+
 :root {
   --anim-duration: 3000ms;
   /* Font Scale */
@@ -51,7 +49,9 @@ html, body, * {
   padding: 0;
   font-size: 62.5%;  /* 16px * 62.5% = 10px → 1rem = 10px  보통의 브라우저가 16px로 기준을 잡음*/
 }
-
+.fixedBanner > div{
+  background: url("../assets/sub/winterbooster_reservation.png") no-repeat center / cover;
+}
 /**/
 /*고해상도*/ 
 @media (min-width: 1921px) {
