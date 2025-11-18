@@ -1,3 +1,6 @@
+.fixedBanner> div{
+  background: url("../assets/sub/winterbooster_reservation.png") no-repeat center / cover;
+}
 :root {
   --anim-duration: 3000ms;
   /* Font Scale */
