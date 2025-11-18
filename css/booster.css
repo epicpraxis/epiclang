@@ -638,7 +638,7 @@ h1{
 .whybooster-container{
   background: 
   url("../assets/00.main/key-bg.svg") no-repeat center center,
-  linear-gradient(180deg, #c0d5ff, #fff);
+  linear-gradient(180deg, #c0d5ff, #ebf4ff);
   width: 100%;
   height: 1020px;
   display: flex;
