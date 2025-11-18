@@ -27,7 +27,7 @@ class Footer extends HTMLElement {
         <ul class="service-list">
           <!--li class="service-item"><a href="#">회사소개</a></li>
           <li class="service-item"><a href="#">자주 묻는 질문</a></li-->
-          <!--li class="service-item-bold"><a href="#">문의하기: 02-783-6806</a></li-->
+          <li class="service-item-bold"><a href="#">문의하기: 02-783-6806</a></li>
         </ul>
       </div>
       <div class="footer-info">
