@@ -506,6 +506,7 @@ h1{
   min-width: 300px; 
   max-width: 1020px; 
   margin: 0 auto;
+  padding-bottom:30px;
 }
 
 .enrollment-process{
