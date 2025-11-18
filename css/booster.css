@@ -675,7 +675,7 @@ h1{
   flex-direction: column;
   align-items: left;
   gap: 20px;
-  border: 4px solid transparent;
+  border: 2px solid transparent;
   background:
   linear-gradient(#fff) padding-box,
   linear-gradient(90deg, #7db3ff, #2d72f1) border-box;
@@ -770,7 +770,7 @@ h1{
   padding: 24px 25px;
   text-align: left;
 
-  border: 4px solid transparent;
+  border: 2px solid transparent;
   background:
   linear-gradient(#fff) padding-box,
   linear-gradient(90deg, #006dea, #114aac) border-box;
