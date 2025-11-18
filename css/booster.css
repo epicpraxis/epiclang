@@ -119,7 +119,7 @@ html {
   font-weight: 700;
   line-height: 124%; /* 81.84px */
 
-  background: linear-gradient(180deg, #ffffff -11.61%, #ffffff 170.63%);
+  background: linear-gradient(180deg, #a3c2ff, #ffffff);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
