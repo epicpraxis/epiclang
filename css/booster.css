@@ -220,7 +220,7 @@ h1{
   text-align: left;
   background: linear-gradient(#fff) padding-box,
   linear-gradient(90deg, #006dea, #114aac) border-box;
-  border: 4px solid transparent;
+  border: 2px solid transparent;
   border-radius: 20px;
   display: flex;
   flex-direction: column;
