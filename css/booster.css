@@ -551,20 +551,6 @@ h1{
   background: linear-gradient(90deg, #0C3C81, #061A40);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-weight: 600;
-  color: #333;
-  padding: 10px;
-  padding-left:20px;
-  width: 100%;
-  text-align: left;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  transition: background 0.3s ease;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: var(--body-lg);
 }
 
 .accordion-icon {
