@@ -947,7 +947,7 @@ h1{
 
 /*whybooster*/
 #whybooster{
-  padding-top: 80px;
+  padding-top: 0px;
 }
 
 .whybooster-container h2{
@@ -992,6 +992,9 @@ h1{
   height: 100%;
 }
 
+#benefit{
+  padding-top:0px;
+}
 
 .benefit-cards{
   flex-direction: column;
