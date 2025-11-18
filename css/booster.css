@@ -276,10 +276,6 @@ h1{
   display: none;
 }
 
-.mealplanimg-mobile{
-  display: none;
-}
-
 .schedule-section > div:nth-child(2) {
   transform: translateY(-20px);
 }
@@ -982,15 +978,6 @@ h1{
 }
 .classesimg-mobile{
   display: block;
-  width: 90%;
-}
-
-.mealplanimg{
-  display: none;
-}
-.mealplanimg-mobile{
-  display: block;
-  border-radius: 20px;
   width: 90%;
 }
 
