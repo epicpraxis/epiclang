@@ -50,7 +50,7 @@ html, body, * {
   font-size: 62.5%;  /* 16px * 62.5% = 10px → 1rem = 10px  보통의 브라우저가 16px로 기준을 잡음*/
 }
 .fixedBanner > div{
-  background: url("../assets/sub/winterbooster_reservation.png") no-repeat center / cover;
+  background: url("../assets/sub/winterbooster_reservation.png") no-repeat center / cover !important;
 }
 /**/
 /*고해상도*/ 
