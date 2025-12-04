@@ -117,6 +117,7 @@ h1{
 }
 .speech-bubble .gradient-text, h6{
   font-size: 2.4rem;
+  font-weight: 400;
 }
 
 /* 홀수번째 → 왼쪽 */
@@ -1505,6 +1506,7 @@ h6{font-size: 1.5rem;}
 }
 .speech-bubble h6{
   font-size: 1.6rem;
+  font-weight: 400;
 }
 .speech-bubble .gradient-text{
   font-size: 1.6rem;

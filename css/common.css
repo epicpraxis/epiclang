@@ -29,7 +29,7 @@ h2{font-size: var(--title-xl);}
 h3{font-size: var(--title-lg);}
 h4{font-size: var(--title-md);}
 h5{font-size: var(--title-sm);}
-h6{font-size: 2.4rem; font-weight: 400;}
+h6{font-size: 2.4rem;}
 
 .body-lg{
   font-size: 2rem;
