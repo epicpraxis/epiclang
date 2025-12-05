@@ -759,6 +759,11 @@ h1{
   font-size: 5rem;
 }
 
+.whybooster-card{
+  padding: 38px 20px;
+  height: 360px;
+}
+
 .whybooster-cards{
   max-width: 840px;
   gap: 10px;
