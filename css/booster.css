@@ -285,6 +285,29 @@ h1{
   padding-top: 0px;
 }
 
+.btn-classes {
+  display: inline-block;
+  padding: 22px 20px;
+  font-size: 24px;
+  font-weight: 600;
+  color: #fff;
+  background: linear-gradient(90deg, #0e396b, #4171ab); /* your gradient */
+  
+  border-radius: 300px;
+  text-decoration: none;
+  transition: all 0.25s ease;
+  width: 90%;
+  max-width: 1020px;
+}
+
+/* Hover state: swap colors */
+.btn-classes:hover {
+  color: #023268; /* text turns black */
+  background: #fff; /* background becomes white */
+  border-color: #023268; /* stroke changes */
+  outline: 2px solid #0e396b;
+}
+
 #classes img{
   margin: 0 auto;
   width: 90%;
@@ -610,8 +633,6 @@ h1{
   padding: 6px 12px;
   margin-right: 8px;
   border-radius: 10px;
-
-
 }
 
 .whybooster-content-area ul {
@@ -636,6 +657,7 @@ h1{
 .aiso-right-mobile{display: none;}
 
   @media (max-width: 1020px){
+
 .only-desktop {display: inline;}
 .only-tablet {display: none;}
 .only-mobile {display: none;}
@@ -814,6 +836,10 @@ h1{
 .enrollment-process .mobile{display:none; }
 .brMobile{display: inline;}
 
+.btn-classes{
+  font-size: 2rem;
+}
+
 /*hero-830px*/
 
 .hero-wrapper{
@@ -943,7 +969,10 @@ h6{font-size: 1.6rem;}
 .body-lg{font-size: 1.6rem;}
 .body-md{font-size: 1.7rem;}
 .title-md{font-size: 2.3rem;}
-
+.btn-classes{
+  font-size: 1.6rem;
+  padding: 16px;
+}
 .gradient-text{
   font-size: 2rem;
 }
