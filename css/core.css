@@ -116,11 +116,14 @@ h1{
   text-align: center;
   justify-content: center;
 }
-.speech-bubble .gradient-text, h6{
+.speech-bubble .gradient-text{
   font-size: 2.4rem;
-  font-weight: 400;
+  font-weight: 600;
 }
 
+.speech-bubble h6{
+  font-weight: 400;
+}
 /* 홀수번째 → 왼쪽 */
 .speech-bubble:nth-child(1) {
   margin-left: 50px;   /* 왼쪽에 붙음 */

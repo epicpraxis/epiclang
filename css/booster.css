@@ -515,76 +515,11 @@ h1{
   align-items: center;
 }
 
-/* Accordion Styles */
-.accordion-container{
-  width: 980px;
-  margin: 20px auto 100px;
-  background: #fff;
-  padding:20px;
-  border-radius: 30px;
-}
-.accordion {
-  overflow: hidden;
-  width: 950px;
-  align-items: center;
-}
-
-.accordion-item {
-  border-top: 1px solid #ddd;
-}
-
-.accordion-item:first-child {
-  border-top: none;
-}
-
+/*Accordion*/
 .accordion-toggle {
   background: linear-gradient(90deg, #0C3C81, #061A40);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-}
-
-.accordion-icon svg {
-  width: 40px;
-  height: 40px;
-  stroke: currentColor;
-  stroke-width: 1;
-  fill: none;
-}
-
-.accordion-toggle.active .accordion-icon {
-  transform: rotate(180deg);
-}
-
-.accordion-content {
-  max-height: 0;
-  overflow: hidden;
-  padding: 0px;
-  background: #f3f9ff;
-  transition: max-height 0.3s ease, padding 0.3s ease;
-}
-
-.accordion-text{
-  font-size: var(--body-md);
-  color: #000;
-  text-align: left;
-  padding-left: 8px;
-  line-height: 1.6;
-  font-weight: 400;
-}
-
-.accordion-text strong{
-  font-size: var(--body-md);
-  color: #000;
-  text-align: left;
-  padding-left: 8px;
-  line-height: 1.6;
-  font-weight: 600;
-}
-
-
-.accordion-content.open {
-  padding: 10px 40px 15px 15px;
-  max-height: 500px; /* adjust as needed */
 }
 
 .faq{
@@ -668,12 +603,15 @@ h1{
 
 .whybooster-content-area h6{
   font-size: 2rem;
-  font-weight: 600;
-  border: 3px solid #4794ff;
-  display: inline;
-  padding: 6px 10px;
-  border-radius: 8px;
-  margin-right: 6px;
+  font-weight: 500;
+  display: inline-block;
+  background: linear-gradient(90deg, #074db0, #5583d9);
+  color: #fff;
+  padding: 6px 12px;
+  margin-right: 8px;
+  border-radius: 10px;
+
+
 }
 
 .whybooster-content-area ul {
@@ -684,7 +622,7 @@ h1{
 .whybooster-card span{
   width: 100%;
   height: 1px;
-  border: 1px solid #c9c9c9;
+  border: 1px solid #c1d6ff;
 }
 
 .whybooster-card li {
@@ -1039,11 +977,11 @@ h6{font-size: 1.6rem;}
 }
 
 .hero p{
-  font-size: 1.56rem;
+  font-size: 1.8rem;
 }
 
 .hero-image img{
-  width: 170px;
+  width: 270px;
 }
 .hero-wrapper{
   gap: 10px;

@@ -115,8 +115,12 @@ h1{
   text-align: center;
   justify-content: center;
 }
-.speech-bubble .gradient-text, h6{
+.speech-bubble .gradient-text{
   font-size: 2.4rem;
+  font-weight: 600;
+}
+
+.speech-bubble h6{
   font-weight: 400;
 }
 
