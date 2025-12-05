@@ -458,6 +458,19 @@ html {
   line-height: 1.6;
   font-weight: 400;
 }
+.accordion-text a{
+  font-size: var(--body-md);
+  color: #0099ff;
+  text-align: left;
+  padding-left: 8px;
+  line-height: 1.6;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.accordion-text a:hover{
+  color: #5309FF;
+}
 
 .accordion-content.open {
   padding: 10px 40px 15px 15px;
@@ -833,6 +846,19 @@ h6{font-size: 1.7rem; line-height: 1.6;}
 
 .accordion-text{
   font-size: 1.5rem;
+}
+.accordion-text a{
+  font-size: 1.5rem;
+  color: #0099ff;
+  text-align: left;
+  padding-left: 8px;
+  line-height: 1.6;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.accordion-text a:hover{
+  color: #5309FF;
 }
 
 .accordion-icon svg{
