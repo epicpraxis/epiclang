@@ -609,7 +609,7 @@ h1{
   linear-gradient(#fff) padding-box,
   linear-gradient(90deg, #7db3ff, #2d72f1) border-box;
   border-radius: 20px;
-  padding: 50px 20px;
+  padding: 40px 30px;
   box-shadow: 0 6px 18px rgba(53, 120, 245, 0.15);
   width: 400px;
 }
@@ -631,7 +631,7 @@ h1{
   background: linear-gradient(90deg, #074db0, #5583d9);
   color: #fff;
   padding: 6px 12px;
-  margin-right: 8px;
+  margin-right: 4px;
   border-radius: 10px;
 }
 
@@ -782,7 +782,7 @@ h1{
 }
 
 .whybooster-card{
-  padding: 38px 20px;
+  padding: 38px 30px;
   height: 360px;
 }
 
@@ -808,7 +808,11 @@ h1{
 .key-container h1{
   font-size: 5rem;
 }
-
+.whybooster-card span{
+  width: 100%;
+  height: 1px;
+  border: 1px solid #c1d6ff;
+}
 
 /*triSwiper*/
   .triSwiper .swiper {
@@ -904,7 +908,7 @@ h1{
 
 .whybooster-card{
   width: 370px;
-  padding: 20px 0 20px 24px;
+  padding: 24px;
   gap: 10px;
   height: 100%;
 }
