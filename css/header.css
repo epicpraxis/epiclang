@@ -28,6 +28,7 @@
           margin: 0 auto;        /* mx-auto */
           position: relative;     /* relative */
       }
+      .btn-wb{display: none;}
 
       .header-inner {
           display: flex;               /* flex */
@@ -523,4 +524,24 @@
         .top-header{display: none;}
         .header{top: 0;}
         .menu-header{font-size: 3.5rem;}
+      .mobile-menu{
+        display: flex;
+        gap: 6px;
+      }
+
+      .btn-wb {
+        display: block;
+        padding: 2px 16px;
+              font-weight: 600;
+              font-size: 1.8rem;
+              border-radius: 999px;
+              background: #066af6;
+              border:none;
+              margin: 0 auto;
+            color: #fff;
         }
+
+        .btn-wb a{
+            text-decoration: none;
+        }
+    }
