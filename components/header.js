@@ -30,8 +30,8 @@ document.body.insertAdjacentHTML('afterbegin', `
                     <a href="https://blog.naver.com/epiclang_">블로그</a>
                 </nav>
                 <div class="mobile-menu">
-                     <button class="btn-wb">
-                        <div class="btn-wb><a href="booster.html">2026 겨울특강 모집</a></div>
+                     <button id="btn-wb" class="btn-wb">
+                        <a href="booster.html" class="btn-wb">2026 겨울특강 예약</a>
                     </button>
                      <button id="category-button" class="btn-category">
                         <div class="hamburger-icon">
@@ -127,7 +127,7 @@ document.body.insertAdjacentHTML('afterbegin', `
                                         gap: 3px;
                                         background: linear-gradient(90deg, #9edb47, #5bc7d3);
                                 -webkit-background-clip: text;
-                                -webkit-text-fill-color: transparent;" >🐥 2026 예비초 및 신규 모집</span>
+                                -webkit-text-fill-color: transparent;" >🐥 2026 예비초 및 방과후 모집</span>
                             </a>
                         </li>
                         </li>
