@@ -880,6 +880,7 @@ h1{
   width: 370px;
   padding: 20px 0 20px 24px;
   gap: 10px;
+  height: 100%;
 }
 
 .whybooster-card h3{
@@ -900,10 +901,6 @@ h1{
 
 .whybooster-container h1{
   padding-bottom: 10px;
-}
-
-.whybooster-card span{
-  height: 100%;
 }
 
 #benefit{
