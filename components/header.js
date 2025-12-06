@@ -31,7 +31,7 @@ document.body.insertAdjacentHTML('afterbegin', `
                 </nav>
                 <div class="mobile-menu">
                      <button id="btn-wb" class="btn-wb">
-                        <a href="booster.html" class="btn-wb">2026 겨울특강 예약</a>
+                        <a href="booster.html#consultation" class="btn-wb">2026 겨울특강 예약</a>
                     </button>
                      <button id="category-button" class="btn-category">
                         <div class="hamburger-icon">
