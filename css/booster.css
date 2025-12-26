@@ -106,7 +106,7 @@ html {
   justify-content: center;
 
   padding: 120px 0;
-  gap: 250px;
+  gap: 200px;
   margin: 0 auto;
   background: url("../assets/sub/hero-booster-bg.svg") no-repeat;
 }
@@ -138,7 +138,7 @@ html {
 }
 
 .hero-image img{
-  width: 360px;
+  width: 420px;
 }
 
 
@@ -763,6 +763,9 @@ h1{
 }
 
 
+.hero-image img{
+  width: 390px;
+}
 
 
 /*whybooster*/
@@ -1019,7 +1022,7 @@ h6{font-size: 1.6rem;}
 }
 
 .hero-image img{
-  width: 270px;
+  width: 310px;
 }
 .hero-wrapper{
   gap: 10px;
