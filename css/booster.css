@@ -97,7 +97,7 @@ html {
 }
 
 .hero-wrapper{
-  max-width: 1320px;
+  max-width: 1020px;
   color: #fff;
 
   display: flex;
@@ -106,7 +106,7 @@ html {
   justify-content: center;
 
   padding: 120px 0;
-  gap: 20px;
+  gap: 90px;
   margin: 0 auto;
   background: url("../assets/sub/hero-booster-bg.svg") no-repeat;
 }
@@ -138,7 +138,7 @@ html {
 }
 
 .hero-image img{
-  width: 320px;
+  width: 360px;
 }
 
 
