@@ -831,7 +831,9 @@ h1{
 .accordion-container{width: 800px; margin-top: 60px;}
 .accordion-toggle{padding-left: 10px;}
 .accordion-icon svg{width: 30px; height: 30px;}
-
+.hero-wrapper{
+  gap: 40px;
+}
 }
 /*Tablet - 615px ~ 830px*/
 @media (max-width: 830px) {
