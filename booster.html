@@ -139,8 +139,26 @@
                 <p class="body-md">※ 수강료와 실라버스는 아래 이미지를 눌러서 확인해주세요.<br class="brMobile">선착순 모집으로 마감이 될 수 있으니 참고해주세요. </p>
                 <p class="body-md" style="padding-bottom: 20px;">※ 수업별 비용과 상세 내용은 아래 이미지를 <br class="brMobile">눌러 실라버스 페이지에서 확인하세요 </p>
                 <a href="https://tr.ee/elayc-wb26-classes"><img src="assets/sub/classes.png" alt="class schedule" class="classesimg"></a>
-                <a href="https://tr.ee/elayc-wb26-classes"><img src="assets/sub/classes-mobile.png" alt="class schedule" class="classesimg-mobile"></a>
+            </div>
+
+          <!--Schedule-Cards-Mobile-->
+            <div class="classes-cards-mobile">
+              <div class="swiper classes-swiper">
+                <div class="classes-swiper-wrapper">
+                  <div class="classes-swiper-slide">
+                  <img src="assets/sub/classes01.png" alt="classes01">
+                </div>
+
+                  <div class="classes-swiper-slide">
+                  <img src="assets/sub/classes02.png" alt="classes02">
+                  </div>
+
+                  <div class="classes-swiper-slide">
+                  <img src="assets/sub/classes03.png" alt="classes03">
+                  </div>
               </div>
+            </div>
+          </div>
               <a id="classes-button" class="btn-classes" href="https://tr.ee/elayc-wb26-classes">수업 자세히 보기 &#8599;</a>
           </section>
 
@@ -426,6 +444,18 @@
     var swiper = new Swiper(".schedule-swiper", {
       wrapperClass: 'schedule-swiper-wrapper',
       slideClass: 'schedule-swiper-slide',
+      spaceBetween: 20,
+      slidesPerView: '1.2',
+      slidesOffsetBefore: 30,   // 👈 왼쪽에 여백 추가!
+      slidesOffsetAfter: 10,     // (원하면 오른쪽도)
+    });
+  </script>
+
+    <!--classes -->
+  <script>
+    var swiper = new Swiper(".classes-swiper", {
+      wrapperClass: 'classes-swiper-wrapper',
+      slideClass: 'classes-swiper-slide',
       spaceBetween: 20,
       slidesPerView: '1.2',
       slidesOffsetBefore: 30,   // 👈 왼쪽에 여백 추가!
