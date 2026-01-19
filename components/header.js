@@ -13,7 +13,7 @@ document.body.insertAdjacentHTML('afterbegin', `
                     <span class="divider"></span>
                     <li><a href="javascript:void(0)" class="open-channel-talk">고객센터</a></li>
                     <span class="divider"></span-->
-                    <li><a href="https://tr.ee/epic-yc-feedback">에픽에 바란다</a></li>
+                    <li><a href="https://forms.epiclang.cc/voc">에픽에 바란다</a></li>
                     <span class="divider"></span>
                     <li><a href="https://global-zone08.renaissance-go.com/welcomeportal">온라인 도서관</a></li>
                 </ul>
