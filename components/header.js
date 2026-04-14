@@ -22,7 +22,7 @@ document.body.insertAdjacentHTML('afterbegin', `
             <div class="header-inner">
                 <a href="index.html" class="logo"><img src="assets/ELA-Black.png" alt="Epic English Logo"></a>
                 <nav class="nav-menu">
-                    <a href="index.html#consultation">🌴 2026 여름방학 특강 모집</a>
+                    <a href="index.html#consultation">⛱️ 2026 여름방학 특강 모집</a>
                     <span style="border:1px solid #767676; height:18px; margin-top:3px;" ></span>
                     <a href="core.html" class="nav-trigger">정규 프로그램</a>
                     <!--a href="#">워크숍</a-->
@@ -118,7 +118,7 @@ document.body.insertAdjacentHTML('afterbegin', `
                                         gap: 3px;
                                         background: linear-gradient(90deg, #476bff, #a030ff);
                                 -webkit-background-clip: text;
-                                -webkit-text-fill-color: transparent;" > 🌴 2026 여름방학 특강 모집</span>
+                                -webkit-text-fill-color: transparent;" >⛱️ 2026 여름방학 특강 모집</span>
                             </a>
                         <li>
                             <a href="base.html" class="menu-link">
