@@ -22,7 +22,7 @@ document.body.insertAdjacentHTML('afterbegin', `
             <div class="header-inner">
                 <a href="index.html" class="logo"><img src="assets/ELA-Black.png" alt="Epic English Logo"></a>
                 <nav class="nav-menu">
-                    <a href="booster.html">❄️ 2026 겨울방학 특강 모집</a>
+                    <a href="index.html#consultation">🌴 2026 여름방학 특강 모집</a>
                     <span style="border:1px solid #767676; height:18px; margin-top:3px;" ></span>
                     <a href="core.html" class="nav-trigger">정규 프로그램</a>
                     <!--a href="#">워크숍</a-->
@@ -31,7 +31,7 @@ document.body.insertAdjacentHTML('afterbegin', `
                 </nav>
                 <div class="mobile-menu">
                      <button id="btn-wb" class="btn-wb">
-                        <a href="booster.html#consultation" class="btn-wb">2026 겨울특강 예약</a>
+                        <a href="index.html#consultation" class="btn-wb">2026 여름특강 예약</a>
                     </button>
                      <button id="category-button" class="btn-category">
                         <div class="hamburger-icon">
@@ -112,13 +112,13 @@ document.body.insertAdjacentHTML('afterbegin', `
                         <h3 class="menu-group-title">모집중</h3>
                         <ul class="menu-group-list">
                         <li>
-                            <a href="booster.html" class="menu-link">
+                            <a href="index.html#consultation" class="menu-link">
                             <span style="display: inline-flex;
                                         align-items: center;
                                         gap: 3px;
                                         background: linear-gradient(90deg, #476bff, #a030ff);
                                 -webkit-background-clip: text;
-                                -webkit-text-fill-color: transparent;" > ❄️ 2026 겨울방학 특강 모집</span>
+                                -webkit-text-fill-color: transparent;" > 🌴 2026 여름방학 특강 모집</span>
                             </a>
                         <li>
                             <a href="base.html" class="menu-link">
