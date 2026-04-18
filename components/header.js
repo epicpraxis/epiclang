@@ -183,11 +183,11 @@ document.body.insertAdjacentHTML('afterbegin', `
                             <span>워크숍: 8주 토요 심화 특강</span>
                             </a>
                         </li>
-                        <li>
+                        <!--li>
                             <a href="booster.html" class="menu-link">
                             <span>부스터: 방학 중 몰입형 특강</span>
                             </a>
-                        </li>
+                        </li-->
                         <li>
                             <a class="menu-link" onclick="alert('블로그에 커뮤니티 이벤트 진행 현황이 곧 업로드될 예정입니다. 조금만 기다려 주세요:)')">
                             <span>커뮤티니: 영어를 자연스럽게</span>
